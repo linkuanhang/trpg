@@ -2,7 +2,8 @@
 <xsl:stylesheet version="2.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:books="books" xmlns:gen="general"
 	xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/1999/xhtml">
 
-<xsl:import href="/static/xml/base.xsl" />
+<xsl:import href="/pathfinder/static/xml/base.xsl" />
+<xsl:import href="/pathfinder/static/xml/general.xsl" />
 
 <xsl:output
 	method="html"
@@ -16,12 +17,12 @@
 <xsl:call-template name="page">
 	<xsl:with-param name="root" select="." />
 	<xsl:with-param name="title">
-		<gen:name xlink:type="simple" xlink:href="/static/xml/terms.xml#pathfinder" type="ch">pathfinder</gen:name>
+		<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#pathfinder" type="ch">pathfinder</gen:name>
 	</xsl:with-param>
 	<xsl:with-param name="pageTitle">
-		<gen:name xlink:type="simple" xlink:href="/static/xml/terms.xml#pathfinder" type="total">pathfinder</gen:name>
+		<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#pathfinder" type="total">pathfinder</gen:name>
 	</xsl:with-param>
-	<xsl:with-param name="pageDes"><gen:name xlink:type="simple" xlink:href="/static/xml/terms.xml#pathfinder" type="ch">pathfinder</gen:name>規則整理站</xsl:with-param>
+	<xsl:with-param name="pageDes"><gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#pathfinder" type="ch">pathfinder</gen:name>規則整理站</xsl:with-param>
 </xsl:call-template>
 </xsl:template>
 
