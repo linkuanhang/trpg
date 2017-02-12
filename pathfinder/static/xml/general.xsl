@@ -79,3 +79,4 @@
 <xsl:template match="gen:comment">
 	<xsl:text>【譯注︰</xsl:text><xsl:apply-templates /><xsl:text>】</xsl:text>
 </xsl:template>
+</xsl:stylesheet>
