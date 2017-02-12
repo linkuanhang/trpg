@@ -24,7 +24,7 @@
 			<chapter>創造非玩家角色</chapter>
 			<chapter xlink:type="simple" xlink:href="/pathfinder/core/magic_items_home.xml">魔法物品</chapter>
 			<chapter>特殊用語</chapter>
-			<chapter xlink:type="simple" xlink:href="/pathfinder/core/static/xml/terms.xml">翻譯詞彙</chapter>
+			<chapter xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml">翻譯詞彙</chapter>
 		</chapters>
 	</book>
 	<book>
