@@ -5,26 +5,26 @@
 	<book>
 		<name>核心規則手冊</name>
 		<chapters>
-			<chapter xlink:type="simple" xlink:href="core/begin.xhtml">如何開始</chapter>
-			<chapter xlink:type="simple" xlink:href="core/races.xhtml">種族</chapter>
-			<chapter xlink:type="simple" xlink:href="core/classes.xhtml">職業</chapter>
+			<chapter xlink:type="simple" xlink:href="/pathfinder/core/begin.xhtml">如何開始</chapter>
+			<chapter xlink:type="simple" xlink:href="/pathfinder/core/races.xhtml">種族</chapter>
+			<chapter xlink:type="simple" xlink:href="/pathfinder/core/classes.xhtml">職業</chapter>
 			<chapter>使用技能</chapter>
-			<chapter xlink:type="simple" xlink:href="core/skills_home.xml">技能描述</chapter>
-			<chapter xlink:type="simple" xlink:href="core/feats_home.xml">專長</chapter>
-			<chapter xlink:type="simple" xlink:href="core/equipments_home.xml">裝備</chapter>
-			<chapter xlink:type="simple" xlink:href="core/extra_rules.xhtml">額外規則</chapter>
-			<chapter xlink:type="simple" xlink:href="core/combat.xhtml">戰鬥</chapter>
+			<chapter xlink:type="simple" xlink:href="/pathfinder/core/skills_home.xml">技能描述</chapter>
+			<chapter xlink:type="simple" xlink:href="/pathfinder/core/feats_home.xml">專長</chapter>
+			<chapter xlink:type="simple" xlink:href="/pathfinder/core/equipments_home.xml">裝備</chapter>
+			<chapter xlink:type="simple" xlink:href="/pathfinder/core/extra_rules.xhtml">額外規則</chapter>
+			<chapter xlink:type="simple" xlink:href="/pathfinder/core/combat.xhtml">戰鬥</chapter>
 			<chapter>魔法</chapter>
 			<chapter>法術列表</chapter>
-			<chapter xlink:type="simple" xlink:href="core/magics.xml">法術索引</chapter>
+			<chapter xlink:type="simple" xlink:href="/pathfinder/core/magics.xml">法術索引</chapter>
 			<chapter>進階職業</chapter>
 			<chapter>掌控遊戲</chapter>
 			<chapter>環境</chapter>
 			<chapter>非玩家角色職業</chapter>
 			<chapter>創造非玩家角色</chapter>
-			<chapter xlink:type="simple" xlink:href="core/magic_items_home.xml">魔法物品</chapter>
+			<chapter xlink:type="simple" xlink:href="/pathfinder/core/magic_items_home.xml">魔法物品</chapter>
 			<chapter>特殊用語</chapter>
-			<chapter xlink:type="simple" xlink:href="static/xml/terms.xml">翻譯詞彙</chapter>
+			<chapter xlink:type="simple" xlink:href="/pathfinder/core/static/xml/terms.xml">翻譯詞彙</chapter>
 		</chapters>
 	</book>
 	<book>
