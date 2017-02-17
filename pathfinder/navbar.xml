@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="navbar.xsl" ?>
+
+<books xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="books" xmlns:gen="general">
+	<book>
+		<name>核心規則手冊</name>
+		<chapters>
+			<chapter xlink:type="simple" xlink:href="/pathfinder/core/begin.xml">如何開始</chapter>
+			<chapter>種族</chapter>
+			<chapter>職業</chapter>
+			<chapter>使用技能</chapter>
+			<chapter>技能描述</chapter>
+			<chapter>專長</chapter>
+			<chapter>裝備</chapter>
+			<chapter>額外規則</chapter>
+			<chapter>戰鬥</chapter>
+			<chapter>魔法</chapter>
+			<chapter>法術列表</chapter>
+			<chapter>法術索引</chapter>
+			<chapter>進階職業</chapter>
+			<chapter>掌控遊戲</chapter>
+			<chapter>環境</chapter>
+			<chapter>非玩家角色職業</chapter>
+			<chapter>創造非玩家角色</chapter>
+			<chapter>魔法物品</chapter>
+			<chapter>特殊用語</chapter>
+			<chapter xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml">翻譯詞彙</chapter>
+		</chapters>
+	</book>
+	<book>
+		<name>進階玩家手冊</name>
+		<chapters>
+			<chapter>種族</chapter>
+			<chapter>職業</chapter>
+			<chapter>專長</chapter>
+			<chapter>裝備</chapter>
+			<chapter>法術</chapter>
+			<chapter>進階職業</chapter>
+			<chapter>魔法物品</chapter>
+			<chapter>新規則</chapter>
+		</chapters>
+	</book>
+	<book>
+		<name>新增</name>
+		<chapters>
+			<chapter>自訂規則</chapter>
+		</chapters>
+	</book>
+</books>

@@ -1,821 +1,565 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="terms.xsl"?>
 
-<terms xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="terms" xmlns:gen="general">
+<terms xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="terms">
 	<!-- General terms -->
 	<term id="ability">
-		<name>
-			<ch>能力</ch>
-			<en>Ability</en>
-		</name>
+		<name lang="en">Ability</name>
+		<name lang="zh-tw">能力</name>
 	</term>
 	<term id="bonus">
-		<name>
-			<ch>加值</ch>
-			<en>Bonus</en>
-		</name>
+		<name lang="en">Bonus</name>
+		<name lang="zh-tw">加值</name>
 	</term>
 	<term id="character">
-		<name>
-			<ch>角色</ch>
-			<en>Character</en>
-		</name>
+		<name lang="en">Character</name>
+		<name lang="zh-tw">角色</name>
 	</term>
 	<term id="check">
-		<name>
-			<ch>檢定</ch>
-			<en>Check</en>
-		</name>
+		<name lang="en">Check</name>
+		<name lang="zh-tw">檢定</name>
 	</term>
 	<term id="creature">
-		<name>
-			<ch>生物</ch>
-			<en>Creature</en>
-		</name>
+		<name lang="en">Creature</name>
+		<name lang="zh-tw">生物</name>
 	</term>
 	<term id="damage">
-		<name>
-			<ch>傷害</ch>
-			<en>Damage</en>
-		</name>
+		<name lang="en">Damage</name>
+		<name lang="zh-tw">傷害</name>
 	</term>
 	<term id="effect">
-		<name>
-			<ch>效果</ch>
-			<en>Effect</en>
-		</name>
+		<name lang="en">Effect</name>
+		<name lang="zh-tw">效果</name>
 	</term>
 	<term id="GM">
-		<name>
-			<ch>遊戲主持人</ch>
-			<en>Game Master</en>
-			<en_abbr>GM</en_abbr>
-		</name>
+		<name lang="en">Game Master</name>
+		<name lang="zh-tw">遊戲主持人</name>
+		<abbr lang="en">GM</abbr>
 	</term>
 	<term id="gold">
-		<name>
-			<ch>金錢</ch>
-			<en>Gold</en>
-		</name>
+		<name lang="en">Gold</name>
+		<name lang="zh-tw">金錢</name>
 	</term>
 	<term id="HR">
-		<name>
-			<ch>房規</ch>
-			<en>House Rules</en>
-			<en_abbr>HR</en_abbr>
-		</name>
+		<name lang="en">House Rules</name>
+		<name lang="zh-tw">房規</name>
+		<abbr lang="en">HR</abbr>
 	</term>
 	<term id="initiative">
-		<name>
-			<ch>先攻</ch>
-			<en>Initiative</en>
-		</name>
+		<name lang="en">Initiative</name>
+		<name lang="zh-tw">先攻</name>
 	</term>
 	<term id="initiative_check">
-		<name>
-			<ch>先攻檢定</ch>
-			<en>Initiative Check</en>
-		</name>
+		<name lang="en">Initiative Check</name>
+		<name lang="zh-tw">先攻檢定</name>
 	</term>
 	<term id="monster">
-		<name>
-			<ch>怪物</ch>
-			<en>Monster</en>
-		</name>
+		<name lang="en">Monster</name>
+		<name lang="zh-tw">怪物</name>
 	</term>
 	<term id="NPC">
-		<name>
-			<ch>非玩家角色</ch>
-			<en>Nonplayer Character</en>
-			<en_abbr>NPC</en_abbr>
-		</name>
+		<name lang="en">Nonplayer Character</name>
+		<name lang="zh-tw">非玩家角色</name>
+		<abbr lang="en">NPC</abbr>
 	</term>
 	<term id="pathfinder">
-		<name>
-			<ch>尋路者傳奇</ch>
-			<en>Pathfinder RPG</en>
-		</name>
+		<name lang="en">Pathfinder RPG</name>
+		<name lang="zh-tw">尋路者傳奇</name>
 	</term>
 	<term id="penalty">
-		<name>
-			<ch>減值</ch>
-			<en>Penalty</en>
-		</name>
+		<name lang="en">Penalty</name>
+		<name lang="zh-tw">減值</name>
 	</term>
 	<term id="player">
-		<name>
-			<ch>玩家</ch>
-			<en>Player</en>
-		</name>
+		<name lang="en">Player</name>
+		<name lang="zh-tw">玩家</name>
 	</term>
 	<term id="PC">
-		<name>
-			<ch>玩家角色</ch>
-			<en>Player Character</en>
-			<en_abbr>PC</en_abbr>
-		</name>
+		<name lang="en">Player Character</name>
+		<name lang="zh-tw">玩家角色</name>
+		<abbr lang="en">PC</abbr>
 	</term>
 	<term id="roll">
-		<name>
-			<ch>擲骰</ch>
-			<en>Roll</en>
-		</name>
+		<name lang="en">Roll</name>
+		<name lang="zh-tw">擲骰</name>
 	</term>
 	<term id="rounding">
-		<name>
-			<ch>取整</ch>
-			<en>Rounding</en>
-		</name>
+		<name lang="en">Rounding</name>
+		<name lang="zh-tw">取整</name>
 	</term>
-	
-	
+
 	<!-- Attributes -->
 	<term id="ability_score">
-		<name>
-			<ch>屬性值</ch>
-			<en>Ability Score</en>
-		</name>
+		<name lang="en">Ability Score</name>
+		<name lang="zh-tw">屬性值</name>
 	</term>
 	<term id="ability_check">
-		<name>
-			<ch>屬性檢定</ch>
-			<en>Ability Check</en>
-		</name>
+		<name lang="en">Ability Check</name>
+		<name lang="zh-tw">屬性檢定</name>
 	</term>
 	<term id="AC">
-		<name>
-			<ch>防護等級</ch>
-			<en>Armor Class</en>
-			<en_abbr>AC</en_abbr>
-		</name>
+		<name lang="en">Armor Class</name>
+		<name lang="zh-tw">防護等級</name>
+		<abbr lang="en">AC</abbr>
 	</term>
 	<term id="BAB">
-		<name>
-			<ch>基本攻擊加值</ch>
-			<en>Base Attack Bonus</en>
-			<en_abbr>BAB</en_abbr>
-		</name>
+		<name lang="en">Base Attack Bonus</name>
+		<name lang="zh-tw">基本攻擊加值</name>
+		<abbr lang="en">BAB</abbr>
 	</term>
 	<term id="CL">
-		<name>
-			<ch>施法者等級</ch>
-			<en>Caster Level</en>
-			<en_abbr>CL</en_abbr>
-		</name>
+		<name lang="en">Caster Level</name>
+		<name lang="zh-tw">施法者等級</name>
+		<abbr lang="en">CL</abbr>
 	</term>
 	<term id="character_level">
-		<name>
-			<ch><ref xlink:type="simple" xlink:href="#character" type="ch" /><ref xlink:type="simple" xlink:href="#level" type="en" /></ch>
-			<en>Character Level</en>
-		</name>
+		<name lang="en"><ref href="#character" type="name" lang="en" /> <ref href="#level" type="name" lang="en" /></name>
+		<name lang="zh-tw"><ref href="#character" type="name" lang="zh-tw" /><ref href="#level" type="name" lang="zh-tw" /></name>
 	</term>
 	<term id="Cha">
-		<name>
-			<ch>魅力</ch>
-			<en>Charisma</en>
-			<en_abbr>Cha</en_abbr>
-		</name>
+		<name lang="en">Charisma</name>
+		<name lang="zh-tw">魅力</name>
+		<abbr lang="en">Cha</abbr>
 	</term>
 	<term id="class_level">
-		<name>
-			<ch>職業等級</ch>
-			<en>Class Level</en>
-		</name>
+		<name lang="en">Class Level</name>
+		<name lang="zh-tw">職業等級</name>
 	</term>
 	<term id="CMB">
-		<name>
-			<ch>戰技加值</ch>
-			<en>Combat Maneuver Bonus</en>
-			<en_abbr>CMB</en_abbr>
-		</name>
+		<name lang="en">Combat Maneuver Bonus</name>
+		<name lang="zh-tw">戰技加值</name>
+		<abbr lang="en">CMB</abbr>
 	</term>
 	<term id="CMD">
-		<name>
-			<ch>戰技防禦</ch>
-			<en>Combat Maneuver Defense</en>
-			<en_abbr>CMD</en_abbr>
-		</name>
+		<name lang="en">Combat Maneuver Defense</name>
+		<name lang="zh-tw">戰技防禦</name>
+		<abbr lang="en">CMD</abbr>
 	</term>
 	<term id="Con">
-		<name>
-			<ch>體質</ch>
-			<en>Constitution</en>
-			<en_abbr>Con</en_abbr>
-		</name>
+		<name lang="en">Constitution</name>
+		<name lang="zh-tw">體質</name>
+		<abbr lang="en">Con</abbr>
 	</term>
 	<term id="DR">
-		<name>
-			<ch>傷害減免</ch>
-			<en>Damage Reduction</en>
-			<en_abbr>DR</en_abbr>
-		</name>
+		<name lang="en">Damage Reduction</name>
+		<name lang="zh-tw">傷害減免</name>
+		<abbr lang="en">DR</abbr>
 	</term>
 	<term id="Dex">
-		<name>
-			<ch>敏捷</ch>
-			<en>Dexterity</en>
-			<en_abbr>Dex</en_abbr>
-		</name>
+		<name lang="en">Dexterity</name>
+		<name lang="zh-tw">敏捷</name>
+		<abbr lang="en">Dex</abbr>
 	</term>
 	<term id="DC">
-		<name>
-			<ch>難度等級</ch>
-			<en>Difficulty Class</en>
-			<en_abbr>DC</en_abbr>
-		</name>
+		<name lang="en">Difficulty Class</name>
+		<name lang="zh-tw">難度等級</name>
+		<abbr lang="en">DC</abbr>
 	</term>
 	<term id="XP">
-		<name>
-			<ch>經驗值</ch>
-			<en>Experience Points</en>
-			<en_abbr>XP</en_abbr>
-		</name>
+		<name lang="en">Experience Points</name>
+		<name lang="zh-tw">經驗值</name>
+		<abbr lang="en">XP</abbr>
 	</term>
 	<term id="fortitude">
-		<name>
-			<ch>強韌豁免</ch>
-			<en>Fortitude</en>
-		</name>
+		<name lang="en">Fortitude</name>
+		<name lang="zh-tw">強韌豁免</name>
 	</term>
 	<term id="HD">
-		<name>
-			<ch>生命骰</ch>
-			<en>Hit Dice</en>
-			<en_abbr>HD</en_abbr>
-		</name>
+		<name lang="en">Hit Dice</name>
+		<name lang="zh-tw">生命骰</name>
+		<abbr lang="en">HD</abbr>
 	</term>
 	<term id="HP">
-		<name>
-			<ch>生命值</ch>
-			<en>Hit Points</en>
-			<en_abbr>HP</en_abbr>
-		</name>
+		<name lang="en">Hit Points</name>
+		<name lang="zh-tw">生命值</name>
+		<abbr lang="en">HP</abbr>
 	</term>
 	<term id="Int">
-		<name>
-			<ch>智力</ch>
-			<en>Intelligence</en>
-			<en_abbr>Int</en_abbr>
-		</name>
+		<name lang="en">Intelligence</name>
+		<name lang="zh-tw">智力</name>
+		<abbr lang="en">Int</abbr>
 	</term>
 	<term id="level">
-		<name>
-			<ch>等級</ch>
-			<en>Level</en>
-		</name>
+		<name lang="en">Level</name>
+		<name lang="zh-tw">等級</name>
 	</term>
 	<term id="modifier">
-		<name>
-			<ch>調整值</ch>
-			<en>Modifier</en>
-		</name>
+		<name lang="en">Modifier</name>
+		<name lang="zh-tw">調整值</name>
 	</term>
 	<term id="multiplying">
-		<name>
-			<ch>倍率</ch>
-			<en>Multiplying</en>
-		</name>
+		<name lang="en">Multiplying</name>
+		<name lang="zh-tw">倍率</name>
 	</term>
 	<term id="range">
-		<name>
-			<ch>距離</ch>
-			<en>Range</en>
-		</name>
+		<name lang="en">Range</name>
+		<name lang="zh-tw">距離</name>
 	</term>
 	<term id="reflex">
-		<name>
-			<ch>反射豁免</ch>
-			<en>Reflex</en>
-		</name>
+		<name lang="en">Reflex</name>
+		<name lang="zh-tw">反射豁免</name>
 	</term>
-	<term id="Str"> 
-		<name>
-			<ch>力量</ch>
-			<en>Strength</en>
-			<en_abbr>Str</en_abbr>
-		</name>
+	<term id="Str">
+		<name lang="en">Strength</name>
+		<name lang="zh-tw">力量</name>
+		<abbr lang="en">Str</abbr>
 	</term>
 	<term id="stacking">
-		<name>
-			<ch>疊加</ch>
-			<en>Stacking</en>
-		</name>
+		<name lang="en">Stacking</name>
+		<name lang="zh-tw">疊加</name>
 	</term>
 	<term id="will">
-		<name>
-			<ch>意志豁免</ch>
-			<en>Will</en>
-		</name>
+		<name lang="en">Will</name>
+		<name lang="zh-tw">意志豁免</name>
 	</term>
 	<term id="Wis">
-		<name>
-			<ch>感知</ch>
-			<en>Wisdom</en>
-			<en_abbr>Wis</en_abbr>
-		</name>
+		<name lang="en">Wisdom</name>
+		<name lang="zh-tw">感知</name>
+		<abbr lang="en">Wis</abbr>
 	</term>
-	
-	
+
 	<!-- Alighments -->
 	<term id="alignment">
-		<name>
-			<ch>陣營</ch>
-			<en>Alignment</en>
-		</name>
+		<name lang="en">Alignment</name>
+		<name lang="zh-tw">陣營</name>
 	</term>
 	<term id="chaotic">
-		<name>
-			<ch>混亂</ch>
-			<en>Chaotic</en>
-		</name>
+		<name lang="en">Chaotic</name>
+		<name lang="zh-tw">混亂</name>
 	</term>
 	<term id="CG">
-		<name>
-			<ch>混亂善良</ch>
-			<en>Chaotic Good</en>
-			<en_abbr>CG</en_abbr>
-		</name>
+		<name lang="en">Chaotic Good</name>
+		<name lang="zh-tw">混亂善良</name>
+		<abbr lang="en">CG</abbr>
 	</term>
 	<term id="CN">
-		<name>
-			<ch>混亂中立</ch>
-			<en>Chaotic Neutral</en>
-			<en_abbr>CN</en_abbr>
-		</name>
+		<name lang="en">Chaotic Neutral</name>
+		<name lang="zh-tw">混亂中立</name>
+		<abbr lang="en">CN</abbr>
 	</term>
 	<term id="CE">
-		<name>
-			<ch>混亂邪惡</ch>
-			<en>Chaotic Evil</en>
-			<en_abbr>CE</en_abbr>
-		</name>
+		<name lang="en">Chaotic Evil</name>
+		<name lang="zh-tw">混亂邪惡</name>
+		<abbr lang="en">CE</abbr>
 	</term>
 	<term id="evil">
-		<name>
-			<ch>邪惡</ch>
-			<en>Evil</en>
-		</name>
+		<name lang="en">Evil</name>
+		<name lang="zh-tw">邪惡</name>
 	</term>
 	<term id="good">
-		<name>
-			<ch>善良</ch>
-			<en>Good</en>
-		</name>
+		<name lang="en">Good</name>
+		<name lang="zh-tw">善良</name>
 	</term>
 	<term id="lawful">
-		<name>
-			<ch>秩序</ch>
-			<en>Lawful</en>
-		</name>
+		<name lang="en">Lawful</name>
+		<name lang="zh-tw">秩序</name>
 	</term>
 	<term id="LG">
-		<name>
-			<ch>秩序善良</ch>
-			<en>Lawful Good</en>
-			<en_abbr>LG</en_abbr>
-		</name>
+		<name lang="en">Lawful Good</name>
+		<name lang="zh-tw">秩序善良</name>
+		<abbr lang="en">LG</abbr>
 	</term>
 	<term id="LN">
-		<name>
-			<ch>秩序中立</ch>
-			<en>Lawful Neutral</en>
-			<en_abbr>LN</en_abbr>
-		</name>
+		<name lang="en">Lawful Neutral</name>
+		<name lang="zh-tw">秩序中立</name>
+		<abbr lang="en">LN</abbr>
 	</term>
 	<term id="LE">
-		<name>
-			<ch>秩序邪惡</ch>
-			<en>Lawful Evil</en>
-			<en_abbr>LE</en_abbr>
-		</name>
+		<name lang="en">Lawful Evil</name>
+		<name lang="zh-tw">秩序邪惡</name>
+		<abbr lang="en">LE</abbr>
 	</term>
 	<term id="neutral">
-		<name>
-			<ch>中立</ch>
-			<en>Neutral</en>
-		</name>
+		<name lang="en">Neutral</name>
+		<name lang="zh-tw">中立</name>
 	</term>
 	<term id="NG">
-		<name>
-			<ch>中立善良</ch>
-			<en>Neutral Good</en>
-			<en_abbr>NG</en_abbr>
-		</name>
+		<name lang="en">Neutral Good</name>
+		<name lang="zh-tw">中立善良</name>
+		<abbr lang="en">NG</abbr>
 	</term>
 	<term id="N">
-		<name>
-			<ch>絕對中立</ch>
-			<en>Neutral</en>
-			<en_abbr>N</en_abbr>
-		</name>
+		<name lang="en">Neutral</name>
+		<name lang="zh-tw">絕對中立</name>
+		<abbr lang="en">N</abbr>
 	</term>
 	<term id="NE">
-		<name>
-			<ch>中立邪惡</ch>
-			<en>Neutral Evil</en>
-			<en_abbr>NE</en_abbr>
-		</name>
+		<name lang="en">Neutral Evil</name>
+		<name lang="zh-tw">中立邪惡</name>
+		<abbr lang="en">NE</abbr>
 	</term>
-	
-	
+
 	<!-- Races -->
 	<term id="race">
-		<name>
-			<ch>種族</ch>
-			<en>Race</en>
-		</name>
+		<name lang="en">Race</name>
+		<name lang="zh-tw">種族</name>
 	</term>
 	<term id="dwarves">
-		<name>
-			<ch>矮人</ch>
-			<en>Dwarves</en>
-		</name>
+		<name lang="en">Dwarves</name>
+		<name lang="zh-tw">矮人</name>
 	</term>
 	<term id="elves">
-		<name>
-			<ch>精靈</ch>
-			<en>Elves</en>
-		</name>
+		<name lang="en">Elves</name>
+		<name lang="zh-tw">精靈</name>
 	</term>
 	<term id="gnomes">
-		<name>
-			<ch>侏儒</ch>
-			<en>Gnomes</en>
-		</name>
+		<name lang="en">Gnomes</name>
+		<name lang="zh-tw">侏儒</name>
 	</term>
 	<term id="half_elves">
-		<name>
-			<ch>半精靈</ch>
-			<en>Half-Elves</en>
-		</name>
+		<name lang="en">Half-Elves</name>
+		<name lang="zh-tw">半精靈</name>
 	</term>
 	<term id="half_orcs">
-		<name>
-			<ch>半獸人</ch>
-			<en>Half-Orcs</en>
-		</name>
+		<name lang="en">Half-Orcs</name>
+		<name lang="zh-tw">半獸人</name>
 	</term>
 	<term id="halflings">
-		<name>
-			<ch>半身人</ch>
-			<en>Halflings</en>
-		</name>
+		<name lang="en">Halflings</name>
+		<name lang="zh-tw">半身人</name>
 	</term>
 	<term id="humans">
-		<name>
-			<ch>人類</ch>
-			<en>Humans</en>
-		</name>
+		<name lang="en">Humans</name>
+		<name lang="zh-tw">人類</name>
 	</term>
-	
-	
+
 	<!-- Classes -->
 	<term id="bonus_feat">
-		<name>
-			<ch>獎勵專長</ch>
-			<en>Bonus Feat</en>
-		</name>
+		<name lang="en">Bonus Feat</name>
+		<name lang="zh-tw">獎勵專長</name>
 	</term>
 	<term id="class">
-		<name>
-			<ch>職業</ch>
-			<en>Class</en>
-		</name>
+		<name lang="en">Class</name>
+		<name lang="zh-tw">職業</name>
 	</term>
 	<term id="core_class">
-		<name>
-			<ch>核心職業</ch>
-			<en>Core Class</en>
-		</name>
+		<name lang="en">Core Class</name>
+		<name lang="zh-tw">核心職業</name>
 	</term>
 	<term id="barbarian">
-		<name>
-			<ch>野蠻人</ch>
-			<en>Barbarian</en>
-		</name>
+		<name lang="en">Barbarian</name>
+		<name lang="zh-tw">野蠻人</name>
 	</term>
 	<term id="bard">
-		<name>
-			<ch>吟遊詩人</ch>
-			<en>Bard</en>
-		</name>
+		<name lang="en">Bard</name>
+		<name lang="zh-tw">吟遊詩人</name>
 	</term>
 	<term id="cleric">
-		<name>
-			<ch>牧師</ch>
-			<en>Cleric</en>
-		</name>
+		<name lang="en">Cleric</name>
+		<name lang="zh-tw">牧師</name>
 	</term>
 	<term id="druid">
-		<name>
-			<ch>德魯伊</ch>
-			<en>Druid</en>
-		</name>
+		<name lang="en">Druid</name>
+		<name lang="zh-tw">德魯伊</name>
 	</term>
 	<term id="fighter">
-		<name>
-			<ch>戰士</ch>
-			<en>Fighter</en>
-		</name>
+		<name lang="en">Fighter</name>
+		<name lang="zh-tw">戰士</name>
 	</term>
 	<term id="monk">
-		<name>
-			<ch>武僧</ch>
-			<en>Monk</en>
-		</name>
+		<name lang="en">Monk</name>
+		<name lang="zh-tw">武僧</name>
 	</term>
 	<term id="paladin">
-		<name>
-			<ch>聖騎士</ch>
-			<en>Paladin</en>
-		</name>
+		<name lang="en">Paladin</name>
+		<name lang="zh-tw">聖騎士</name>
 	</term>
 	<term id="ranger">
-		<name>
-			<ch>遊俠</ch>
-			<en>Ranger</en>
-		</name>
+		<name lang="en">Ranger</name>
+		<name lang="zh-tw">遊俠</name>
 	</term>
 	<term id="rogue">
-		<name>
-			<ch>盜賊</ch>
-			<en>Rogue</en>
-		</name>
+		<name lang="en">Rogue</name>
+		<name lang="zh-tw">盜賊</name>
 	</term>
 	<term id="sorcerer">
-		<name>
-			<ch>術士</ch>
-			<en>Sorcerer</en>
-		</name>
+		<name lang="en">Sorcerer</name>
+		<name lang="zh-tw">術士</name>
 	</term>
 	<term id="wizard">
-		<name>
-			<ch>法師</ch>
-			<en>Wizard</en>
-		</name>
+		<name lang="en">Wizard</name>
+		<name lang="zh-tw">法師</name>
 	</term>
 	<term id="prestige_classes">
-		<name>
-			<ch>進階職業</ch>
-			<en>Prestige Classes</en>
-		</name>
+		<name lang="en">Prestige Classes</name>
+		<name lang="zh-tw">進階職業</name>
 	</term>
-	
-	
+
 	<!-- Items -->
 	<term id="equipment">
-		<name>
-			<ch>裝備</ch>
-			<en>Equipment</en>
-		</name>
+		<name lang="en">Equipment</name>
+		<name lang="zh-tw">裝備</name>
 	</term>
+
 	<!-- Weapons -->
 	<term id="weapon">
-		<name>
-			<ch>武器</ch>
-			<en>Weapon</en>
-		</name>
+		<name lang="en">Weapon</name>
+		<name lang="zh-tw">武器</name>
 	</term>
+
 	<!-- Armors -->
-	
 	
 	<!-- Combat -->
 	<term id="combat">
-		<name>
-			<ch>戰鬥</ch>
-			<en>Combat</en>
-		</name>
+		<name lang="en">Combat</name>
+		<name lang="zh-tw">戰鬥</name>
 	</term>
 	<term id="combat_maneuver">
-		<name>
-			<ch>戰技</ch>
-			<en>Combat Maneuver</en>
-		</name>
+		<name lang="en">Combat Maneuver</name>
+		<name lang="zh-tw">戰技</name>
 	</term>
 	<term id="dead">
-		<name>
-			<ch>死亡</ch>
-			<en>Dead</en>
-		</name>
+		<name lang="en">Dead</name>
+		<name lang="zh-tw">死亡</name>
 	</term>
 	<term id="disease">
-		<name>
-			<ch>疾病</ch>
-			<en>Diseases</en>
-		</name>
+		<name lang="en">Diseases</name>
+		<name lang="zh-tw">疾病</name>
 	</term>
 	<term id="dying">
-		<name>
-			<ch>瀕死</ch>
-			<en>Dying</en>
-		</name>
+		<name lang="en">Dying</name>
+		<name lang="zh-tw">瀕死</name>
 	</term>
 	<term id="poison">
-		<name>
-			<ch>毒素</ch>
-			<en>Poison</en>
-		</name>
+		<name lang="en">Poison</name>
+		<name lang="zh-tw">毒素</name>
 	</term>
 	<term id="round">
-		<name>
-			<ch>輪</ch>
-			<en>Round</en>
-		</name>
+		<name lang="en">Round</name>
+		<name lang="zh-tw">輪</name>
 	</term>
 	<term id="saving_throw">
-		<name>
-			<ch>豁免檢定</ch>
-			<en>Saving Throw</en>
-		</name>
+		<name lang="en">Saving Throw</name>
+		<name lang="zh-tw">豁免檢定</name>
 	</term>
 	<term id="turn">
-		<name>
-			<ch>回合</ch>
-			<en>Turn</en>
-		</name>
+		<name lang="en">Turn</name>
+		<name lang="zh-tw">回合</name>
 	</term>
 	<term id="unconscious">
-		<name>
-			<ch>昏迷</ch>
-			<en>Unconscious</en>
-		</name>
+		<name lang="en">Unconscious</name>
+		<name lang="zh-tw">昏迷</name>
 	</term>
+
 	<!-- Actions -->
 	<term id="action">
-		<name>
-			<ch>動作</ch>
-			<en>Action</en>
-		</name>
+		<name lang="en">Action</name>
+		<name lang="zh-tw">動作</name>
 	</term>
 	<term id="attack">
-		<name>
-			<ch>攻擊</ch>
-			<en>Attack</en>
-		</name>
+		<name lang="en">Attack</name>
+		<name lang="zh-tw">攻擊</name>
 	</term>
 	<term id="attack_roll">
-		<name>
-			<ch>攻擊檢定</ch>
-			<en>Attack Roll</en>
-		</name>
+		<name lang="en">Attack Roll</name>
+		<name lang="zh-tw">攻擊檢定</name>
 	</term>
 	<term id="free_action">
-		<name>
-			<ch>自由動作</ch>
-			<en>Free Action</en>
-		</name>
+		<name lang="en">Free Action</name>
+		<name lang="zh-tw">自由動作</name>
 	</term>
 	<term id="full_attack">
-		<name>
-			<ch>整輪攻擊</ch>
-			<en>Full Attack</en>
-		</name>
+		<name lang="en">Full Attack</name>
+		<name lang="zh-tw">整輪攻擊</name>
 	</term>
 	<term id="full_round_action">
-		<name>
-			<ch>整輪動作</ch>
-			<en>Full-round Action</en>
-		</name>
+		<name lang="en">Full-round Action</name>
+		<name lang="zh-tw">整輪動作</name>
 	</term>
 	<term id="grapple">
-		<name>
-			<ch>擒抱</ch>
-			<en>Grapple</en>
-		</name>
+		<name lang="en">Grapple</name>
+		<name lang="zh-tw">擒抱</name>
 	</term>
 	<term id="standard_action">
-		<name>
-			<ch>標準動作</ch>
-			<en>Standard Action</en>
-		</name>
+		<name lang="en">Standard Action</name>
+		<name lang="zh-tw">標準動作</name>
 	</term>
 	<term id="trip">
-		<name>
-			<ch>絆摔</ch>
-			<en>Trip</en>
-		</name>
+		<name lang="en">Trip</name>
+		<name lang="zh-tw">絆摔</name>
 	</term>
 	<term id="disarm">
-		<name>
-			<ch>卸武</ch>
-			<en>Disarm</en>
-		</name>
+		<name lang="en">Disarm</name>
+		<name lang="zh-tw">卸武</name>
 	</term>
 	<term id="move_action">
-		<name>
-			<ch>移動動作</ch>
-			<en>Move Action</en>
-		</name>
+		<name lang="en">Move Action</name>
+		<name lang="zh-tw">移動動作</name>
 	</term>
 	<term id="swift_action">
-		<name>
-			<ch>迅捷動作</ch>
-			<en>Swift Action</en>
-		</name>
+		<name lang="en">Swift Action</name>
+		<name lang="zh-tw">迅捷動作</name>
 	</term>
-	
-	
+
 	<!-- Skills -->
 	<term id="skill">
-		<name>
-			<ch>技能</ch>
-			<en>Skill</en>
-		</name>
+		<name lang="en">Skill</name>
+		<name lang="zh-tw">技能</name>
 	</term>
 	<term id="skill_check">
-		<name>
-			<ch>技能檢定</ch>
-			<en>Skill Check</en>
-		</name>
+		<name lang="en">Skill Check</name>
+		<name lang="zh-tw">技能檢定</name>
 	</term>
 	<term id="skill_rank">
-		<name>
-			<ch>技能點</ch>
-			<en>Skill Rank</en>
-		</name>
+		<name lang="en">Skill Rank</name>
+		<name lang="zh-tw">技能點</name>
 	</term>
-	
-	
+
 	<!-- Feats -->
 	<term id="special_ability">
-		<name>
-			<ch>特殊能力</ch>
-			<en>Special Ability</en>
-		</name>
+		<name lang="en">Special Ability</name>
+		<name lang="zh-tw">特殊能力</name>
 	</term>
 	<term id="Ex">
-		<name>
-			<ch>特異能力</ch>
-			<en>Extraordinary Abilities</en>
-			<en_abbr>Ex</en_abbr>
-		</name>
+		<name lang="en">Extraordinary Abilities</name>
+		<name lang="zh-tw">特異能力</name>
+		<abbr lang="en">Ex</abbr>
 	</term>
 	<term id="feat">
-		<name>
-			<ch>專長</ch>
-			<en>Feat</en>
-		</name>
+		<name lang="en">Feat</name>
+		<name lang="zh-tw">專長</name>
 	</term>
 	<term id="Sp">
-		<name>
-			<ch>類法術能力</ch>
-			<en>Spell-Like Abilities</en>
-			<en_abbr>Sp</en_abbr>
-		</name>
+		<name lang="en">Spell-Like Abilities</name>
+		<name lang="zh-tw">類法術能力</name>
+		<abbr lang="en">Sp</abbr>
 	</term>
 	<term id="Su">
-		<name>
-			<ch>超自然能力</ch>
-			<en>Supernatural Abilities</en>
-			<en_abbr>Su</en_abbr>
-		</name>
+		<name lang="en">Supernatural Abilities</name>
+		<name lang="zh-tw">超自然能力</name>
+		<abbr lang="en">Su</abbr>
 	</term>
-	
-	
+
 	<!-- Magics -->
 	<term id="caster">
-		<name>
-			<ch>施法者</ch>
-			<en>Caster</en>
-		</name>
+		<name lang="en">Caster</name>
+		<name lang="zh-tw">施法者</name>
 	</term>
 	<term id="concentration_check">
-		<name>
-			<ch>專注檢定</ch>
-			<en>Concentration Check</en>
-		</name>
+		<name lang="en">Concentration Check</name>
+		<name lang="zh-tw">專注檢定</name>
 	</term>
 	<term id="magic_items">
-		<name>
-			<ch>魔法物品</ch>
-			<en>Magic Items</en>
-		</name>
+		<name lang="en">Magic Items</name>
+		<name lang="zh-tw">魔法物品</name>
 	</term>
 	<term id="spell">
-		<name>
-			<ch>法術</ch>
-			<en>Spell</en>
-		</name>
+		<name lang="en">Spell</name>
+		<name lang="zh-tw">法術</name>
 	</term>
 	<term id="spell_level">
-		<name>
-			<ch>法術環級</ch>
-			<en>Spell Level</en>
-		</name>
+		<name lang="en">Spell Level</name>
+		<name lang="zh-tw">法術環級</name>
 	</term>
 	<term id="SR">
-		<name>
-			<ch>法術抗力</ch>
-			<en>Spell Resistance</en>
-			<en_abbr>SR</en_abbr>
-		</name>
+		<name lang="en">Spell Resistance</name>
+		<name lang="zh-tw">法術抗力</name>
+		<abbr lang="en">SR</abbr>
 	</term>
 	<term id="target">
-		<name>
-			<ch>目標</ch>
-			<en>Target</en>
-		</name>
+		<name lang="en">Target</name>
+		<name lang="zh-tw">目標</name>
 	</term>
-	<!--  -->
-</terms>
 
+	<!-- aaa -->
+</terms>

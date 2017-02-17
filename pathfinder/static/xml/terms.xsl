@@ -2,42 +2,37 @@
 <xsl:stylesheet version="2.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/1999/xhtml"
 	xmlns:t="terms">
 	
-<xsl:output
-	method="html"
-	encoding="UTF-8"
-	doctype-public="-//W3C//DTD XHTML 1.1 plus MathML 2.0 plus SVG 1.1//EN"
-	doctype-system="http://www.w3.org/2002/04/xhtml-math-svg/xhtml-math-svg.dtd"
-	indent="yes"
-	media-type="application/xhtml+xml" />
+<xsl:import href="/pathfinder/navbar.xsl" />
+
+<xsl:output method="html" encoding="utf-8" doctype-system="about:legacy-compat" indent="yes" media-type="application/xhtml+xml" />
 
 <xsl:template match="t:terms">
 <html>
 <head>
 	<meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
 	<title>翻譯詞彙</title>
-	<link rel="stylesheet" href="static/css/bootstrap.min.css" />
-	<script src="static/js/jquery.min.js"></script>
-	<script src="static/js/bootstrap.min.js"></script>
-	<script src="static/js/base.js"></script>
+	<link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css" />
+	<script type="text/javascript" src="/pathfinder/static/js/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="/pathfinder/static/js/base.js"></script>
 </head>
 
 <body>
 
-<div id="header" class="navbar navbar-default navbar-fixed-top"></div>
+<xsl:apply-templates select="document('/pathfinder/navbar.xml')" />
 
-<div class="container">
-	<div class="jumbotron">
-		<h1>翻譯詞彙</h1>
-	</div>
-</div>
+<div class="w3-main" style="margin-left:200px">
+<header class="w3-container">
+	<span class="w3-opennav w3-xlarge w3-hide-large" onclick="w3_open()">&#9776;</span>
+	<h1>翻譯詞彙</h1>
+</header>
 
-<div class="container">
-	<table class="table table-bordered">
+<div class="w3-container">
+	<table class="w3-table-all">
 		<thead>
 			<tr>
 				<th>原文</th>
-				<th>原文縮寫</th>
 				<th>中文翻譯</th>
+				<th>原文縮寫</th>
 			</tr>
 		</thead>
 		
@@ -48,25 +43,26 @@
 		</tbody>
 	</table>
 </div>
+</div>
 </body>
 </html>
 </xsl:template>
 
 <xsl:template match="t:term">
 	<tr>
-		<td><xsl:apply-templates select="t:name/t:en" /></td>
-		<td><xsl:apply-templates select="t:name/t:en_abbr" /></td>
-		<td><xsl:apply-templates select="t:name/t:ch" /></td>
+		<td><xsl:apply-templates select="t:name[@lang='en']" /></td>
+		<td><xsl:apply-templates select="t:name[@lang='zh-tw']" /></td>
+		<td><xsl:apply-templates select="t:abbr[@lang='en']" /></td>
 	</tr>
 </xsl:template>
 
 <xsl:template match="t:ref">
-	<xsl:param name="xlink" select="./@xlink:href" />
-	<xsl:param name="id" select="substring-after($xlink,'#')" />
-	<xsl:param name="type" select="name(..)" />
-	<xsl:param name="node" select="//t:term[@id=$id]" />
+	<xsl:variable name="href" select="@href" />
+	<xsl:variable name="id" select="substring-after($href,'#')" />
+	<xsl:variable name="node" select="//t:term[@id=$id]" />
+	<xsl:variable name="type" select="@type" />
+	<xsl:variable name="lang" select="@lang" />
 	
-	<xsl:apply-templates select="$node/t:name/*[name(.)=$type]" />
+	<xsl:apply-templates select="$node/*[name()=$type][@lang=$lang]" />
 </xsl:template>
 </xsl:stylesheet>
-

@@ -1,5 +1,4 @@
 $(document).ready(function(){
-	$("body").css("padding-top","70px");
 	$("#header").load("/pathfinder/navbar.html");
 	
 	$("*").contents().filter(function() {
