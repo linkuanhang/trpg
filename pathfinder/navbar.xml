@@ -6,7 +6,7 @@
 		<name>核心規則手冊</name>
 		<chapters>
 			<chapter xlink:type="simple" xlink:href="/pathfinder/core/begin.xml">如何開始</chapter>
-			<chapter>種族</chapter>
+			<chapter xlink:type="simple" xlink:href="/pathfinder/core/races.xml">種族</chapter>
 			<chapter>職業</chapter>
 			<chapter>使用技能</chapter>
 			<chapter>技能描述</chapter>
