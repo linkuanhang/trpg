@@ -99,7 +99,9 @@
 </xsl:template>
 
 <xsl:template match="math:*">
-	<xsl:copy-of select="." />
+	<xsl:copy-of select=".">
+		<xsl:apply-templates />
+	</xsl:copy-of>
 </xsl:template>
 
 <xsl:template match="com:terms">

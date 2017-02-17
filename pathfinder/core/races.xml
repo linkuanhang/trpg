@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="races.xsl"?>
+
+<races xmlns="races" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:math="http://www.w3.org/1998/Math/MathML"
+	  xmlns:gen="general">
+	<race>
+		<name><gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#dwarf" type="zh-tw" /></name>
+		<descriptions>
+			<description><gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.dwarf" type="zh-tw" />是堅忍克己和嚴肅認真的<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#race" type="zh-tw" />，深居在從山嶺核心開鑿出的城市中，時刻準備著擊潰進犯的『獸人』和『地精』等野蠻的劫掠<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#race" type="zh-tw" />。在世上眾多<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#race" type="zh-tw" />之中，論及嚴厲古板和缺少幽默感，無有人能出<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.dwarf" type="zh-tw" />之右。據說<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.dwarf" type="zh-tw" />的歷史刻畫了他們的黑暗境遇，比如他們居住在高山之上、或是地底的危險國度，那裡時刻伴隨着與『巨人』、『地精』之類<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#monster" type="zh-tw" />的戰爭。</description>
+		</descriptions>
+		<physical><gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.dwarf" type="zh-tw" />是矮壯的<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#race" type="zh-tw" />，站立時身高比<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#human" type="zh-tw" />約低一尺，體寬則與其粗獷外貌一致地寬廣。男性和女性<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.dwarf" type="zh-tw" />都以長髮為榮，男性還經常會一系列裝飾來打理自己的鬍子。男性<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.dwarf" type="zh-tw" />把剃須當作一種甚至連發瘋都不如的行為——熟悉這個<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#race" type="zh-tw" />的人中，沒人會信賴一個下巴光滑的男性<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.dwarf" type="zh-tw" />。</physical>
+		<society><gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.dwarf" type="zh-tw" />山嶺要塞之間的遙遠距離，闡釋了<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.dwarf" type="zh-tw" />社會和文化中存在的巨大差異。盡管存在分歧，遍及世界的<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.dwarf" type="zh-tw" />都有着某些共性︰對岩石和金屬的基於『工藝』和『工程』的愛好與熱情，還有對『巨人』、『獸人』和『地精』的切齒痛恨。</society>
+		<relation><gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.dwarf" type="zh-tw" />和『獸人』長期相鄰，他們之間血腥的歷史自<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#race" type="zh-tw" />誕生之初延續至今。<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.dwarf" type="zh-tw" />一般不信任並避開<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#half_orc" type="zh-tw" />。他們認為<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#elve" type="zh-tw" />、<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#gnome" type="zh-tw" />和<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#halfling" type="zh-tw" />都太過脆弱、輕浮，或者說過於「好看」而不值得尊重。<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.dwarf" type="zh-tw" />和<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#human" type="zh-tw" />之間的羈絆最深重，因為<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#human" type="zh-tw" />的工業天性和友善態度最對他們的脾胃。</relation>
+		<alignment><gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.dwarf" type="zh-tw" />被榮譽和傳統所驅動。盡管經常刻板冷淡，他們對於友誼和公正的認知極為強烈，贏得他們信任的人才能理解<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.dwarf" type="zh-tw" />以湧泉報滴水之恩的理念——當然再來杯好酒就最好不過啦。多數<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.dwarf" type="zh-tw" />都是<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#LG" type="zh-tw" />的。</alignment>
+		<adventurer>盡管相對<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#human" type="zh-tw" />而言『矮人冒險者』較為少見，他們確實遍及全世界。<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.dwarf" type="zh-tw" />時常會離開堡壘的圍柵，為部族尋找榮耀、為故鄉贏取財富、或是從世仇手中奪回陷落的<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.dwarf" type="zh-tw" />領土。<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.dwarf" type="zh-tw" />的戰爭通常都以坑道中刺刀見紅的肉搏方式展開，因此多數<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.dwarf" type="zh-tw" />會選擇<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#fighter" type="zh-tw" />或<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#barbarian" type="zh-tw" /><gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#class" type="zh-tw" />。</adventurer>
+		<traits>
+			<trait>
+				<name><gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#Con" type="zh-tw" /><math:math><math:mo>+</math:mo><math:mn>2</math:mn></math:math>、<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#Wis" type="zh-tw" /><math:math><math:mo>+</math:mo><math:mn>2</math:mn></math:math>、<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#Cha" type="zh-tw" /><math:math><math:mo>-</math:mo><math:mn>2</math:mn></math:math></name>
+				<description>他們堅強而智慧，只是有些固執。</description>
+			</trait>
+			<trait>
+				<name>『中等體型』</name>
+				<description><gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.dwarf" type="zh-tw" />是『中等體型生物』，不因『體型』獲得任何<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#bonus" type="zh-tw" />或者<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#penalty" type="zh-tw" />。</description>
+			</trait>
+			<trait>
+				<name>緩慢穩固</name>
+				<description><gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.dwarf" type="zh-tw" />的『基本陸地速度』為<math:math><math:mn>20</math:mn></math:math>英尺，但不受任何『盔甲』影響。</description>
+			</trait>
+			<trait>
+				<name>『黑暗視覺』</name>
+				<description><gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.dwarf" type="zh-tw" />具有60尺『黑暗視覺』。</description>
+			</trait>
+			<trait>
+				<name>防禦受訓</name>
+				<description><gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.dwarf" type="zh-tw" />對『巨人』的<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#AC" type="zh-tw" />有<math:math><math:mo>+</math:mo><math:mn>4</math:mn></math:math>『閃避加值』。</description>
+			</trait>
+			<trait>
+				<name>貪婪</name>
+				<description><gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.dwarf" type="zh-tw" />在對岩石或金屬相關的非『魔法物品』作『估價檢定』時，有<math:math><math:mo>+</math:mo><math:mn>2</math:mn></math:math>『種族加值』。</description>
+			</trait>
+			<trait>
+				<name>憎恨</name>
+				<description><gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.dwarf" type="zh-tw" />對『獸人』和『地精』的『攻擊檢定』有<math:math><math:mo>+</math:mo><math:mn>1</math:mn></math:math>『種族加值』。</description>
+			</trait>
+			<trait>
+				<name>堅韌</name>
+				<description><gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.dwarf" type="zh-tw" />對『毒素』、<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#spell" type="zh-tw" />和『類法術能力』的『豁免』有<math:math><math:mo>+</math:mo><math:mn>2</math:mn></math:math>『種族加值』。</description>
+			</trait>
+			<trait>
+				<name>穩定</name>
+				<description>當站在地面上時，<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.dwarf" type="zh-tw" />在對抗『衝撞』或『摔絆』的<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#CMD" type="zh-tw" />具有<math:math><math:mo>+</math:mo><math:mn>4</math:mn></math:math>『種族加值』。</description>
+			</trait>
+			<trait>
+				<name>岩石敏銳</name>
+				<description><gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.dwarf" type="zh-tw" />在對不尋常的石造物進行『搜索檢定』時，有<math:math><math:mo>+</math:mo><math:mn>2</math:mn></math:math>『種族加值』。比如『石質陷阱』和『暗門』。只要進入特殊石造物<math:math><math:mn>10</math:mn></math:math>英尺內，<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.dwarf" type="zh-tw" />就能進行『搜索技能檢定』，如同他主動做了『搜索檢定』一樣。</description>
+			</trait>
+			<trait>
+				<name>『武器熟悉』</name>
+				<description><gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.dwarf" type="zh-tw" />熟練於『戰斧』、『重型十字鎬』和『戰錘』，並將任何冠以「<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.dwarf" type="zh-tw" />」之名的『武器』視為『軍用武器』。</description>
+			</trait>
+			<trait>
+				<name>起始語言</name>
+				<description>『通用語』和『矮人語』。<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#Int" type="zh-tw" />足夠高的<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.dwarf" type="zh-tw" />可以選擇『巨人語』、『侏儒語』、『地精語』、『獸人語』、『土族語』和『地底通用』語作為『額外語言』。</description>
+			</trait>
+		</traits>
+	</race>
+	<race>
+		<name><gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#elve" type="total" /></name>
+		<a_name><gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#elve" type="zh-tw" /></a_name>
+		<descriptions>
+			<description>長壽的精靈是自然世界的愛子，在簡單層面上與精類生物相似，但關鍵性的差別頗多。精靈珍視隱私和傳統，盡管她們從個人和國家層面的交友都進展緩慢，外來者一旦獲得認可，那麼雙方的盟約將能延續數代之久。『Elves have a curious attachment to their surroundings, perhaps as a result of their incredibly long lifespans or some deeper, more mystical reason.』那些在同一區域長期駐留的精靈將會發現自己在生理上已與周遭環境同調，她們的膚色、髮色正反映了當地的環境。另一方面，那些經常與短壽種族打交道的精靈則往往會鬱郁寡歡，因為她們不得不看着夥伴們如浪花般一波波逝去。</description>
+		</descriptions>
+		<physical>總體上比人類更高挑，精靈的身材修長而優雅，尖尖的長耳朵最引人注目。她們的眼睛寬而呈杏仁形，並擁有大大的、靈動的彩色瞳孔。儘管精靈的衣裝常常體現着自然世界之美，在城市居住的精靈一般都是時尚領跑者。</physical>
+		<society>許多精靈感受到自身與自然的羈絆，『Most, however, find manipulating earth and stone to be distasteful, and prefer instead to indulge in the finer arts, with their inborn patience making them particularly suited to wizardry.』</society>
+		<relation>精靈傾向于輕視其他種族，認為他族沖動狂躁；但在個人層面上，她們看人的眼光獨到。一個精靈也許並不想要和矮人為鄰，但可能會比他人更先意識到矮人的鍛造技藝與抗擊獸人的能力。精靈把侏儒當作奇怪的（有時甚至是危險的）好奇客，把半身人當成是值得憐憫的對象，這些小傢伙對精靈而言像是無家可歸的流浪兒。精靈對人類很感興趣，遍布世界的半精靈正是其證據。但是，精靈難以接受任何形式的跨族混血兒</relation>
+		<alignment></alignment>
+		<adventurer></adventurer>
+		<traits>
+			<trait>
+				<name></name>
+				<description></description>
+			</trait>
+		</traits>
+	</race>
+	<race>
+		<name><gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#gnome" type="zh-tw" /></name>
+		<descriptions>
+			<description></description>
+		</descriptions>
+		<physical></physical>
+		<society></society>
+		<relation></relation>
+		<alignment></alignment>
+		<adventurer></adventurer>
+		<traits>
+			<trait>
+				<name></name>
+				<description></description>
+			</trait>
+		</traits>
+	</race>
+	<race>
+		<name><gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#half_elve" type="zh-tw" /></name>
+		<descriptions>
+			<description></description>
+		</descriptions>
+		<physical></physical>
+		<society></society>
+		<relation></relation>
+		<alignment></alignment>
+		<adventurer></adventurer>
+		<traits>
+			<trait>
+				<name></name>
+				<description></description>
+			</trait>
+		</traits>
+	</race>
+	<race>
+		<name><gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#half_orc" type="zh-tw" /></name>
+		<descriptions>
+			<description></description>
+		</descriptions>
+		<physical></physical>
+		<society></society>
+		<relation></relation>
+		<alignment></alignment>
+		<adventurer></adventurer>
+		<traits>
+			<trait>
+				<name></name>
+				<description></description>
+			</trait>
+		</traits>
+	</race>
+	<race>
+		<name><gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#halfling" type="zh-tw" /></name>
+		<descriptions>
+			<description></description>
+		</descriptions>
+		<physical></physical>
+		<society></society>
+		<relation></relation>
+		<alignment></alignment>
+		<adventurer></adventurer>
+		<traits>
+			<trait>
+				<name></name>
+				<description></description>
+			</trait>
+		</traits>
+	</race>
+	<race>
+		<name><gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#human" type="zh-tw" /></name>
+		<descriptions>
+			<description></description>
+		</descriptions>
+		<physical></physical>
+		<society></society>
+		<relation></relation>
+		<alignment></alignment>
+		<adventurer></adventurer>
+		<traits>
+			<trait>
+				<name></name>
+				<description></description>
+			</trait>
+		</traits>
+	</race>
+</races>

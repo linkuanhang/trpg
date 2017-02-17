@@ -294,31 +294,31 @@
 		<name lang="en">Race</name>
 		<name lang="zh-tw">種族</name>
 	</term>
-	<term id="dwarves">
+	<term id="dwarf">
 		<name lang="en">Dwarves</name>
 		<name lang="zh-tw">矮人</name>
 	</term>
-	<term id="elves">
+	<term id="elf">
 		<name lang="en">Elves</name>
 		<name lang="zh-tw">精靈</name>
 	</term>
-	<term id="gnomes">
+	<term id="gnome">
 		<name lang="en">Gnomes</name>
 		<name lang="zh-tw">侏儒</name>
 	</term>
-	<term id="half_elves">
+	<term id="half_elf">
 		<name lang="en">Half-Elves</name>
 		<name lang="zh-tw">半精靈</name>
 	</term>
-	<term id="half_orcs">
+	<term id="half_orc">
 		<name lang="en">Half-Orcs</name>
 		<name lang="zh-tw">半獸人</name>
 	</term>
-	<term id="halflings">
+	<term id="halfling">
 		<name lang="en">Halflings</name>
 		<name lang="zh-tw">半身人</name>
 	</term>
-	<term id="humans">
+	<term id="human">
 		<name lang="en">Humans</name>
 		<name lang="zh-tw">人類</name>
 	</term>
