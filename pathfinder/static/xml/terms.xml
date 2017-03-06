@@ -387,9 +387,17 @@
 		<name lang="en">Monk</name>
 		<name lang="zh-tw">武僧</name>
 	</term>
+	<term id="NPC_class">
+		<name lang="en">NPC Classes</name>
+		<name lang="zh-tw"><ref href="#NPC" type="name" lang="zh-tw" /><ref href="#class" type="name" lang="zh-tw" /></name>
+	</term>
 	<term id="paladin">
 		<name lang="en">Paladin</name>
 		<name lang="zh-tw">聖騎士</name>
+	</term>
+	<term id="prestige_class">
+		<name lang="en">Prestige Classes</name>
+		<name lang="zh-tw">進階<ref href="#class" type="name" lang="zh-tw" /></name>
 	</term>
 	<term id="ranger">
 		<name lang="en">Ranger</name>
@@ -406,10 +414,6 @@
 	<term id="wizard">
 		<name lang="en">Wizard</name>
 		<name lang="zh-tw">法師</name>
-	</term>
-	<term id="prestige_classes">
-		<name lang="en">Prestige Classes</name>
-		<name lang="zh-tw">進階<ref href="#class" type="name" lang="zh-tw" /></name>
 	</term>
 
 	<!-- Items -->
