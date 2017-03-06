@@ -7,6 +7,8 @@
 <xsl:output method="html" encoding="utf-8" doctype-system="about:legacy-compat" indent="yes" media-type="application/xhtml+xml" />
 
 <xsl:template match="t:terms">
+<xsl:variable name="xml" value="/pathfinder/static/xml/test.xml" />
+
 <html>
 <head>
 	<meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
@@ -31,14 +33,18 @@
 		<thead>
 			<tr>
 				<th>原文</th>
-				<th>中文翻譯</th>
 				<th>原文縮寫</th>
+				<th>中文翻譯</th>
 			</tr>
 		</thead>
 		
 		<tbody>
 			<xsl:for-each select="t:term">
-				<xsl:apply-templates select="." />
+				<tr>
+					<td><xsl:apply-templates select="t:name[@lang='en']" /></td>
+					<td><xsl:apply-templates select="t:abbr[@lang='en']" /></td>
+					<td><xsl:apply-templates select="t:name[@lang='zh-tw']" /></td>
+				</tr>
 			</xsl:for-each>
 		</tbody>
 	</table>
@@ -48,18 +54,10 @@
 </html>
 </xsl:template>
 
-<xsl:template match="t:term">
-	<tr>
-		<td><xsl:apply-templates select="t:name[@lang='en']" /></td>
-		<td><xsl:apply-templates select="t:name[@lang='zh-tw']" /></td>
-		<td><xsl:apply-templates select="t:abbr[@lang='en']" /></td>
-	</tr>
-</xsl:template>
-
 <xsl:template match="t:ref">
 	<xsl:variable name="href" select="@href" />
 	<xsl:variable name="id" select="substring-after($href,'#')" />
-	<xsl:variable name="node" select="//t:term[@id=$id]" />
+	<xsl:variable name="node" select="../../../t:term[@id=$id]" />
 	<xsl:variable name="type" select="@type" />
 	<xsl:variable name="lang" select="@lang" />
 	

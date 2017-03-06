@@ -8,11 +8,11 @@
 
 <xsl:template match="i:intro">
 	<xsl:call-template name="page">
-		<xsl:with-param name="title" select="i:header/i:title" />
+		<xsl:with-param name="title" select="i:header/i:title[@lang='zh-tw']" />
 		<xsl:with-param name="pageTitle" select="i:header/i:title" />
 		<xsl:with-param name="nav" select="document('/pathfinder/navbar.xml')" />
 		<xsl:with-param name="page" select="i:body/*" />
-		<xsl:with-param name="initDepth" select="1" />
+		<xsl:with-param name="initDepth" select="2" />
 	</xsl:call-template>
 </xsl:template>
 

@@ -3,16 +3,17 @@
 
 <intro xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="intro" xmlns:gen="general">
 	<header>
-		<title>簡介</title>
+		<title lang="en">Introduction</title>
+		<title lang="zh-tw">簡介</title>
 	</header>
 	
 	<body>
 		<article>
-			<paragraph>The Pathfinder Roleplaying Game is released under the Open Game License, meaning the core rules that drive the Pathfinder RPG system are available to anyone to use for free under the terms of the OGL. This compendium of rules, charts, and tables contains all of the open rules in the system, and is provided for the use of the community of gamers and publishers working with the system.</paragraph>
-			<paragraph>This compendium is NOT the official Pathfinder Roleplaying Game! Players interested in a user-friendly introduction to the Pathfinder system will want to check out the full line of Pathfinder Roleplaying Game products, which comes with lots of great monsters, illustrations, advice and more! All of these products are also available in affordable PDF editions.</paragraph>
-			<paragraph>If you're just getting started with the Pathfinder Roleplaying Game, be sure to check out the Beginner Box which details all the basics for first time players and Game Masters alike!</paragraph>
-			<paragraph>You can also check out the full line of Pathfinder Roleplaying Game products, or discuss the game with the Paizo community on our messageboards!</paragraph>
-			<paragraph>Erik Mona, <publisher>Publisher, Paizo Inc.</publisher></paragraph>
+			<paragraph lang="en">The Pathfinder Roleplaying Game is released under the Open Game License, meaning the core rules that drive the Pathfinder RPG system are available to anyone to use for free under the terms of the OGL. This compendium of rules, charts, and tables contains all of the open rules in the system, and is provided for the use of the community of gamers and publishers working with the system.</paragraph>
+			<paragraph lang="en">This compendium is NOT the official Pathfinder Roleplaying Game! Players interested in a user-friendly introduction to the Pathfinder system will want to check out the full line of Pathfinder Roleplaying Game products, which comes with lots of great monsters, illustrations, advice and more! All of these products are also available in affordable PDF editions.</paragraph>
+			<paragraph lang="en">If you're just getting started with the Pathfinder Roleplaying Game, be sure to check out the Beginner Box which details all the basics for first time players and Game Masters alike!</paragraph>
+			<paragraph lang="en">You can also check out the full line of Pathfinder Roleplaying Game products, or discuss the game with the Paizo community on our messageboards!</paragraph>
+			<paragraph lang="en">Erik Mona, <publisher>Publisher, Paizo Inc.</publisher></paragraph>
 		</article>
 	</body>
 </intro>

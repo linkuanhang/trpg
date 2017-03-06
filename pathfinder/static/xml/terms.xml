@@ -3,9 +3,9 @@
 
 <terms xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="terms">
 	<!-- General terms -->
-	<term id="ability">
-		<name lang="en">Ability</name>
-		<name lang="zh-tw">能力</name>
+	<term id="base">
+		<name lang="en">Base</name>
+		<name lang="zh-tw">基本</name>
 	</term>
 	<term id="bonus">
 		<name lang="en">Bonus</name>
@@ -31,9 +31,13 @@
 		<name lang="en">Effect</name>
 		<name lang="zh-tw">效果</name>
 	</term>
+	<term id="game">
+		<name lang="en">Game</name>
+		<name lang="zh-tw">遊戲</name>
+	</term>
 	<term id="GM">
 		<name lang="en">Game Master</name>
-		<name lang="zh-tw">遊戲主持人</name>
+		<name lang="zh-tw"><ref href="#game" type="name" lang="zh-tw" />主持人</name>
 		<abbr lang="en">GM</abbr>
 	</term>
 	<term id="gold">
@@ -51,7 +55,7 @@
 	</term>
 	<term id="initiative_check">
 		<name lang="en">Initiative Check</name>
-		<name lang="zh-tw">先攻檢定</name>
+		<name lang="zh-tw"><ref href="#initiative" type="name" lang="zh-tw" /><ref href="#check" type="name" lang="zh-tw" /></name>
 	</term>
 	<term id="monster">
 		<name lang="en">Monster</name>
@@ -59,12 +63,18 @@
 	</term>
 	<term id="NPC">
 		<name lang="en">Nonplayer Character</name>
-		<name lang="zh-tw">非玩家角色</name>
+		<name lang="zh-tw">非<ref href="#player" type="name" lang="zh-tw" /><ref href="#character" type="name" lang="zh-tw" /></name>
 		<abbr lang="en">NPC</abbr>
 	</term>
-	<term id="pathfinder">
-		<name lang="en">Pathfinder RPG</name>
-		<name lang="zh-tw">尋路者傳奇</name>
+	<term id="PF">
+		<name lang="en">Pathfinder</name>
+		<name lang="zh-tw">探索者</name>
+		<abbr lang="en">PF</abbr>
+	</term>
+	<term id="PFRPG">
+		<name lang="en">Pathfinder Roleplaying Game</name>
+		<name lang="zh-tw"><ref href="#PF" type="name" lang="zh-tw" /><ref href="#RPG" type="name" lang="zh-tw" /></name>
+		<abbr lang="en"><ref href="#PF" type="abbr" lang="en" /><ref href="#RPG" type="abbr" lang="en" /></abbr>
 	</term>
 	<term id="penalty">
 		<name lang="en">Penalty</name>
@@ -76,7 +86,7 @@
 	</term>
 	<term id="PC">
 		<name lang="en">Player Character</name>
-		<name lang="zh-tw">玩家角色</name>
+		<name lang="zh-tw"><ref href="#player" type="name" lang="zh-tw" /><ref href="#character" type="name" lang="zh-tw" /></name>
 		<abbr lang="en">PC</abbr>
 	</term>
 	<term id="roll">
@@ -87,15 +97,28 @@
 		<name lang="en">Rounding</name>
 		<name lang="zh-tw">取整</name>
 	</term>
+	<term id="round_down">
+		<name lang="en">Round Down</name>
+		<name lang="zh-tw">向下<ref href="#rounding" type="name" lang="zh-tw" /></name>
+	</term>
+	<term id="RPG">
+		<name lang="en">Roleplaying Game</name>
+		<name lang="zh-tw">角色扮演<ref href="#game" type="name" lang="zh-tw" /></name>
+		<abbr lang="en">RPG</abbr>
+	</term>
 
 	<!-- Attributes -->
+	<term id="ability">
+		<name lang="en">Ability</name>
+		<name lang="zh-tw">屬性</name>
+	</term>
 	<term id="ability_score">
 		<name lang="en">Ability Score</name>
-		<name lang="zh-tw">屬性值</name>
+		<name lang="zh-tw"><ref href="#ability" type="name" lang="zh-tw" />值</name>
 	</term>
 	<term id="ability_check">
 		<name lang="en">Ability Check</name>
-		<name lang="zh-tw">屬性檢定</name>
+		<name lang="zh-tw"><ref href="#ability" type="name" lang="zh-tw" /><ref href="#check" type="name" lang="zh-tw" /></name>
 	</term>
 	<term id="AC">
 		<name lang="en">Armor Class</name>
@@ -104,16 +127,16 @@
 	</term>
 	<term id="BAB">
 		<name lang="en">Base Attack Bonus</name>
-		<name lang="zh-tw">基本攻擊加值</name>
+		<name lang="zh-tw"><ref href="#base" type="name" lang="zh-tw" /><ref href="#attack" type="name" lang="zh-tw" /><ref href="#bonus" type="name" lang="zh-tw" /></name>
 		<abbr lang="en">BAB</abbr>
 	</term>
 	<term id="CL">
 		<name lang="en">Caster Level</name>
-		<name lang="zh-tw">施法者等級</name>
+		<name lang="zh-tw"><ref href="#caster" type="name" lang="zh-tw" /><ref href="#level" type="name" lang="zh-tw" /></name>
 		<abbr lang="en">CL</abbr>
 	</term>
 	<term id="character_level">
-		<name lang="en"><ref href="#character" type="name" lang="en" /> <ref href="#level" type="name" lang="en" /></name>
+		<name lang="en">Character Level</name>
 		<name lang="zh-tw"><ref href="#character" type="name" lang="zh-tw" /><ref href="#level" type="name" lang="zh-tw" /></name>
 	</term>
 	<term id="Cha">
@@ -123,16 +146,16 @@
 	</term>
 	<term id="class_level">
 		<name lang="en">Class Level</name>
-		<name lang="zh-tw">職業等級</name>
+		<name lang="zh-tw"><ref href="#class" type="name" lang="zh-tw" /><ref href="#level" type="name" lang="zh-tw" /></name>
 	</term>
 	<term id="CMB">
 		<name lang="en">Combat Maneuver Bonus</name>
-		<name lang="zh-tw">戰技加值</name>
+		<name lang="zh-tw"><ref href="#combat_maneuver" type="name" lang="zh-tw" /><ref href="#bonus" type="name" lang="zh-tw" /></name>
 		<abbr lang="en">CMB</abbr>
 	</term>
 	<term id="CMD">
 		<name lang="en">Combat Maneuver Defense</name>
-		<name lang="zh-tw">戰技防禦</name>
+		<name lang="zh-tw"><ref href="#combat_maneuver" type="name" lang="zh-tw" />防護</name>
 		<abbr lang="en">CMD</abbr>
 	</term>
 	<term id="Con">
@@ -142,7 +165,7 @@
 	</term>
 	<term id="DR">
 		<name lang="en">Damage Reduction</name>
-		<name lang="zh-tw">傷害減免</name>
+		<name lang="zh-tw"><ref href="#damage" type="name" lang="zh-tw" />減免</name>
 		<abbr lang="en">DR</abbr>
 	</term>
 	<term id="Dex">
@@ -162,11 +185,11 @@
 	</term>
 	<term id="fortitude">
 		<name lang="en">Fortitude</name>
-		<name lang="zh-tw">強韌豁免</name>
+		<name lang="zh-tw">強韌</name>
 	</term>
 	<term id="HD">
 		<name lang="en">Hit Dice</name>
-		<name lang="zh-tw">生命骰</name>
+		<name lang="zh-tw">生命骰數</name>
 		<abbr lang="en">HD</abbr>
 	</term>
 	<term id="HP">
@@ -197,20 +220,20 @@
 	</term>
 	<term id="reflex">
 		<name lang="en">Reflex</name>
-		<name lang="zh-tw">反射豁免</name>
+		<name lang="zh-tw">反射</name>
 	</term>
 	<term id="Str">
 		<name lang="en">Strength</name>
 		<name lang="zh-tw">力量</name>
 		<abbr lang="en">Str</abbr>
 	</term>
-	<term id="stacking">
-		<name lang="en">Stacking</name>
+	<term id="stack">
+		<name lang="en">Stack</name>
 		<name lang="zh-tw">疊加</name>
 	</term>
 	<term id="will">
 		<name lang="en">Will</name>
-		<name lang="zh-tw">意志豁免</name>
+		<name lang="zh-tw">意志</name>
 	</term>
 	<term id="Wis">
 		<name lang="en">Wisdom</name>
@@ -229,17 +252,17 @@
 	</term>
 	<term id="CG">
 		<name lang="en">Chaotic Good</name>
-		<name lang="zh-tw">混亂善良</name>
+		<name lang="zh-tw"><ref href="#chaotic" type="name" lang="zh-tw" /><ref href="#good" type="name" lang="zh-tw" /></name>
 		<abbr lang="en">CG</abbr>
 	</term>
 	<term id="CN">
 		<name lang="en">Chaotic Neutral</name>
-		<name lang="zh-tw">混亂中立</name>
+		<name lang="zh-tw"><ref href="#chaotic" type="name" lang="zh-tw" /><ref href="#neutral" type="name" lang="zh-tw" /></name>
 		<abbr lang="en">CN</abbr>
 	</term>
 	<term id="CE">
 		<name lang="en">Chaotic Evil</name>
-		<name lang="zh-tw">混亂邪惡</name>
+		<name lang="zh-tw"><ref href="#chaotic" type="name" lang="zh-tw" /><ref href="#evil" type="name" lang="zh-tw" /></name>
 		<abbr lang="en">CE</abbr>
 	</term>
 	<term id="evil">
@@ -256,17 +279,17 @@
 	</term>
 	<term id="LG">
 		<name lang="en">Lawful Good</name>
-		<name lang="zh-tw">秩序善良</name>
+		<name lang="zh-tw"><ref href="#lawful" type="name" lang="zh-tw" /><ref href="#good" type="name" lang="zh-tw" /></name>
 		<abbr lang="en">LG</abbr>
 	</term>
 	<term id="LN">
 		<name lang="en">Lawful Neutral</name>
-		<name lang="zh-tw">秩序中立</name>
+		<name lang="zh-tw"><ref href="#lawful" type="name" lang="zh-tw" /><ref href="#neutral" type="name" lang="zh-tw" /></name>
 		<abbr lang="en">LN</abbr>
 	</term>
 	<term id="LE">
 		<name lang="en">Lawful Evil</name>
-		<name lang="zh-tw">秩序邪惡</name>
+		<name lang="zh-tw"><ref href="#lawful" type="name" lang="zh-tw" /><ref href="#evil" type="name" lang="zh-tw" /></name>
 		<abbr lang="en">LE</abbr>
 	</term>
 	<term id="neutral">
@@ -275,17 +298,17 @@
 	</term>
 	<term id="NG">
 		<name lang="en">Neutral Good</name>
-		<name lang="zh-tw">中立善良</name>
+		<name lang="zh-tw"><ref href="#neutral" type="name" lang="zh-tw" /><ref href="#good" type="name" lang="zh-tw" /></name>
 		<abbr lang="en">NG</abbr>
 	</term>
 	<term id="N">
 		<name lang="en">Neutral</name>
-		<name lang="zh-tw">絕對中立</name>
+		<name lang="zh-tw">絕對<ref href="#neutral" type="name" lang="zh-tw" /></name>
 		<abbr lang="en">N</abbr>
 	</term>
 	<term id="NE">
 		<name lang="en">Neutral Evil</name>
-		<name lang="zh-tw">中立邪惡</name>
+		<name lang="zh-tw"><ref href="#neutral" type="name" lang="zh-tw" /><ref href="#evil" type="name" lang="zh-tw" /></name>
 		<abbr lang="en">NE</abbr>
 	</term>
 
@@ -308,11 +331,11 @@
 	</term>
 	<term id="half_elf">
 		<name lang="en">Half-Elves</name>
-		<name lang="zh-tw">半精靈</name>
+		<name lang="zh-tw">半<ref href="#elf" type="name" lang="zh-tw" /></name>
 	</term>
 	<term id="half_orc">
 		<name lang="en">Half-Orcs</name>
-		<name lang="zh-tw">半獸人</name>
+		<name lang="zh-tw">半<ref href="#orc" type="name" lang="zh-tw" /></name>
 	</term>
 	<term id="halfling">
 		<name lang="en">Halflings</name>
@@ -322,11 +345,15 @@
 		<name lang="en">Humans</name>
 		<name lang="zh-tw">人類</name>
 	</term>
+	<term id="orc">
+		<name lang="en">Orcs</name>
+		<name lang="zh-tw">獸人</name>
+	</term>
 
 	<!-- Classes -->
 	<term id="bonus_feat">
 		<name lang="en">Bonus Feat</name>
-		<name lang="zh-tw">獎勵專長</name>
+		<name lang="zh-tw">獎勵<ref href="#feat" type="name" lang="zh-tw" /></name>
 	</term>
 	<term id="class">
 		<name lang="en">Class</name>
@@ -334,7 +361,7 @@
 	</term>
 	<term id="core_class">
 		<name lang="en">Core Class</name>
-		<name lang="zh-tw">核心職業</name>
+		<name lang="zh-tw">核心<ref href="#class" type="name" lang="zh-tw" /></name>
 	</term>
 	<term id="barbarian">
 		<name lang="en">Barbarian</name>
@@ -382,13 +409,17 @@
 	</term>
 	<term id="prestige_classes">
 		<name lang="en">Prestige Classes</name>
-		<name lang="zh-tw">進階職業</name>
+		<name lang="zh-tw">進階<ref href="#class" type="name" lang="zh-tw" /></name>
 	</term>
 
 	<!-- Items -->
 	<term id="equipment">
 		<name lang="en">Equipment</name>
 		<name lang="zh-tw">裝備</name>
+	</term>
+	<term id="item">
+		<name lang="en">Item</name>
+		<name lang="zh-tw">物品</name>
 	</term>
 
 	<!-- Weapons -->
@@ -398,6 +429,10 @@
 	</term>
 
 	<!-- Armors -->
+	<term id="armor">
+		<name lang="en">Armors</name>
+		<name lang="zh-tw">盔甲</name>
+	</term>
 	
 	<!-- Combat -->
 	<term id="combat">
@@ -428,9 +463,13 @@
 		<name lang="en">Round</name>
 		<name lang="zh-tw">輪</name>
 	</term>
+	<term id="saving">
+		<name lang="en">Saving</name>
+		<name lang="zh-tw">豁免</name>
+	</term>
 	<term id="saving_throw">
 		<name lang="en">Saving Throw</name>
-		<name lang="zh-tw">豁免檢定</name>
+		<name lang="zh-tw"><ref href="#saving" type="name" lang="zh-tw" />檢定</name>
 	</term>
 	<term id="turn">
 		<name lang="en">Turn</name>
@@ -452,19 +491,19 @@
 	</term>
 	<term id="attack_roll">
 		<name lang="en">Attack Roll</name>
-		<name lang="zh-tw">攻擊檢定</name>
+		<name lang="zh-tw"><ref href="#attack" type="name" lang="zh-tw" />檢定</name>
 	</term>
 	<term id="free_action">
 		<name lang="en">Free Action</name>
-		<name lang="zh-tw">自由動作</name>
+		<name lang="zh-tw">自由<ref href="#action" type="name" lang="zh-tw" /></name>
 	</term>
 	<term id="full_attack">
 		<name lang="en">Full Attack</name>
-		<name lang="zh-tw">整輪攻擊</name>
+		<name lang="zh-tw">整輪<ref href="#attack" type="name" lang="zh-tw" /></name>
 	</term>
 	<term id="full_round_action">
 		<name lang="en">Full-round Action</name>
-		<name lang="zh-tw">整輪動作</name>
+		<name lang="zh-tw">整輪<ref href="#action" type="name" lang="zh-tw" /></name>
 	</term>
 	<term id="grapple">
 		<name lang="en">Grapple</name>
@@ -472,7 +511,7 @@
 	</term>
 	<term id="standard_action">
 		<name lang="en">Standard Action</name>
-		<name lang="zh-tw">標準動作</name>
+		<name lang="zh-tw">標準<ref href="#action" type="name" lang="zh-tw" /></name>
 	</term>
 	<term id="trip">
 		<name lang="en">Trip</name>
@@ -484,11 +523,11 @@
 	</term>
 	<term id="move_action">
 		<name lang="en">Move Action</name>
-		<name lang="zh-tw">移動動作</name>
+		<name lang="zh-tw">移動<ref href="#action" type="name" lang="zh-tw" /></name>
 	</term>
 	<term id="swift_action">
 		<name lang="en">Swift Action</name>
-		<name lang="zh-tw">迅捷動作</name>
+		<name lang="zh-tw">迅捷<ref href="#action" type="name" lang="zh-tw" /></name>
 	</term>
 
 	<!-- Skills -->
@@ -498,11 +537,11 @@
 	</term>
 	<term id="skill_check">
 		<name lang="en">Skill Check</name>
-		<name lang="zh-tw">技能檢定</name>
+		<name lang="zh-tw"><ref href="#skill" type="name" lang="zh-tw" /><ref href="#check" type="name" lang="zh-tw" /></name>
 	</term>
 	<term id="skill_rank">
 		<name lang="en">Skill Rank</name>
-		<name lang="zh-tw">技能點</name>
+		<name lang="zh-tw"><ref href="#skill" type="name" lang="zh-tw" />點</name>
 	</term>
 
 	<!-- Feats -->
@@ -521,7 +560,7 @@
 	</term>
 	<term id="Sp">
 		<name lang="en">Spell-Like Abilities</name>
-		<name lang="zh-tw">類法術能力</name>
+		<name lang="zh-tw">法術型能力</name>
 		<abbr lang="en">Sp</abbr>
 	</term>
 	<term id="Su">
@@ -535,13 +574,21 @@
 		<name lang="en">Caster</name>
 		<name lang="zh-tw">施法者</name>
 	</term>
+	<term id="concentration">
+		<name lang="en">Concentration</name>
+		<name lang="zh-tw">專注</name>
+	</term>
 	<term id="concentration_check">
 		<name lang="en">Concentration Check</name>
-		<name lang="zh-tw">專注檢定</name>
+		<name lang="zh-tw"><ref href="#concentration" type="name" lang="zh-tw" /><ref href="#check" type="name" lang="zh-tw" /></name>
 	</term>
-	<term id="magic_items">
+	<term id="magic">
+		<name lang="en">Magic</name>
+		<name lang="zh-tw">魔法</name>
+	</term>
+	<term id="magic_item">
 		<name lang="en">Magic Items</name>
-		<name lang="zh-tw">魔法物品</name>
+		<name lang="zh-tw"><ref href="#magic" type="name" lang="zh-tw" /><ref href="#item" type="name" lang="zh-tw" /></name>
 	</term>
 	<term id="spell">
 		<name lang="en">Spell</name>
@@ -549,11 +596,11 @@
 	</term>
 	<term id="spell_level">
 		<name lang="en">Spell Level</name>
-		<name lang="zh-tw">法術環級</name>
+		<name lang="zh-tw"><ref href="#spell" type="name" lang="zh-tw" /><ref href="#level" type="name" lang="zh-tw" /></name>
 	</term>
 	<term id="SR">
 		<name lang="en">Spell Resistance</name>
-		<name lang="zh-tw">法術抗力</name>
+		<name lang="zh-tw"><ref href="#spell" type="name" lang="zh-tw" />抗力</name>
 		<abbr lang="en">SR</abbr>
 	</term>
 	<term id="target">

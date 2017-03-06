@@ -3,7 +3,139 @@
 
 <begin xmlns="begin" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:math="http://www.w3.org/1998/Math/MathML"
 	xmlns:gen="general" xmlns:com="common" xmlns:cre="create" xmlns:ga="generate_ability" xmlns:db="determine_bonus" xmlns:abi="ability">
-	<title>如何開始</title>
+	
+	<header>
+		<title lang="en">Getting Started</title>
+		<title lang="zh-tw">如何開始</title>
+	</header>
+	
+	<body>
+		<section>
+			<title lang="en">Playing the Game</title>
+			<title lang="zh-tw">開始遊玩</title>
+			<paragraph lang="en">While playing the Pathfinder RPG, the Game Master describes the events that occur in the game world, and the players take turns describing what their characters do in response to those events. Unlike storytelling, however, the actions of the players and the characters controlled by the Game Master (frequently called non-player characters, or NPCs) are not certain. Most actions require dice rolls to determine success, with some tasks being more difficult than others. Each character is better at some things than he is at other things, granting him bonuses based on his skills and abilities. </paragraph>
+			<paragraph lang="zh-tw">當進行<gen:name href="PFRPG" type="name" lang="zh-tw" />時，由<gen:name href="GM" type="name" lang="zh-tw" />描述在<gen:name href="game" type="name" lang="zh-tw" />世界中發生的事件，而<gen:name href="player" type="name" lang="zh-tw" />們則描述他們扮演的<gen:name href="character" type="name" lang="zh-tw" />將如何應對這些發生的事件。但與講故事不同的是，<gen:name href="player" type="name" lang="zh-tw" />們和<gen:name href="GM" type="name" lang="zh-tw" />所控制的<gen:name href="character" type="name" lang="zh-tw" />（後者經常稱為<gen:name href="NPC" type="name" lang="zh-tw" />或<gen:name href="NPC" type="abbr" lang="en" />）的行動都是不確定的。多數行動需要<gen:name href="roll" type="name" lang="zh-tw" />來決定其成功與否，而有些行為將比其他的行為更加難以完成。每名<gen:name href="character" type="name" lang="zh-tw" />會在某些方面有所擅長，基於其<gen:name href="skill" type="name" lang="zh-tw" />和<gen:name href="ability" type="name" lang="zh-tw" />來獲得各種<gen:name href="bonus" type="name" lang="zh-tw" />。 </paragraph>
+			<paragraph lang="en">Whenever a roll is required, the roll is noted as "d#," with the "#" representing the number of sides on the die. If you need to roll multiple dice of the same type, there will be a number before the "d." For example, if you are required to roll 4d6, you should roll four six-sided dice and add the results together. Sometimes there will be a + or – after the notation, meaning that you add that number to, or subtract it from, the total results of the dice (not to each individual die rolled). Most die rolls in the game use a d20 with a number of modifiers based on the character's skills, his or her abilities, and the situation. Generally speaking, rolling high is better than rolling low. Percentile rolls are a special case, indicated as rolling d%. You can generate a random number in this range by rolling two differently colored ten-sided dice (2d10). Pick one color to represent the tens digit, then roll both dice. If the die chosen to be the tens digit rolls a "4" and the other d10 rolls a "2," then you've generated a 42. A zero on the tens digit die indicates a result from 1 to 9, or 100 if both dice result in a zero. Some d10s are printed with "10," "20," "30," and so on in order to make reading d% rolls easier. Unless otherwise noted, whenever you must round a number, always round down.</paragraph>
+			<paragraph lang="zh-tw">當需要<gen:name href="roll" type="name" lang="zh-tw" />時，該<gen:name href="roll" type="name" lang="zh-tw" />將被記為「<gen:dice num="" face="#" />」，其中「#」表示骰子的面數。若你需要投擲同一類型的骰子數次，在「<gen:dice num="" face="" />」前還會以數字來表示。舉例而言，若你需要骰<gen:dice num="4" face="6" />，你應該將六面骰投擲四次，並將結果相加。有時在擲骰數後面還會有+或-等加註，意味著你要在<gen:name href="roll" type="name" lang="zh-tw" />的總結果中加上或減去對應數值（注意並非每個骰子的結果）。本遊戲中的大多<gen:name href="roll" type="name" lang="zh-tw" />用到的是<gen:dice num="" face="20" />，並基於<gen:name href="character" type="name" lang="zh-tw" />的<gen:name href="skill" type="name" lang="zh-tw" />、<gen:name href="ability" type="name" lang="zh-tw" />和處境等狀況決定<gen:name href="modifier" type="name" lang="zh-tw" />。大體而言，<gen:name href="roll" type="name" lang="zh-tw" />結果越高越好。用<gen:dice num="" face="%" />表示的百分率<gen:name href="roll" type="name" lang="zh-tw" />是一種特殊情況，你可以通過骰兩顆顏色不同的十面骰（<gen:dice num="2" face="10" />）來生成這一範圍的隨機結果。將一顆的結果定為十位數，再同時投擲兩顆骰子。若十位的那顆<gen:name href="roll" type="name" lang="zh-tw" />結果為「4」、另一顆為「2」，那麼你得到的結果為42。十位數的骰子結果為零時代表其結果為1到9，而兩個<gen:name href="roll" type="name" lang="zh-tw" />結果均為零則表示結果為100。某些十面骰會將每面印成「10」、「20」、「30」等以便於進行<gen:dice num="" face="%" />的<gen:name href="roll" type="name" lang="zh-tw" />和讀數。若無特別說明，當你必須對結果<gen:name href="rounding" type="name" lang="zh-tw" />時，總是<gen:name href="round_down" type="name" lang="zh-tw" />。 </paragraph>
+			<paragraph lang="en">As your character goes on adventures, he earns gold, magic items, and experience points. Gold can be used to purchase better equipment, while magic items possess powerful abilities that enhance your character. Experience points are awarded for overcoming challenges and completing major storylines. When your character has earned enough experience points, he increases his character level by one, granting him new powers and abilities that allow him to take on even greater challenges.</paragraph>
+			<paragraph lang="zh-tw">當你的<gen:name href="character" type="name" lang="zh-tw" />突破一次又一次冒險時，他會獲得金錢、<gen:name href="magic_item" type="name" lang="zh-tw" />和<gen:name href="XP" type="name" lang="zh-tw" />等等。金錢可以用來獲取更好的<gen:name href="equipment" type="name" lang="zh-tw" />，<gen:name href="magic_item" type="name" lang="zh-tw" />能夠給予各種強化<gen:name href="character" type="name" lang="zh-tw" />的能力，<gen:name href="XP" type="name" lang="zh-tw" />是贏下挑戰和完成任務的獎勵。當你的<gen:name href="character" type="name" lang="zh-tw" />積攢了足夠多的<gen:name href="XP" type="name" lang="zh-tw" />時，他的<gen:name href="character_level" type="name" lang="zh-tw" />會上升一級並獲取使自己足以面對更大挑戰的新力量與能力。</paragraph>
+			
+			<section>
+				<title lang="en">The Most Important Rule</title>
+				<title lang="zh-tw">最重要的規則</title>
+				<paragraph lang="en">The rules presented are here to help you breathe life into your characters and the world they explore. While they are designed to make your game easy and exciting, you might find that some of them do not suit the style of play that your gaming group enjoys. Remember that these rules are yours. You can change them to fit your needs. Most Game Masters have a number of "house rules" that they use in their games. The Game Master and players should always discuss any rules changes to make sure that everyone understands how the game will be played. Although the Game Master is the final arbiter of the rules, the Pathfinder RPG is a shared experience, and all of the players should contribute their thoughts when the rules are in doubt.</paragraph>
+				<paragraph lang="zh-tw">此處的規則是協助你融入自己的<gen:name href="character" type="name" lang="zh-tw" />並探索<gen:name href="game" type="name" lang="zh-tw" />世界。雖然它們是為了讓你的<gen:name href="game" type="name" lang="zh-tw" />簡單刺激而被設計的，你也許會發現其中一些規則並不適於你所在圈子的遊戲風格。請記住，規則是屬於你的，你可以根據需要來改變或調整它們。多數<gen:name href="GM" type="name" lang="zh-tw" />會在自己的<gen:name href="game" type="name" lang="zh-tw" />中設定一系列「<gen:name href="HR" type="name" lang="zh-tw" />」，<gen:name href="GM" type="name" lang="zh-tw" />和<gen:name href="player" type="name" lang="zh-tw" />應該在對規則進行任何調整前展開討論，以確保每個人都了解當前的<gen:name href="game" type="name" lang="zh-tw" />正以怎樣的形式展開。儘管<gen:name href="GM" type="name" lang="zh-tw" />是規則的最終裁決者，遊戲體驗畢竟是大家共同分享的，因此每位<gen:name href="player" type="name" lang="zh-tw" />都應該在對規則存疑時提出自己的看法。 </paragraph>
+			</section>
+		</section>
+		
+		<section>
+			<title lang="en">Common Terms</title>
+			<title lang="zh-tw">通用術語</title>
+			<paragraph lang="en">The Pathfinder RPG uses a number of terms, abbreviations, and definitions in presenting the rules of the game. The following are among the most common.</paragraph>
+			<paragraph lang="zh-tw">在<gen:name href="PFRPG" type="name" lang="zh-tw" />的規則中使用了許多術語、縮寫以及定義，以下為最常使用的術語。</paragraph>
+			<com:terms>
+				<com:term>
+					<com:name lang="en">Ability Score</com:name>
+					<com:name lang="zh-tw"><gen:name href="ability_score" type="name" lang="zh-tw" /></com:name>
+					<com:description lang="en">Each creature has six ability scores: Strength, Dexterity, Constitution, Intelligence, Wisdom, and Charisma. These scores represent a creature's most basic attributes. The higher the score, the more raw potential and talent your character possesses. </com:description>
+					<com:description lang="zh-tw">每名<gen:name href="creature" type="name" lang="zh-tw" />都具有六項<gen:name href="ability_score" type="name" lang="zh-tw" />︰<gen:name href="Str" type="name" lang="zh-tw" />、<gen:name href="Dex" type="name" lang="zh-tw" />、<gen:name href="Con" type="name" lang="zh-tw" />、<gen:name href="Int" type="name" lang="zh-tw" />、<gen:name href="Wis" type="name" lang="zh-tw" />和<gen:name href="Cha" type="name" lang="zh-tw" />。這些數值體現了一名<gen:name href="creature" type="name" lang="zh-tw" />最基本的特徵。數值越高，你的<gen:name href="character" type="name" lang="zh-tw" />的潛力和天賦就越出色。</com:description>
+				</com:term>
+				<com:term>
+					<com:name lang="en">Action</com:name>
+					<com:name lang="zh-tw">動作</com:name>
+					<com:description lang="en">An action is a discrete measurement of time during a round of combat. Using abilities, casting spells, and making attacks all require actions to perform. There are a number of different kinds of actions, such as a standard action, move action, swift action, free action, and full-round action (see Combat). </com:description>
+					<com:description lang="zh-tw"><gen:name href="action" type="name" lang="zh-tw" />是一<gen:name href="round" type="name" lang="zh-tw" /><gen:name href="combat" type="name" lang="zh-tw" />中衡量行為耗時程度的概念，使用能力、施展<gen:name href="spell" type="name" lang="zh-tw" />和發動<gen:name href="attack" type="name" lang="zh-tw" />都需要消耗一定的<gen:name href="action" type="name" lang="zh-tw" />。<gen:name href="action" type="name" lang="zh-tw" />的種類很多，像是<gen:name href="standard_action" type="name" lang="zh-tw" />、<gen:name href="move_action" type="name" lang="zh-tw" />、<gen:name href="swift_action" type="name" lang="zh-tw" />、<gen:name href="free_action" type="name" lang="zh-tw" />和<gen:name href="full_round_action" type="name" lang="zh-tw" />等（<gen:rlink href="javascript:viod(0)"><gen:name href="combat" type="name" lang="zh-tw" /></gen:rlink>）。</com:description>
+				</com:term>
+				<com:term>
+					<com:name lang="en">Alignment</com:name>
+					<com:name lang="zh-tw"><gen:name href="alignment" type="name" lang="zh-tw" /></com:name>
+					<com:description lang="en">Alignment represents a creature's basic moral and ethical attitude. Alignment has two components: one describing whether a creature is lawful, neutral, or chaotic, followed by another that describes whether a character is good, neutral, or evil. Alignments are usually abbreviated using the first letter of each alignment component, such as LN for lawful neutral or CE for chaotic evil. Creatures that are neutral in both components are denoted by a single "N."</com:description>
+					<com:description lang="zh-tw"><gen:name href="alignment" type="name" lang="zh-tw" />呈現了一名<gen:name href="creature" type="name" lang="zh-tw" />基本的道德和倫理觀念。<gen:name href="alignment" type="name" lang="zh-tw" />有兩條主軸，一條描述<gen:name href="creature" type="name" lang="zh-tw" />是<gen:name href="lawful" type="name" lang="zh-tw" />、<gen:name href="neutral" type="name" lang="zh-tw" />還是<gen:name href="chaotic" type="name" lang="zh-tw" />的，另一條描述<gen:name href="creature" type="name" lang="zh-tw" />是<gen:name href="good" type="name" lang="zh-tw" />、<gen:name href="neutral" type="name" lang="zh-tw" />還是<gen:name href="evil" type="name" lang="zh-tw" />的。<gen:name href="alignment" type="name" lang="zh-tw" />常以每條主軸的首字母縮寫表示，譬如<gen:name href="LN" type="abbr" lang="en" />表示<gen:name href="LN" type="name" lang="zh-tw" />、<gen:name href="CE" type="abbr" lang="en" />表示<gen:name href="CE" type="name" lang="zh-tw" />等，在兩條主軸上都傾向<gen:name href="neutral" type="name" lang="zh-tw" />的<gen:name href="creature" type="name" lang="zh-tw" />僅以單字「<gen:name href="N" type="abbr" lang="en" />」表示。</com:description>
+				</com:term>
+				<com:term>
+					<com:name lang="en">Armor Class (AC)</com:name>
+					<com:name lang="zh-tw"><gen:name href="AC" type="name" lang="zh-tw" />〔<gen:name href="AC" type="abbr" lang="en" />〕</com:name>
+					<com:description lang="en">All creatures in the game have an Armor Class. This score represents how hard it is to hit a creature in combat. As with other scores, higher is better.</com:description>
+					<com:description lang="zh-tw">所有<gen:name href="game" type="name" lang="zh-tw" />中的<gen:name href="creature" type="name" lang="zh-tw" />都有<gen:name href="AC" type="name" lang="zh-tw" />。這一數值呈現了在<gen:name href="combat" type="name" lang="zh-tw" />中擊中一名<gen:name href="creature" type="name" lang="zh-tw" />的困難程度。與其他數值一樣，<gen:name href="AC" type="name" lang="zh-tw" />愈高愈好。 </com:description>
+				</com:term>
+				<com:term>
+					<com:name lang="en">Base Attack Bonus (BAB)</com:name>
+					<com:name lang="zh-tw"><gen:name href="BAB" type="name" lang="zh-tw" />〔<gen:name href="BAB" type="abbr" lang="en" />〕</com:name>
+					<com:description lang="en">Each creature has a base attack bonus and it represents its skill in combat. As a character gains levels or Hit Dice, his base attack bonus improves. When a creature's base attack bonus reaches +6, +11, or +16, he receives an additional attack in combat when he takes a full-attack action (which is one type of full-round action—see Combat).</com:description>
+					<com:description lang="zh-tw">每名<gen:name href="creature" type="name" lang="zh-tw" />都有用來展現其<gen:name href="combat" type="name" lang="zh-tw" />技巧的<gen:name href="BAB" type="name" lang="zh-tw" />。當<gen:name href="character" type="name" lang="zh-tw" />獲得新的<gen:name href="level" type="name" lang="zh-tw" />或<gen:name href="HD" type="name" lang="zh-tw" />時，其<gen:name href="BAB" type="name" lang="zh-tw" />將會提高。當一名<gen:name href="creature" type="name" lang="zh-tw" />的<gen:name href="BAB" type="name" lang="zh-tw" />達到+6、+11或+16時，他會在進行<gen:name href="full_attack" type="name" lang="zh-tw" />時獲得一次額外的<gen:name href="attack" type="name" lang="zh-tw" />次數（<gen:name href="full_attack" type="name" lang="zh-tw" />屬於<gen:name href="full_round_action" type="name" lang="zh-tw" />，詳情請<gen:rlink href="javascript:void(0)"><gen:name href="combat" type="name" lang="zh-tw" /></gen:rlink>）。</com:description>
+				</com:term>
+				<com:term>
+					<com:name lang="en"></com:name>
+					<com:description lang="en"></com:description>
+				</com:term>
+				<com:term>
+					<com:name lang="en"></com:name>
+					<com:description lang="en"></com:description>
+				</com:term>
+				<com:term>
+					<com:name lang="en"></com:name>
+					<com:description lang="en"></com:description>
+				</com:term>
+				<com:term>
+					<com:name lang="en"></com:name>
+					<com:description lang="en"></com:description>
+				</com:term>
+				<com:term>
+					<com:name lang="en"></com:name>
+					<com:description lang="en"></com:description>
+				</com:term>
+				<com:term>
+					<com:name lang="en"></com:name>
+					<com:description lang="en"></com:description>
+				</com:term>
+				<com:term>
+					<com:name lang="en"></com:name>
+					<com:description lang="en"></com:description>
+				</com:term>
+				<com:term>
+					<com:name lang="en"></com:name>
+					<com:description lang="en"></com:description>
+				</com:term>
+				<com:term>
+					<com:name lang="en"></com:name>
+					<com:description lang="en"></com:description>
+				</com:term>
+				<com:term>
+					<com:name lang="en"></com:name>
+					<com:description lang="en"></com:description>
+				</com:term>
+				<com:term>
+					<com:name lang="en"></com:name>
+					<com:description lang="en"></com:description>
+				</com:term>
+				<com:term>
+					<com:name lang="en"></com:name>
+					<com:description lang="en"></com:description>
+				</com:term>
+				<com:term>
+					<com:name lang="en"></com:name>
+					<com:description lang="en"></com:description>
+				</com:term>
+				<com:term>
+					<com:name lang="en"></com:name>
+					<com:description lang="en"></com:description>
+				</com:term>
+				<com:term>
+					<com:name lang="en"></com:name>
+					<com:description lang="en"></com:description>
+				</com:term>
+				<com:term>
+					<com:name lang="en"></com:name>
+					<com:description lang="en"></com:description>
+				</com:term>
+				<com:term>
+					<com:name lang="en"></com:name>
+					<com:description lang="en"></com:description>
+				</com:term>
+			</com:terms>
+		</section>
+	</body>
+	
 	<paragraphs>
 		<paragraph>
 			<contains>
@@ -22,236 +154,7 @@
 			<title>通用術語</title>
 			<contains>
 				<contain>
-					<com:terms>
-						<com:term>
-							<com:name><gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#ability_score" type="total">ability_score</gen:name></com:name>
-							<com:descriptions>
-								<com:description>每名<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#creature" type="total">creature</gen:name>都具有六項<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#ability_score" type="ch">ability_score</gen:name>——<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#Str" type="total">Str</gen:name>、<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#Dex" type="total">Dex</gen:name>、<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#Con" type="total">Con</gen:name>、<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#Int" type="total">Int</gen:name>、<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#Wis" type="total">Wis</gen:name>和<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#Cha" type="total">Cha</gen:name>。這些數值體現了一名<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#creature" type="ch">creature</gen:name>最基本的特徵。數值越高，你的<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#character" type="ch">character</gen:name>的潛力和天賦就越出色。</com:description>
-							</com:descriptions>
-						</com:term>
-						<com:term>
-							<com:name><gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#action" type="total">action</gen:name></com:name>
-							<com:descriptions>
-								<com:description><gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#action" type="ch">action</gen:name>是<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#combat" type="total">combat</gen:name>中衡量行為耗時程度的概念。使用<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#ability" type="ch">ability</gen:name>、施展<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#spell" type="total">spell</gen:name>和發動攻擊都需要消耗一定的<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#action" type="ch">action</gen:name>。<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#action" type="ch">action</gen:name>的種類很多，包括<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#standard_action" type="total">standard action</gen:name>、<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#move_action" type="total">move action</gen:name>、<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#swift_action" type="total">switf action</gen:name>、<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#free_action" type="total">free action</gen:name>和<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#full_round_action" type="total">full-round action</gen:name>等（參看<gen:link xlink:type="simple" xlink:href="{% url 'combat' %}"><gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#combat" type="ch">combat</gen:name></gen:link>部分）。</com:description>
-							</com:descriptions>
-						</com:term>
-						<com:term>
-							<com:name><gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#alignment" type="total">alignment</gen:name></com:name>
-							<com:descriptions>
-								<com:description><gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#alignment" type="ch">alignment</gen:name>體現了一名<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#creature" type="ch">creature</gen:name>基本的道德和倫理觀念。<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#alignment" type="ch">alignment</gen:name>有兩條主軸，一條描述<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#creature" type="ch">creature</gen:name>是<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#lawful" type="total">lawful</gen:name>、<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#neutral" type="total">neutral</gen:name>還是<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#chaotic" type="total">chaotic</gen:name>的，另一條描述<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#creature" type="ch">creature</gen:name>是<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#good" type="total">good</gen:name>、<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#neutral" type="total">neutral</gen:name>還是<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#evil" type="total">evil</gen:name>的。<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#alignment" type="ch">alignment</gen:name>常以每條主軸的首字母縮寫表示，譬如<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#LN" type="en_abbr">LN</gen:name>表示<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#LN" type="ch">LN</gen:name>、<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#CE" type="en_abbr">CE</gen:name>表示<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#CE" type="ch">CE</gen:name>等。在兩條主軸上都傾向<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#neutral" type="ch">neutral</gen:name>的<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#creature" type="ch">creature</gen:name>僅以單字<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#N" type="en_abbr">N</gen:name>表示。</com:description>
-							</com:descriptions>
-						</com:term>
-						<com:term>
-							<com:name><gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#AC" type="total">AC</gen:name></com:name>
-							<com:descriptions>
-								<com:description>所有遊戲中的<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#creature" type="ch">creature</gen:name>都有<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#AC" type="ch">AC</gen:name>。這一數值體現了在<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#combat" type="ch">combat</gen:name>中擊中一名<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#creature" type="ch">creature</gen:name>的困難程度。與其他數值一樣，<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#AC" type="ch">AC</gen:name>愈高愈好。</com:description>
-							</com:descriptions>
-						</com:term>
-						<com:term>
-							<com:name><gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#BAB" type="total">BAB</gen:name></com:name>
-							<com:descriptions>
-								<com:description>每名<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#creature" type="ch">creature</gen:name>都有用來體現其<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#combat" type="ch">combat</gen:name>技巧的<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#BAB" type="ch">BAB</gen:name>。當<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#character" type="ch">character</gen:name>獲得新的<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#level" type="total">level</gen:name>或<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#HD" type="total">HD</gen:name>時，其<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#BAB" type="ch">BAB</gen:name>將會提高。當一名<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#creature" type="ch">creature</gen:name>的<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#BAB" type="ch">BAB</gen:name>達到<math:math><math:mo>+</math:mo><math:mn>6</math:mn></math:math>、<math:math><math:mo>+</math:mo><math:mn>11</math:mn></math:math>和<math:math><math:mo>+</math:mo><math:mn>16</math:mn></math:math>時，他會在進行<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#full_attack" type="ch">full attack</gen:name>（屬於<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#full_round_action" type="ch">full-round action</gen:name>；參看<gen:link xlink:type="simple" xlink:href="{% url 'combat' %}"><gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#combat" type="ch">combat</gen:name></gen:link>部分）時獲得一次額外的<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#attack" type="ch">attack</gen:name>次數。<gen:comment>這裡是使用『人造武器』的『攻擊』次數計算方式；注意『天生武器』的『攻擊』次數不遵循此規則。</gen:comment></com:description>
-							</com:descriptions>
-						</com:term>
-						<com:term>
-							<com:name><gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#bonus" type="total">bonus</gen:name></com:name>
-							<com:descriptions>
-								<com:description><gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#bonus" type="ch">bonus</gen:name>為增加到『檢定』結果和統計數據上的數值。多數<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#bonus" type="ch">bonus</gen:name>都有其類型，作為基本規則之一，同一類型的<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#bonus" type="ch">bonus</gen:name>不會重復計算（即不<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#stacking" type="total">stacking</gen:name>）——僅有最高的<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#bonus" type="ch">bonus</gen:name>將被計算。<gen:comment>注意有少數類型的『加值』可以彼此『疊加』，譬如『防護等級』的『閃避加值』、某些『技能』的『環境加值』等等。</gen:comment></com:description>
-							</com:descriptions>
-						</com:term>
-						<com:term>
-							<com:name><gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#CL" type="total">CL</gen:name></com:name>
-							<com:descriptions>
-								<com:description><gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#CL" type="ch">CL</gen:name>體現了一名<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#creature" type="ch">creature</gen:name>施展<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#spell" type="ch">spell</gen:name>時的強度。當<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#creature" type="ch">creature</gen:name>施展<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#spell" type="ch">spell</gen:name>時，其中往往含有一系列變量，譬如<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#range" type="total">range</gen:name>、<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#damage" type="total">damage</gen:name>等，這些變量常由<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#CL" type="ch">CL</gen:name>決定。</com:description>
-							</com:descriptions>
-						</com:term>
-						<com:term>
-							<com:name><gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#class" type="total">class</gen:name></com:name>
-							<com:descriptions>
-								<com:description><gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#class" type="ch">class</gen:name>體現了<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#character" type="ch">character</gen:name>和其他一些<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#creature" type="ch">creature</gen:name>所選擇的專業方向。<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#class" type="ch">class</gen:name>為<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#character" type="ch">character</gen:name>提供了一系列<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#bonus" type="ch">bonus</gen:name>、並允許<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#character" type="ch">character</gen:name>做出一些他人無法完成的行動，譬如施法或變身等。當<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#creature" type="ch">creature</gen:name>在某<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#class" type="ch">class</gen:name>上獲得新<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#level" type="ch">level</gen:name>時，他將得到新的、更強大的<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#ability" type="ch">ability</gen:name>。多數<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#PC" type="total">PC</gen:name>獲得<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#core_class" type="total">core class</gen:name>或<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#prestige_classes" type="total">prestige classes</gen:name>的<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#level" type="ch">level</gen:name>，因為這些<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#class" type="ch">class</gen:name>最為強力。多數<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#NPC" type="ch">NPC</gen:name>獲得<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#NPC" type="total">NPC</gen:name><gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#class" type="ch">class</gen:name>的<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#level" type="ch">level</gen:name>，它們強度較低（參看創造非玩家角色部分）。</com:description>
-							</com:descriptions>
-						</com:term>
-						<com:term>
-							<com:name><gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#check" type="total">check</gen:name></com:name>
-							<com:descriptions>
-								<com:description>一次<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#check" type="ch">check</gen:name>是指包含或不包含其他<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#modifier" type="ch">modifier</gen:name>的<math:math><math:mi>d</math:mi><math:mn>20</math:mn></math:math><gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#roll" type="ch">roll</gen:name>。最常見的情形為<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#attack_roll" type="total">attack roll</gen:name>、<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#ability_check" type="total">ability check</gen:name>、<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#skill_check" type="total">skill check</gen:name>和<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#saving_throw" type="total">saving_throw</gen:name>。</com:description>
-							</com:descriptions>
-						</com:term>
-						<com:term>
-							<com:name><gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#combat_maneuver" type="total">combat maneuver</gen:name></com:name>
-							<com:descriptions>
-								<com:description>這是一種<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#combat" type="ch">combat</gen:name>中並不直接給對手造成<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#damage" type="ch">damage</gen:name>的<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#action" type="ch">action</gen:name>，譬如嘗試將他<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#trip" type="total">trip</gen:name>、<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#disarm" type="total">disarm</gen:name>、或<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#grapple" type="total">grapple</gen:name>等等（參看<gen:link xlink:type="simple" xlink:href="{% url 'combat' %}"><gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#combat" type="ch">combat</gen:name></gen:link>部分）。</com:description>
-							</com:descriptions>
-						</com:term>
-						<com:term>
-							<com:name><gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#CMB" type="total">CMB</gen:name></com:name>
-							<com:descriptions>
-								<com:description>該數值體現了<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#creature" type="ch">creature</gen:name>在發動<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#combat_maneuver" type="ch">combat maneuver</gen:name>時的熟練程度。每當嘗試發動<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#combat_maneuver" type="ch">combat maneuver</gen:name>時，將此數值加至<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#character" type="ch">character</gen:name>的<math:math><math:mi>d</math:mi><math:mn>20</math:mn></math:math><gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#roll" type="ch">roll</gen:name>上。</com:description>
-							</com:descriptions>
-						</com:term>
-						<com:term>
-							<com:name><gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#CMD" type="total">CMD</gen:name></com:name>
-							<com:descriptions>
-								<com:description>該數值體現了對這名<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#creature" type="ch">creature</gen:name>發動<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#combat_maneuver" type="ch">combat maneuver</gen:name>時的熟練程度。每當嘗試發動<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#combat_maneuver" type="ch">combat maneuver</gen:name>的困難程度。每當嘗試發動<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#combat_maneuver" type="ch">combat maneuver</gen:name>時的熟練程度。每當嘗試發動<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#combat_maneuver" type="ch">combat maneuver</gen:name>時，對象<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#creature" type="ch">creature</gen:name>的<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#CMD" type="ch">CMD</gen:name>將作為<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#DC" type="total">DC</gen:name>來使用。</com:description>
-							</com:descriptions>
-						</com:term>
-						<com:term>
-							<com:name><gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#concentration_check" type="total">Concentration Check</gen:name></com:name>
-							<com:descriptions>
-								<com:description>當<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#creature" type="ch">creature</gen:name>在施展<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#spell" type="ch">spell</gen:name>時遭到干擾，他必須通過<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#concentration_check" type="ch">Concentration Check</gen:name>，否則將無法施展<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#spell" type="ch">spell</gen:name>（參看<gen:link xlink:type="simple" xlink:href="{% url 'magic' %}"><gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#spell" type="ch">spell</gen:name></gen:link>部分）。</com:description>
-							</com:descriptions>
-						</com:term>
-						<com:term>
-							<com:name><gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#creature" type="total">creature</gen:name></com:name>
-							<com:descriptions>
-								<com:description>所謂<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#creature" type="ch">creature</gen:name>是指在故事或遊戲世界中的活動對象，包括<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#PC" type="ch">PC</gen:name>、<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#NPC" type="ch">NPC</gen:name>和<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#monster" type="ch">monster</gen:name>。</com:description>
-							</com:descriptions>
-						</com:term>
-						<com:term>
-							<com:name><gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#DR" type="total">DR</gen:name></com:name>
-							<com:descriptions>
-								<com:description>對<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#damage" type="ch">damage</gen:name>具備抵抗<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#ability" type="ch">ability</gen:name>的<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#creature" type="ch">creature</gen:name>通常擁有<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#DR" type="ch">DR</gen:name>。物理來源的任何<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#damage" type="ch">damage</gen:name>將減去此數值後再作用於該<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#creature" type="ch">creature</gen:name>。大多數<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#DR" type="ch">DR</gen:name>可以被特定類型的<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#weapon" type="total">weapon</gen:name>所無視，該類型將標注在「<math:math><math:mo>/</math:mo></math:math>」符號之後，譬如「<math:math><math:mn>10</math:mn><math:mo>/</math:mo><math:mtext>寒鐵</math:mtext></math:math>」。有些類型的<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#DR" type="ch">DR</gen:name>對所有物理<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#attack" type="ch">attack</gen:name>均有效，這些<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#weapon" type="total">weapon</gen:name>將以「<math:math><math:mo>-</math:mo></math:math>」符號來表示。更多信息請查看<gen:link xlink:type="simple" xlink:href="{% url 'appendix' %}"><gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#special_ability" type="ch">special ability</gen:name></gen:link>部分。</com:description>
-							</com:descriptions>
-						</com:term>
-						<com:term>
-							<com:name><gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#DC" type="total">DC</gen:name></com:name>
-							<com:descriptions>
-								<com:description>每當<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#creature" type="ch">creature</gen:name>將要進行一項並非必然成功的<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#action" type="ch">action</gen:name>時，他必須進行某種<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#check" type="ch">check</gen:name>（通常是<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#skill_check" type="ch">skill check</gen:name>）。該<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#check" type="ch">check</gen:name>的結果必須達到或超過這次<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#action" type="ch">action</gen:name>的<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#DC" type="ch">DC</gen:name>，才能視為成功。</com:description>
-							</com:descriptions>
-						</com:term>
-						<com:term>
-							<com:name><gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#Ex" type="total">Ex</gen:name></com:name>
-							<com:descriptions>
-								<com:description><gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#Ex" type="ch">Ex</gen:name>是不依賴於<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#spell" type="ch">spell</gen:name>便能生效的、不尋常的<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#ability" type="ch">ability</gen:name>。</com:description>
-							</com:descriptions>
-						</com:term>
-						<com:term>
-							<com:name><gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#XP" type="total">XP</gen:name></com:name>
-							<com:descriptions>
-								<com:description>當<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#character" type="ch">character</gen:name>通過挑戰、擊敗<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#monster" type="ch">monster</gen:name>、完成任務時，他將會獲得<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#XP" type="ch">XP</gen:name>。這些<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#XP" type="ch">XP</gen:name>隨時間累積，並在達到特定數值時令<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#character" type="ch">character</gen:name>升級。</com:description>
-							</com:descriptions>
-						</com:term>
-						<com:term>
-							<com:name><gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#feat" type="total">feat</gen:name></com:name>
-							<com:descriptions>
-								<com:description><gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#feat" type="ch">feat</gen:name>是<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#creature" type="ch">creature</gen:name>已經掌握的一種<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#ability" type="ch">ability</gen:name>。<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#feat" type="ch">feat</gen:name>通常會允許<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#creature" type="ch">creature</gen:name>突破一般性的規則或限制。<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#feat" type="ch">feat</gen:name>擁有的<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#skill" type="ch">skill</gen:name>數量基於其<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#HD" type="ch">HD</gen:name>，但某些<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#class" type="ch">class</gen:name>或<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#ability" type="ch">ability</gen:name>也會帶來<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#bonus_feat" type="total">bonus feat</gen:name>。</com:description>
-							</com:descriptions>
-						</com:term>
-						<com:term>
-							<com:name><gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#GM" type="total">GM</gen:name></com:name>
-							<com:descriptions>
-								<com:description><gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#GM" type="ch">GM</gen:name>是在<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#player" type="ch">player</gen:name>探索的故事和遊戲世界中裁定規則、控制一切要素的人選。<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#GM" type="ch">GM</gen:name>的職責是提供公平而有趣的遊戲。</com:description>
-							</com:descriptions>
-						</com:term>
-						<com:term>
-							<com:name><gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#HD" type="total">HD</gen:name></com:name>
-							<com:descriptions>
-								<com:description><gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#HD" type="ch">HD</gen:name>體現了一名<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#creature" type="ch">creature</gen:name>力量與技巧的大致水平。當<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#creature" type="ch">creature</gen:name>升級時，它將獲得額外的<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#HD" type="ch">HD</gen:name>；而<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#monster" type="ch">monster</gen:name>獲得的則為體現其整體<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#ability" type="ch">ability</gen:name>強度的<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#race" type="total">race</gen:name><gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#HD" type="ch">HD</gen:name>。<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#HD" type="ch">HD</gen:name>以<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#creature" type="ch">creature</gen:name>擁有的特定類型骰數來表示，譬如「<math:math><math:mn>3</math:mn><math:mi>d</math:mi><math:mn>8</math:mn></math:math>」。這一數值也用來衡量<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#creature" type="ch">creature</gen:name>的<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#HP" type="total">HP</gen:name>。在此例中，該<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#creature" type="ch">creature</gen:name>擁有三個<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#HD" type="ch">HD</gen:name>。當<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#roll" type="ch">roll</gen:name>決定該<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#creature" type="ch">creature</gen:name>的<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#HP" type="ch">HP</gen:name>時，你將骰<math:math><math:mi>d</math:mi><math:mn>8</math:mn></math:math>三次並將結果相加，再加上其他<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#modifier" type="ch">modifier</gen:name>。</com:description>
-							</com:descriptions>
-						</com:term>
-						<com:term>
-							<com:name><gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#HP" type="total">HP</gen:name></com:name>
-							<com:descriptions>
-								<com:description><gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#HP" type="ch">HP</gen:name>是表現<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#creature" type="ch">creature</gen:name>在當前時刻的強壯與健康程度的抽象數值。決定<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#creature" type="ch">vreature</gen:name>的<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#HP" type="ch">HP</gen:name>時，按其<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#HD" type="ch">HD</gen:name>進行<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#roll" type="ch">roll</gen:name>。如果<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#creature" type="ch">creature</gen:name>的第一個<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#HD" type="ch">HD</gen:name>為<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#character" type="ch">character</gen:name><gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#class_level" type="ch">class level</gen:name>，將其<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#HP" type="ch">HP</gen:name>取最大值；而若<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#creature" type="ch">creature</gen:name>的第一個<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#HD" type="ch">HD</gen:name>為<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#NPC" type="ch">NPC</gen:name><gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#class" type="ch">class</gen:name>或其<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#race" type="ch">race</gen:name><gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#HD" type="ch">HD</gen:name>，<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#HP" type="ch">HP</gen:name>則如常<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#roll" type="ch">roll</gen:name>。<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#damage" type="ch">damage</gen:name>將使<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#HP" type="ch">HP</gen:name>降低，而治療（包括自然和魔法的）能夠回復<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#HP" type="ch">HP</gen:name>。某些<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#ability" type="ch">ability</gen:name>和<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#spell" type="ch">spell</gen:name>能夠帶來臨時<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#HP" type="ch">HP</gen:name>，這些臨時<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#HP" type="ch">HP</gen:name>將在持續一定時間后消失。當<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#creature" type="ch">creature</gen:name>的<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#HP" type="ch">HP</gen:name>被降至零以下時，它將<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#unconscious" type="total">unconscious</gen:name>或<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#dying" type="total">dying</gen:name>。當<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#creature" type="ch">creature</gen:name>的<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#HP" type="ch">HP</gen:name>被降至等同於其<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#Con" type="ch">Con</gen:name>值的負值時，它將<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#dead" type="total">dead</gen:name>。</com:description>
-							</com:descriptions>
-						</com:term>
-						<com:term>
-							<com:name><gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#initiative" type="total">initiative</gen:name></com:name>
-							<com:descriptions>
-								<com:description>當<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#combat" type="ch">combat</gen:name>開始時，所有參與<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#combat" type="ch">combat</gen:name>的<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#creature" type="ch">creature</gen:name>必須進行<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#initiative_check" type="total">initiative check</gen:name>，以決定在<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#combat" type="ch">combat</gen:name>中的行動順序。<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#initiative_check" type="ch">initiative check</gen:name>結果越高，越早開始行動。</com:description>
-							</com:descriptions>
-						</com:term>
-						<com:term>
-							<com:name><gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#level" type="total">level</gen:name></com:name>
-							<com:descriptions>
-								<com:description><gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#character" type="ch">character</gen:name>的<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#level" type="ch">level</gen:name>體現了他整體的<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#ability" type="ch">ability</gen:name>水準。這里有三種類型的<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#level" type="ch">level</gen:name>。<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#class_level" type="total">class level</gen:name>是指<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#character" type="ch">character</gen:name>在特定<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#class" type="ch">class</gen:name>上獲得的<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#level" type="ch">level</gen:name>；<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#character_level" type="total">character level</gen:name>是指<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#character" type="ch">character</gen:name>所有已獲得<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#class_level" type="ch">class level</gen:name>的總和。此外，<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#spell" type="ch">spell</gen:name>也有着從<math:math><math:mn>0</math:mn></math:math>到<math:math><math:mn>9</math:mn></math:math>的<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#level" type="ch">level</gen:name><gen:comment>此為<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#spell_level" type="total">spell level</gen:name>。</gen:comment>，此<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#level" type="ch">level</gen:name>體現了<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#spell" type="ch">spell</gen:name>的大致強度。當<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#caster" type="total">caster</gen:name>升級時，他將學會施展更高<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#level" type="ch">level</gen:name>的<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#spell" type="ch">spell</gen:name>。</com:description>
-							</com:descriptions>
-						</com:term>
-						<com:term>
-							<com:name><gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#monster" type="total">Monster</gen:name></com:name>
-							<com:descriptions>
-								<com:description><gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#monster" type="ch">monster</gen:name>是依靠<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#race" type="ch">race</gen:name><gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#HD" type="ch">HD</gen:name>而非<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#class_level" type="ch">class level</gen:name>來衡量其強度的<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#creature" type="ch">creature</gen:name>（盡管某些<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#monster" type="ch">monster</gen:name>同樣有<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#class_level" type="ch">class level</gen:name>）。<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#PC" type="ch">PC</gen:name>通常都不是<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#monster" type="ch">monster</gen:name>。</com:description>
-							</com:descriptions>
-						</com:term>
-						<com:term>
-							<com:name><gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#multiplying" type="total">multiplying</gen:name></com:name>
-							<com:descriptions>
-								<com:description>當你的某次<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#roll" type="ch">roll</gen:name>出現超過一種的<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#multiplying" type="ch">multiplying</gen:name>時，注意<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#multiplying" type="ch">multiplying</gen:name>之間並非疊乘，而是<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#stacking" type="ch">stacking</gen:name>為單一<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#multiplying" type="ch">multiplying</gen:name>——每個額外的<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#multiplying" type="ch">multiplying</gen:name>將會減一後加至總<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#multiplying" type="ch">multiplying</gen:name>。舉例而言，若你需要添加<math:math><math:mo>&#x2A2F;</math:mo><math:mn>2</math:mn></math:math><gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#multiplying" type="ch">multiplying</gen:name>兩次，合併後的<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#multiplying" type="ch">multiplying</gen:name>將為<math:math><math:mo>&#x2A2F;</math:mo><math:mn>3</math:mn></math:math>，而非<math:math><math:mo>&#x2A2F;</math:mo><math:mn>4</math:mn></math:math>。<gen:comment>補充舉例——擁有『奮力沖鋒』『專長』的『角色』在『騎乘沖鋒』時造成的『傷害』加倍，那麼該『角色』在使用『長槍』（『騎乘沖鋒』造成雙倍『傷害』，『武器重擊倍率』×3）『騎乘沖鋒』並造成『重擊』時，計入的『倍率』分別為×2、×2和×3，而實際『疊加』后的單一『倍率』為×5。</gen:comment></com:description>
-							</com:descriptions>
-						</com:term>
-						<com:term>
-							<com:name><gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#NPC" type="total">NPC</gen:name></com:name>
-							<com:descriptions>
-								<com:description>這些<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#character" type="ch">character</gen:name>由<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#GM" type="ch">GM</gen:name>控制。</com:description>
-							</com:descriptions>
-						</com:term>
-						<com:term>
-							<com:name><gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#penalty" type="total">penalty</gen:name></com:name>
-							<com:descriptions>
-								<com:description><gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#penalty" type="ch">penalty</gen:name>是從<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#check" type="ch">check</gen:name>結果和統計數據中減去的數值。<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#penalty" type="ch">penalty</gen:name>並無類型之分，因此多數<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#penalty" type="ch">penalty</gen:name>都會彼此<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#stacking" type="ch">stacking</gen:name>。</com:description>
-							</com:descriptions>
-						</com:term>
-						<com:term>
-							<com:name><gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#PC" type="total"></gen:name></com:name>
-							<com:descriptions>
-								<com:description>這些<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#character" type="ch">character</gen:name>由<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#player" type="ch">player</gen:name>控制。</com:description>
-							</com:descriptions>
-						</com:term>
-						<com:term>
-							<com:name><gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#round" type="total">round</gen:name></com:name>
-							<com:descriptions>
-								<com:description><gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#combat" type="ch">combat</gen:name>以<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#round" type="ch">round</gen:name>來計時。在獨立的一<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#round" type="ch">round</gen:name>中，所有<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#creature" type="ch">creature</gen:name>按其<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#initiative" type="ch">initiative</gen:name>順序，均有一次行動機會。遊戲世界中的一<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#round" type="ch">round</gen:name>包含六秒時間。</com:description>
-							</com:descriptions>
-						</com:term>
-						<com:term>
-							<com:name><gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#rounding" type="total">rounding</gen:name></com:name>
-							<com:descriptions>
-								<com:description>規則有時會要求你對結果或數值<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#rounding" type="ch">rounding</gen:name>。若無特別說明，總是向下<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#rounding" type="ch">rounding</gen:name>。譬如，若你需要對<math:math><math:mn>7</math:mn></math:math>減半<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#rounding" type="ch">rounding</gen:name>，那麼結果為<math:math><math:mn>3</math:mn></math:math>。</com:description>
-							</com:descriptions>
-						</com:term>
-						<com:term>
-							<com:name><gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#saving_throw" type="total">saving throw</gen:name></com:name>
-							<com:descriptions>
-								<com:description>當<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#creature" type="ch">creature</gen:name>成為某一危險<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#spell" type="ch">spell</gen:name>或效果的對象時，他往往會擁有一次減輕其<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#damage" type="ch">damage</gen:name>或效果的<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#saving_throw" type="ch">saving throw</gen:name>機會。<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#saving_throw" type="ch">saving throw</gen:name>是被動的，意味着<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#character" type="ch">character</gen:name>無需消耗<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#action" type="ch">action</gen:name>即可進行<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#saving_throw" type="ch">saving throw</gen:name>——它們都是自動展開的。<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#saving_throw" type="ch">saving throw</gen:name>包括三種類型︰<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#fortitude" type="total">fortitude</gen:name>（用來抵抗<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#poison" type="ch">poison</gen:name>、<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#disease" type="ch">disease</gen:name>和其他肉體危害）、<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#reflex" type="total">reflex</gen:name>（用來避免影響整片區域的效果，如火球等）和<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#will" type="total">will</gen:name>（用來抵抗精神<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#attack" type="ch">attack</gen:name>和<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#spell" type="ch">spell</gen:name>）。</com:description>
-							</com:descriptions>
-						</com:term>
-						<com:term>
-							<com:name><gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#skill" type="total">skill</gen:name></com:name>
-							<com:descriptions>
-								<com:description><gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#skill" type="ch">skill</gen:name>體現了<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#creature" type="ch">creature</gen:name>完成特定工作的能力，譬如爬過牆壁、在走廊中潛行、或偵察到侵襲者等等。<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#character" type="ch">character</gen:name>在特定<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#skill" type="ch">skill</gen:name>上受訓的<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#level" type="ch">level</gen:name>體現了其針對該<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#skill" type="ch">skill</gen:name>的熟練程度。每當<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#creature" type="ch">creature</gen:name>獲得<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#HD" type="ch">HD</gen:name>，它將獲得新的<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#skill_rank" type="total">skill rank</gen:name>並可用來提高其<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#skill" type="ch">skill</gen:name>的<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#level" type="ch">level</gen:name>。</com:description>
-							</com:descriptions>
-						</com:term>
-						<com:term>
-							<com:name><gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#spell" type="total">spell</gen:name></com:name>
-							<com:descriptions>
-								<com:description><gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#spell" type="ch">spell</gen:name>可以實現的內容範圍極廣，從<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#damage" type="ch">damage</gen:name>敵人到起死回生。<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#spell" type="ch">spell</gen:name>按其<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#target" type="total">target</gen:name>、<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#effect" type="total">effect</gen:name>、抵抗方式等類型來加以區分。</com:description>
-							</com:descriptions>
-						</com:term>
-						<com:term>
-							<com:name><gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#Sp" type="total">Sp</gen:name></com:name>
-							<com:descriptions>
-								<com:description><gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#Sp" type="ch">Sp</gen:name>的功能如同<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#spell" type="ch">spell</gen:name>，但其通過特定的<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#race" type="ch">race</gen:name><gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#ability" type="ch">ability</gen:name>或<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#class" type="ch">class</gen:name><gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#ability" type="ch">ability</gen:name>來加以獲得（而<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#spell" type="ch">spell</gen:name>則是通過在<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#caster" type="ch">caster</gen:name><gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#class" type="ch">class</gen:name>上提升<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#level" type="ch">level</gen:name>來獲得）。</com:description>
-							</com:descriptions>
-						</com:term>
-						<com:term>
-							<com:name><gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#stacking" type="total">stacking</gen:name></com:name>
-							<com:descriptions>
-								<com:description><gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#stacking" type="ch">stacking</gen:name>是指對一次特定的<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#check" type="ch">ckeck</gen:name>或一項統計數據，將所有<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#bonus" type="ch">bonus</gen:name>或<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#penalty" type="ch">penalty</gen:name>合併計算的行為。大體而言，大多數類型相同的<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#bonus" type="ch">bonus</gen:name>不會<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#stacking" type="ch">stacking</gen:name>，而是只有最高者生效。多數<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#penalty" type="ch">penalty</gen:name>相互<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#stacking" type="ch">stacking</gen:name>，意味着它們的數值將被合併計算。<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#penalty" type="ch">penalty</gen:name>和<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#bonus" type="ch">bonus</gen:name>通常相互<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#stacking" type="ch">stacking</gen:name>，意味着<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#penalty" type="ch">penalty</gen:name>可能會抵消或超過<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#bonus" type="ch">bonus</gen:name>，反之亦然。</com:description>
-							</com:descriptions>
-						</com:term>
-						<com:term>
-							<com:name><gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#Su" type="total">Su</gen:name></com:name>
-							<com:descriptions>
-								<com:description><gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#Su" type="ch">Su</gen:name>是<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#spell" type="ch">spell</gen:name>的攻防和計量效果。這些<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#ability" type="ch">ability</gen:name>可能持續生效，也可能通過特定<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#action" type="ch">action</gen:name>來啟動。<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#Su" type="ch">Su</gen:name>的詳述包括了其如何使用及效果為何等信息。</com:description>
-							</com:descriptions>
-						</com:term>
-						<com:term>
-							<com:name><gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#turn" type="total">turn</gen:name></com:name>
-							<com:descriptions>
-								<com:description>在一<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#round" type="ch">round</gen:name>裡，<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#creature" type="ch">creature</gen:name>可以在其<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#turn" type="ch">turn</gen:name>中展開一系列的<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#action" type="ch">action</gen:name>。大致而言，<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#character" type="ch">character</gen:name>在其<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#turn" type="ch">turn</gen:name>中可以進行一個<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#standard_action" type="ch">standard action</gen:name>、一個<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#move_action" type="ch">move action</gen:name>、一個<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#swift_action" type="ch">swift action</gen:name>，以及一定數量的<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#free_action" type="ch">free action</gen:name>。較為罕見的<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#action" type="ch">action</gen:name>組合同樣存在，詳情請參看<gen:link xlink:type="simple" xlink:href="{% url 'combat' %}"><gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#combat" type="ch">combat</gen:name></gen:link>部分。</com:description>
-							</com:descriptions>
-						</com:term>
-					</com:terms>
+					
 				</contain>
 			</contains>
 		</paragraph>
