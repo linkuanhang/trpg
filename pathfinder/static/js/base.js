@@ -14,7 +14,9 @@ $(document).ready(function(){
 		}
 	};
 	
-	$(".toggle").hide()
+	$(".toggle").hide();
+	$("main [lang]").hide();
+	$("main [lang='"+$("#languages [checked='checked']").attr("id")+"']").show();
 });
 
 function show(node)
@@ -27,10 +29,27 @@ function show2(node)
 	$(node).next().children().toggle();
 }
 
-function nav_show(node){
-	$(node).next().toggle();
+function nav_toggle(){
+	$("main").css("margin-left",(parseInt($("main").css("margin-left"))+200)%400);
+	$("#sidenav").toggle();
+}
+
+function sidenav_toggle(node){
+	if (node.hasClass('w3-hide')){
+		node.removeClass('w3-hide');
+	}
+	else{
+		node.addClass('w3-hide');
+	}
+}
+
+function toggle_lang(node){
+	var language=node.attr("id");
 	
-	var span_node=$(node).children("span");
-	if($(span_node).text()=="expand_more"){$(span_node).text("expand_less");}
-	else{$(span_node).text("expand_more");}
+	if (node.is(":checked")){
+		$("main [lang='"+language+"']").show();
+	}
+	else{
+		$("main [lang='"+language+"']").hide();
+	}
 }

@@ -119,63 +119,94 @@
 					<com:description lang="zh-tw"><gen:name href="creature" type="name" lang="zh-tw" />是指在故事或<gen:name href="game" type="name" lang="zh-tw" />世界中的活動對象，包括<gen:name href="PC" type="name" lang="zh-tw" />、<gen:name href="NPC" type="name" lang="zh-tw" />和<gen:name href="monster" type="name" lang="zh-tw" />。</com:description>
 				</com:term>
 				<com:term>
-					<com:name lang="en"></com:name>
-					<com:description lang="en"></com:description>
+					<com:name lang="en">Damage Reduction (DR)</com:name>
+					<com:name lang="zh-tw"><gen:name href="DR" type="name" lang="zh-tw" />〔<gen:name href="DR" type="abbr" lang="en" />〕</com:name>
+					<com:description lang="en">Creatures that are resistant to harm typically have damage reduction. This amount is subtracted from any damage dealt to them from a physical source. Most types of DR can be bypassed by certain types of weapons. This is denoted by a "/" followed by the type, such as "10/cold iron." Some types of DR apply to all physical attacks. Such DR is denoted by the "—" symbol. See Special Abilities for more information.</com:description>
+					<com:description lang="zh-tw">對<gen:name href="damage" type="name" lang="zh-tw" />具備抵抗能力的<gen:name href="creature" type="name" lang="zh-tw" />通常擁有<gen:name href="DR" type="name" lang="zh-tw" />。物理來源的任何<gen:name href="damage" type="name" lang="zh-tw" />將減去此數值後再作用於該<gen:name href="creature" type="name" lang="zh-tw" />。大多數<gen:name href="DR" type="name" lang="zh-tw" />可以被特定類型的<gen:name href="weapon" type="name" lang="zh-tw" />所無視，該類型將標注在「/」符號之後，譬如「<gen:DR num="10"><gen:name href="cold_iron" type="name" lang="zh-tw" /></gen:DR>」。有些類型的<gen:name href="DR" type="name" lang="zh-tw" />對所有物理攻擊均有效，這些<gen:name href="DR" type="name" lang="zh-tw" />將以「-」符號來表示。詳情<gen:rlink href="javascript:void(0)">特殊能力</gen:rlink>。</com:description>
+				</com:term>
+				<com:term>
+					<com:name lang="en">Difficulty Class (DC)</com:name>
+					<com:name lang="zh-tw"><gen:name href="DC" type="name" lang="zh-tw" />〔<gen:name href="DC" type="abbr" lang="en" />〕</com:name>
+					<com:description lang="en">Whenever a creature attempts to perform an action whose success is not guaranteed, he must make some sort of check (usually a skill check). The result of that check must meet or exceed the Difficulty Class of the action that the creature is attempting to perform in order for the action to be successful.</com:description>
+					<com:description lang="zh-tw">每當<gen:name href="creature" type="name" lang="zh-tw" />將要進行一項並非必然成功的<gen:name href="action" type="name" lang="zh-tw" />時，他必須進行某種<gen:name href="check" type="name" lang="zh-tw" />（通常是<gen:name href="skill_check" type="name" lang="zh-tw" />）。該<gen:name href="check" type="name" lang="zh-tw" />的結果必須達到或超過這次<gen:name href="action" type="name" lang="zh-tw" />的<gen:name href="DC" type="name" lang="zh-tw" />才能視為成功。</com:description>
+				</com:term>
+				<com:term>
+					<com:name lang="en">Extraordinary Abilities (Ex)</com:name>
+					<com:name lang="zh-tw"><gen:name href="Ex" type="name" lang="zh-tw" />〔<gen:name href="Ex" type="abbr" lang="en" />〕</com:name>
+					<com:description lang="en">Extraordinary abilities are unusual abilities that do not rely on magic to function.</com:description>
+					<com:description lang="zh-tw"><gen:name href="Ex" type="name" lang="zh-tw" />是不依賴於<gen:name href="spell" type="name" lang="zh-tw" />便能生效的、不尋常的能力。</com:description>
+				</com:term>
+				<com:term>
+					<com:name lang="en">Experience Points (XP)</com:name>
+					<com:name lang="zh-tw"><gen:name href="XP" type="name" lang="zh-tw" />〔<gen:name href="XP" type="abbr" lang="en" />〕</com:name>
+					<com:description lang="en">As a character overcomes challenges, defeats monsters, and completes quests, he gains experience points. These points accumulate over time, and when they reach or surpass a specific value, the character gains a level.</com:description>
+					<com:description lang="zh-tw">當<gen:name href="character" type="name" lang="zh-tw" />通過挑戰、擊敗<gen:name href="monster" type="name" lang="zh-tw" />或完成任務時，他將會獲得<gen:name href="XP" type="name" lang="zh-tw" />。這些<gen:name href="XP" type="name" lang="zh-tw" />隨時間累積，在達到特定數值時使<gen:name href="character" type="name" lang="zh-tw" />提升一個<gen:name href="level" type="name" lang="zh-tw" />。</com:description>
+				</com:term>
+				<com:term>
+					<com:name lang="en">Feat</com:name>
+					<com:name lang="zh-tw"><gen:name href="feat" type="name" lang="zh-tw" /></com:name>
+					<com:description lang="en">A feat is an ability a creature has mastered. Feats often allow creatures to circumvent rules or restrictions. Creatures receive a number of feats based off their Hit Dice, but some classes and other abilities grant bonus feats.</com:description>
+					<com:description lang="zh-tw"><gen:name href="feat" type="name" lang="zh-tw" />是<gen:name href="creature" type="name" lang="zh-tw" />已經掌握的一種能力。<gen:name href="feat" type="name" lang="zh-tw" />通常會允許<gen:name href="creature" type="name" lang="zh-tw" />突破規則或限制。<gen:name href="feat" type="name" lang="zh-tw" />擁有的數量基於該<gen:name href="creature" type="name" lang="zh-tw" />的<gen:name href="HD" type="name" lang="zh-tw" />，但某些<gen:name href="class" type="name" lang="zh-tw" />或<gen:name href="ability" type="name" lang="zh-tw" />也會帶來<gen:name href="bonus_feat" type="name" lang="zh-tw" />。</com:description>
+				</com:term>
+				<com:term>
+					<com:name lang="en">Game Master (GM)</com:name>
+					<com:name lang="zh-tw"><gen:name href="GM" type="name" lang="zh-tw" />〔<gen:name href="GM" type="abbr" lang="en" />〕</com:name>
+					<com:description lang="en">A Game Master is the person who adjudicates the rules and controls all of the elements of the story and world that the players explore. A GM's duty is to provide a fair and fun game.</com:description>
+					<com:description lang="zh-tw"><gen:name href="GM" type="name" lang="zh-tw" />是在<gen:name href="player" type="name" lang="zh-tw" />探索的故事和<gen:name href="game" type="name" lang="zh-tw" />世界中裁定規則、控制一切要素的人選。<gen:name href="GM" type="name" lang="zh-tw" />的職責是提供公平而有趣的<gen:name href="game" type="name" lang="zh-tw" />。</com:description>
+				</com:term>
+				<com:term>
+					<com:name lang="en">Hit Dice (HD)</com:name>
+					<com:name lang="zh-tw"><gen:name href="HD" type="name" lang="zh-tw" />〔<gen:name href="HD" type="abbr" lang="en" />〕</com:name>
+					<com:description lang="en">Hit Dice represent a creature's general level of power and skill. As a creature gains levels, it gains additional Hit Dice. Monsters, on the other hand, gain racial Hit Dice, which represent the monster's general prowess and ability. Hit Dice are represented by the number the creature possesses followed by a type of die, such as "3d8." This value is used to determine a creature's total hit points. In this example, the creature has 3 Hit Dice. When rolling for this creature's hit points, you would roll a d8 three times and add the results together, along with other modifiers.</com:description>
+					<com:description lang="zh-tw"><gen:name href="HD" type="name" lang="zh-tw" />呈現了一名<gen:name href="creature" type="name" lang="zh-tw" />力量與技能的大致水平。當<gen:name href="creature" type="name" lang="zh-tw" />升級時，它將獲得額外的<gen:name href="HD" type="name" lang="zh-tw" />。而<gen:name href="monster" type="name" lang="zh-tw" />獲得的則為呈現其整體強度與能力的<gen:name href="racial_HD" type="name" lang="zh-tw" />。<gen:name href="HD" type="name" lang="zh-tw" />以<gen:name href="creature" type="name" lang="zh-tw" />擁有的特定類型骰數來表示，譬如「<gen:dice num="3" face="8" />」。這一數值也用來衡量<gen:name href="creature" type="name" lang="zh-tw" />的總<gen:name href="HP" type="name" lang="zh-tw" />，在此例中，該生物擁有三個<gen:name href="HD" type="name" lang="zh-tw" />。當<gen:name href="roll" type="name" lang="zh-tw" />決定該<gen:name href="creature" type="name" lang="zh-tw" />的<gen:name href="HP" type="name" lang="zh-tw" />時，你將骰<gen:dice face="8" />三次並將結果相加，再加上其他<gen:name href="modifier" type="name" lang="zh-tw" />。</com:description>
+				</com:term>
+				<com:term>
+					<com:name lang="en">Hit Points (HP)</com:name>
+					<com:name lang="zh-tw"><gen:name href="HP" type="name" lang="zh-tw" />〔<gen:name href="HP" type="abbr" lang="en" />〕</com:name>
+					<com:description lang="en">Hit points are an abstraction signifying how robust and healthy a creature is at the current moment. To determine a creature's hit points, roll the dice indicated by its Hit Dice. A creature gains maximum hit points if its first Hit Die roll is for a character class level. Creatures whose first Hit Die comes from an NPC class or from his race roll their first Hit Die normally. Wounds subtract hit points, while healing (both natural and magical) restores hit points. Some abilities and spells grant temporary hit points that disappear after a specific duration. When a creature's hit points drop below 0, it becomes unconscious. When a creature's hit points reach a negative total equal to its Constitution score, it dies.</com:description>
+					<com:description lang="zh-tw"><gen:name href="HP" type="name" lang="zh-tw" />是呈現<gen:name href="creature" type="name" lang="zh-tw" />當前強壯與健康程度的抽象數值。決定<gen:name href="creature" type="name" lang="zh-tw" />的<gen:name href="HP" type="name" lang="zh-tw" />時，按其<gen:name href="HD" type="name" lang="zh-tw" />進行<gen:name href="roll" type="name" lang="zh-tw" />。如果<gen:name href="creature" type="name" lang="zh-tw" />的第一個<gen:name href="HD" type="name" lang="zh-tw" />為<gen:name href="character_class_level" type="name" lang="zh-tw" />，將其<gen:name href="HP" type="name" lang="zh-tw" />取最大值，若<gen:name href="creature" type="name" lang="zh-tw" />的第一個<gen:name href="HD" type="name" lang="zh-tw" />為<gen:name href="NPC_class" type="name" lang="zh-tw" />或其<gen:name href="race" type="name" lang="zh-tw" />則如常<gen:name href="roll" type="name" lang="zh-tw" />。<gen:name href="damage" type="name" lang="zh-tw" />將使<gen:name href="HP" type="name" lang="zh-tw" />降低，而治療（包括自然的和魔法的）能夠回復<gen:name href="HP" type="name" lang="zh-tw" />。某些<gen:name href="ability" type="name" lang="zh-tw" />和<gen:name href="spell" type="name" lang="zh-tw" />能夠帶來<gen:name href="temp_HP" type="name" lang="zh-tw" />，這些<gen:name href="temp_HP" type="name" lang="zh-tw" />將在持續一定時間後消失。當<gen:name href="creature" type="name" lang="zh-tw" />的<gen:name href="HP" type="name" lang="zh-tw" />被降至零以下時，它將<gen:name href="unconscious" type="name" lang="zh-tw" />。當<gen:name href="creature" type="name" lang="zh-tw" />的<gen:name href="HP" type="name" lang="zh-tw" />被降至等同於其<gen:name href="Con_score" type="name" lang="zh-tw" />的負值時，它將<gen:name href="dead" type="name" lang="zh-tw" />。</com:description>
+				</com:term>
+				<com:term>
+					<com:name lang="en">Initiative</com:name>
+					<com:name lang="zh-tw"><gen:name href="initiative" type="name" lang="zh-tw" /></com:name>
+					<com:description lang="en">Whenever combat begins, all creatures involved in the battle must make an initiative check to determine the order in which creatures act during combat. The higher the result of the check, the earlier a creature gets to act.</com:description>
+					<com:description lang="zh-tw">當<gen:name href="combat" type="name" lang="zh-tw" />開始時，所有參與<gen:name href="combat" type="name" lang="zh-tw" />的<gen:name href="creature" type="name" lang="zh-tw" />必須進行<gen:name href="initiative_check" type="name" lang="zh-tw" />，以決定在<gen:name href="combat" type="name" lang="zh-tw" />中的行動順序。<gen:name href="initiative_check" type="name" lang="zh-tw" />結果越高，越早開始行動。</com:description>
+				</com:term>
+				<com:term>
+					<com:name lang="en">Level</com:name>
+					<com:name lang="zh-tw"><gen:name href="level" type="name" lang="zh-tw" /></com:name>
+					<com:description lang="en">A character's level represents his overall ability and power. There are three types of levels. Class level is the number of levels of a specific class possessed by a character. Character level is the sum of all of the levels possessed by a character in all of his classes. In addition, spells have a level associated with them numbered from 0 to 9. This level indicates the general power of the spell. As a spellcaster gains levels, he learns to cast spells of a higher level.</com:description>
+					<com:description lang="zh-tw"><gen:name href="character" type="name" lang="zh-tw" />的<gen:name href="level" type="name" lang="zh-tw" />呈現了他整體的能力水準。有三種類型的<gen:name href="level" type="name" lang="zh-tw" />，<gen:name href="class_level" type="name" lang="zh-tw" />是指<gen:name href="character" type="name" lang="zh-tw" />在特定<gen:name href="class" type="name" lang="zh-tw" />上獲得的<gen:name href="level" type="name" lang="zh-tw" />，<gen:name href="character_level" type="name" lang="zh-tw" />是指<gen:name href="character" type="name" lang="zh-tw" />所有已獲得的<gen:name href="class_level" type="name" lang="zh-tw" />的總和。此外，<gen:name href="spell" type="name" lang="zh-tw" />也有著從0到9的<gen:name href="level" type="name" lang="zh-tw" />，此<gen:name href="level" type="name" lang="zh-tw" />呈現了<gen:name href="spell" type="name" lang="zh-tw" />的大致強度，當<gen:name href="caster" type="name" lang="zh-tw" />升級時，他將學會施展更高<gen:name href="level" type="name" lang="zh-tw" />的<gen:name href="spell" type="name" lang="zh-tw" />。</com:description>
+				</com:term>
+				<com:term>
+					<com:name lang="en">Monster</com:name>
+					<com:name lang="zh-tw"><gen:name href="monster" type="name" lang="zh-tw" /></com:name>
+					<com:description lang="en">Monsters are creatures that rely on racial Hit Dice instead of class levels for their powers and abilities (although some possess class levels as well). PCs are usually not monsters.</com:description>
+					<com:description lang="zh-tw"><gen:name href="monster" type="name" lang="zh-tw" />是依靠<gen:name href="racial_HD" type="name" lang="zh-tw" />而非<gen:name href="class_level" type="name" lang="zh-tw" />來衡量其強度與能力的<gen:name href="creature" type="name" lang="zh-tw" />（儘管某些<gen:name href="monster" type="name" lang="zh-tw" />同樣有<gen:name href="class_level" type="name" lang="zh-tw" />）。<gen:name href="PC" type="name" lang="zh-tw" />通常都不是<gen:name href="monster" type="name" lang="zh-tw" />。</com:description>
+				</com:term>
+				<com:term>
+					<com:name lang="en">Multiplying</com:name>
+					<com:name lang="zh-tw"><gen:name href="multiplying" type="name" lang="zh-tw" /></com:name>
+					<com:description lang="en">When you are asked to apply more than one multiplier to a roll, the multipliers are not multiplied by one another. Instead, you combine them into a single multiplier, with each extra multiple adding 1 less than its value to the first multiple. For example, if you are asked to apply a ×2 multiplier twice, the result would be ×3, not ×4.</com:description>
+					<com:description lang="zh-tw">當你的某次<gen:name href="roll" type="name" lang="zh-tw" />出現超過一種的<gen:name href="multiplying" type="name" lang="zh-tw" />時，<gen:name href="multiplying" type="name" lang="zh-tw" />之間並非疊乘，而是疊加為單一<gen:name href="multiplying" type="name" lang="zh-tw" />，每個額外的<gen:name href="multiplying" type="name" lang="zh-tw" />將會減1後加至總<gen:name href="multiplying" type="name" lang="zh-tw" />。舉例而言，若你需要添加<gen:multiply value="2" /><gen:name href="multiplying" type="name" lang="zh-tw" />兩次，合併後的<gen:name href="multiplying" type="name" lang="zh-tw" />將為<gen:multiply value="3" />，而非<gen:multiply value="4" />。</com:description>
+				</com:term>
+				<com:term>
+					<com:name lang="en">Nonplayer Character (NPC)</com:name>
+					<com:name lang="zh-tw"><gen:name href="NPC" type="name" lang="zh-tw" />〔<gen:name href="NPC" type="abbr" lang="en" />〕</com:name>
+					<com:description lang="en">These are characters controlled by the GM.</com:description>
+					<com:description lang="zh-tw">這些<gen:name href="character" type="name" lang="zh-tw" />由<gen:name href="GM" type="name" lang="zh-tw" />控制。</com:description>
 				</com:term>
 				<com:term>
 					<com:name lang="en"></com:name>
+					<com:name lang="zh-tw"></com:name>
 					<com:description lang="en"></com:description>
-				</com:term>
-				<com:term>
-					<com:name lang="en"></com:name>
-					<com:description lang="en"></com:description>
-				</com:term>
-				<com:term>
-					<com:name lang="en"></com:name>
-					<com:description lang="en"></com:description>
-				</com:term>
-				<com:term>
-					<com:name lang="en"></com:name>
-					<com:description lang="en"></com:description>
-				</com:term>
-				<com:term>
-					<com:name lang="en"></com:name>
-					<com:description lang="en"></com:description>
-				</com:term>
-				<com:term>
-					<com:name lang="en"></com:name>
-					<com:description lang="en"></com:description>
-				</com:term>
-				<com:term>
-					<com:name lang="en"></com:name>
-					<com:description lang="en"></com:description>
+					<com:description lang="zh-tw"></com:description>
 				</com:term>
 			</com:terms>
 		</section>
 	</body>
 	
 	<paragraphs>
-		<paragraph>
-			<contains>
-				<contain>當進行《<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#pathfinder" type="ch">pathfinder</gen:name>》遊戲時，由<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#GM" type="total">GM</gen:name>描述在遊戲世界中發生的事件，而<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#player" type="total">player</gen:name>們則描述他們扮演的<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#character" type="total">character</gen:name>將如何應對這些發生的事件。但與講故事不同的是，<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#player" type="ch">player</gen:name>們和<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#GM" type="ch">GM</gen:name>所控制的<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#character" type="ch">character</gen:name>（後者經常稱為<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#NPC" type="total">NPC</gen:name>）的行動都是不確定的。多數行動需要投骰來決定其成功與否，而有些行為將比其他的更加難以完成。每名<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#character" type="ch">character</gen:name>會在某些方面有所擅長，基於其<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#skill" type="total">skill</gen:name>和<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#ability_score" type="total">ability score</gen:name>來獲得各種獎勵。</contain>
-				<contain>當需要投骰時，該投骰將被記為「<math:math><math:mi>d</math:mi><math:mn>#</math:mn></math:math>」，其中「<math:math><math:mn>#</math:mn></math:math>」表示骰子的面數。若你需要投擲同一類型的骰子數次，在「<math:math><math:mi>d</math:mi></math:math>」前還會以數字來表示。舉例而言，若你需要骰<math:math><math:mn>4</math:mn><math:mi>d</math:mi><math:mn>6</math:mn></math:math>，你應該將六面骰投擲四次，並將結果相加。有時在投骰數後面還會有「<math:math><math:mo>+</math:mo></math:math>」或「<math:math><math:mo>-</math:mo></math:math>」等加註，意味着你要在投骰的總結果中（注意並非每個骰子的結果）加上或減去對應數值。本遊戲中的大多投骰用到的是<math:math><math:mi>d</math:mi><math:mn>20</math:mn></math:math>（二十面骰），並基於<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#character" type="ch">character</gen:name>的<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#skill" type="ch">skill</gen:name>、<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#ability_score" type="ch">ability score</gen:name>和處境等狀況決定<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#modifier" type="total">modifier</gen:name>。大體而言，投骰結果越高越好。用<math:math><math:mi>d</math:mi><math:mo>%</math:mo></math:math>表示的百分率投骰是一種特殊情況，你可以通過骰兩顆顏色不同的十面骰（<math:math><math:mn>2</math:mn><math:mi>d</math:mi><math:mn>10</math:mn></math:math>）來生成這一範圍的隨機結果︰將一顆的結果定為十位數，再同時投擲兩顆骰子。若十位的那顆投骰結果為<math:math><math:mn>4</math:mn></math:math>、另一顆為<math:math><math:mn>2</math:mn></math:math>，那麼你得到的結果為<math:math><math:mn>42</math:mn></math:math>。投骰結果為<math:math><math:mn>10</math:mn></math:math>則按<math:math><math:mn>0</math:mn></math:math>計算，而兩次投骰結果均為<math:math><math:mn>10</math:mn></math:math>則表示結果為<math:math><math:mn>100</math:mn></math:math>。某些十面骰會將每面印成<math:math><math:mn>10</math:mn></math:math>、<math:math><math:mn>20</math:mn></math:math>、<math:math><math:mn>30</math:mn></math:math>等，便於進行<math:math><math:mi>d</math:mi><math:mo>%</math:mo></math:math>的投骰和讀數。若無特別說明，當你必須對結果<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#rounding" type="total">rounding</gen:name>時，總是向下<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#rounding" type="total">rounding</gen:name>。</contain>
-				<contain>當你的<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#character" type="ch">character</gen:name>突破一次又一次冒險時，他會獲得<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#gold" type="total">gold</gen:name>、<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#magic_items" type="total">magic items</gen:name>和<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#XP" type="total">XP</gen:name>等等。<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#gold" type="ch">gold</gen:name>可以用來獲取更好的<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#equipment" type="total">equipment</gen:name>，<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#magic_items" type="ch">magic items</gen:name>能夠給予強化<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#character" type="ch">character</gen:name>的各種<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#ability" type="ch">ability</gen:name>。<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#XP" type="ch">XP</gen:name>是贏下挑戰和完成任務的獎勵，當你的<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#character" type="ch">character</gen:name>積攢了足夠多的<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#XP" type="ch">XP</gen:name>時，他將會升一級並獲取使自己足以面對更大挑戰的新的力量與<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#ability" type="ch">ability</gen:name>。</contain>
-			</contains>
-		</paragraph>
-		<paragraph>
-			<title>最重要的規則</title>
-			<contains>
-				<contain>此處的規則是協助你融入自己的<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#character" type="ch">character</gen:name>、並探索遊戲世界的。雖然它們是為了讓你的遊戲簡單刺激而被設計的，你也許會發現其中一些規則並不適於你所在的圈子的遊戲風格。請記住，規則是屬於你的，你可以根據需要來改變或調整它們。多數<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#GM" type="ch">GM</gen:name>會在自己的遊戲中設定一系列「<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#HR" type="total">HR</gen:name>」。<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#GM" type="ch">GM</gen:name>和<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#player" type="ch">player</gen:name>應該在對規則進行任何調整前展開討論，以確保每個人都了解當前的遊戲正以怎樣的形式展開着。儘管<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#GM" type="ch">GM</gen:name>是規則的最終裁決者，遊戲體驗畢竟是大家共同分享的，	因此每位<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#player" type="ch">player</gen:name>都應該在對規則存疑時提出自己的看法。</contain>
-			</contains>
-		</paragraph>
-		<paragraph>
-			<title>通用術語</title>
-			<contains>
-				<contain>
-					
-				</contain>
-			</contains>
-		</paragraph>
 		<paragraph>
 			<title>創造<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#character" type="ch">character</gen:name></title>
 			<contains>

@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/xsl" href="navbar.xsl" ?>
 
 <books xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="books" xmlns:gen="general">
-	<book>
+	<book id="core_rule">
 		<name>核心規則手冊</name>
 		<chapters>
 			<chapter xlink:type="simple" xlink:href="/pathfinder/core/begin.xml">如何開始</chapter>
@@ -27,7 +27,7 @@
 			<chapter xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml">翻譯詞彙</chapter>
 		</chapters>
 	</book>
-	<book>
+	<book id="adv_player_rule">
 		<name>進階玩家手冊</name>
 		<chapters>
 			<chapter>種族</chapter>
@@ -40,7 +40,7 @@
 			<chapter>新規則</chapter>
 		</chapters>
 	</book>
-	<book>
+	<book id="new">
 		<name>新增</name>
 		<chapters>
 			<chapter>自訂規則</chapter>

@@ -135,6 +135,10 @@
 		<name lang="zh-tw"><ref href="#caster" type="name" lang="zh-tw" /><ref href="#level" type="name" lang="zh-tw" /></name>
 		<abbr lang="en">CL</abbr>
 	</term>
+	<term id="character_class_level">
+		<name lang="en">Character Class Level</name>
+		<name lang="zh-tw"><ref href="#character" type="name" lang="zh-tw" /><ref href="#class_level" type="name" lang="zh-tw" /></name>
+	</term>
 	<term id="character_level">
 		<name lang="en">Character Level</name>
 		<name lang="zh-tw"><ref href="#character" type="name" lang="zh-tw" /><ref href="#level" type="name" lang="zh-tw" /></name>
@@ -143,6 +147,11 @@
 		<name lang="en">Charisma</name>
 		<name lang="zh-tw">魅力</name>
 		<abbr lang="en">Cha</abbr>
+	</term>
+	<term id="Cha_score">
+		<name lang="en">Charisma Score</name>
+		<name lang="zh-tw"><ref href="#Cha" type="name" lang="zh-tw" /><ref href="#ability_score" type="name" lang="zh-tw" /></name>
+		<abbr lang="en"><ref href="#Cha" type="abbr" lang="en" /> score</abbr>
 	</term>
 	<term id="class_level">
 		<name lang="en">Class Level</name>
@@ -163,6 +172,11 @@
 		<name lang="zh-tw">體質</name>
 		<abbr lang="en">Con</abbr>
 	</term>
+	<term id="Con_score">
+		<name lang="en">Constitution Score</name>
+		<name lang="zh-tw"><ref href="#Con" type="name" lang="zh-tw" /><ref href="#ability_score" type="name" lang="zh-tw" /></name>
+		<abbr lang="en"><ref href="#Con" type="abbr" lang="en" /> score</abbr>
+	</term>
 	<term id="DR">
 		<name lang="en">Damage Reduction</name>
 		<name lang="zh-tw"><ref href="#damage" type="name" lang="zh-tw" />減免</name>
@@ -172,6 +186,11 @@
 		<name lang="en">Dexterity</name>
 		<name lang="zh-tw">敏捷</name>
 		<abbr lang="en">Dex</abbr>
+	</term>
+	<term id="Dex_score">
+		<name lang="en">Dexterity Score</name>
+		<name lang="zh-tw"><ref href="#Dex" type="name" lang="zh-tw" /><ref href="#ability_score" type="name" lang="zh-tw" /></name>
+		<abbr lang="en"><ref href="#Dex" type="abbr" lang="en" /> score</abbr>
 	</term>
 	<term id="DC">
 		<name lang="en">Difficulty Class</name>
@@ -202,6 +221,11 @@
 		<name lang="zh-tw">智力</name>
 		<abbr lang="en">Int</abbr>
 	</term>
+	<term id="Int_score">
+		<name lang="en">Intelligence Score</name>
+		<name lang="zh-tw"><ref href="#Int" type="name" lang="zh-tw" /><ref href="#ability_score" type="name" lang="zh-tw" /></name>
+		<abbr lang="en"><ref href="#Int" type="abbr" lang="en" /> score</abbr>
+	</term>
 	<term id="level">
 		<name lang="en">Level</name>
 		<name lang="zh-tw">等級</name>
@@ -213,6 +237,10 @@
 	<term id="multiplying">
 		<name lang="en">Multiplying</name>
 		<name lang="zh-tw">倍率</name>
+	</term>
+	<term id="racial_HD">
+		<name lang="en">Racial Hit Dice</name>
+		<name lang="zh-tw"><ref href="#race" type="name" lang="zh-tw" /><ref href="#HD" type="name" lang="zh-tw" /></name>
 	</term>
 	<term id="range">
 		<name lang="en">Range</name>
@@ -227,9 +255,19 @@
 		<name lang="zh-tw">力量</name>
 		<abbr lang="en">Str</abbr>
 	</term>
+	<term id="Str_score">
+		<name lang="en">Strength Score</name>
+		<name lang="zh-tw"><ref href="#Str" type="name" lang="zh-tw" /><ref href="#ability_score" type="name" lang="zh-tw" /></name>
+		<abbr lang="en"><ref href="#Str" type="abbr" lang="en" /> score</abbr>
+	</term>
 	<term id="stack">
 		<name lang="en">Stack</name>
 		<name lang="zh-tw">疊加</name>
+	</term>
+	<term id="temp_HP">
+		<name lang="en">Temporary Hit Points</name>
+		<name lang="zh-tw">臨時<ref href="#HP" type="name" lang="zh-tw" /></name>
+		<abbr lang="en">Temp. <ref href="#HP" type="abbr" lang="en" /></abbr>
 	</term>
 	<term id="will">
 		<name lang="en">Will</name>
@@ -239,6 +277,11 @@
 		<name lang="en">Wisdom</name>
 		<name lang="zh-tw">感知</name>
 		<abbr lang="en">Wis</abbr>
+	</term>
+	<term id="Wis_score">
+		<name lang="en">Wisdom Score</name>
+		<name lang="zh-tw"><ref href="#Wis" type="name" lang="zh-tw" /><ref href="#ability_score" type="name" lang="zh-tw" /></name>
+		<abbr lang="en"><ref href="#Wis" type="abbr" lang="en" /> score</abbr>
 	</term>
 
 	<!-- Alighments -->
@@ -416,11 +459,37 @@
 		<name lang="zh-tw">法師</name>
 	</term>
 
-	<!-- Items -->
+	<!-- Equipment -->
+	<term id="adamantine">
+		<name lang="en">Adamantine</name>
+		<name lang="zh-tw">精金</name>
+	</term>
+	<term id="alchemical_silver">
+		<name lang="en">Alchemical Silver</name>
+		<name lang="zh-tw">鍍銀</name>
+	</term>
+	<term id="cold_iron">
+		<name lang="en">Cold Iron</name>
+		<name lang="zh-tw">寒鐵</name>
+	</term>
+	<term id="darkwood">
+		<name lang="en">Darkwood</name>
+		<name lang="zh-tw">黑木</name>
+	</term>
+	<term id="dragonhide">
+		<name lang="en">Dragonhide</name>
+		<name lang="zh-tw">龍皮</name>
+	</term>
 	<term id="equipment">
 		<name lang="en">Equipment</name>
 		<name lang="zh-tw">裝備</name>
 	</term>
+	<term id="mithral">
+		<name lang="en">Mithral</name>
+		<name lang="zh-tw">秘銀</name>
+	</term>
+	
+	<!-- Items -->
 	<term id="item">
 		<name lang="en">Item</name>
 		<name lang="zh-tw">物品</name>

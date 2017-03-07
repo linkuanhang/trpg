@@ -7,51 +7,61 @@
 <xsl:output method="html" encoding="utf-8" doctype-system="about:legacy-compat" indent="yes" media-type="application/xhtml+xml" />
 
 <xsl:template match="t:terms">
-<xsl:variable name="xml" value="/pathfinder/static/xml/test.xml" />
+	<html>
+	<head>
+		<meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+		<title>翻譯詞彙</title>
+		<link rel="stylesheet" href="/pathfinder/static/css/w3.css" />
+		<script type="text/javascript" src="/pathfinder/static/js/jquery-3.1.1.min.js"></script>
+		<script type="text/javascript" src="/pathfinder/static/js/base.js"></script>
+	</head>
+	
+	<body>
+	
+	<nav class="w3-bar w3-border-bottom w3-white w3-top">
+		<div class="logo-container">
+			<a href="javascript:void(0)" onclick="nav_toggle();" class="w3-bar-item w3-hover-none w3-xlarge w3-button">&#8801;</a>
+			<a href="/pathfinder/index.xml" class="w3-bar-item"><img src="/pathfinder/static/img/PRD-Logo.png" alt="Pathfinder RPG" height="30px" /></a>
+		</div>
+		<div id="languages">
+			<input id="en" class="w3-bar-item w3-check" type="checkbox" onclick="toggle_lang($(this))" />
+			<label class="w3-bar-item w3-validate">English</label>
+			<input id="zh-tw" class="w3-bar-item w3-check" type="checkbox" checked="checked" onclick="toggle_lang($(this))" />
+			<label class="w3-bar-item w3-validate">中文（台灣）</label>
+		</div>
+	</nav>
+	
+	<xsl:apply-templates select="document('/pathfinder/navbar.xml')" />
+	
+	<main style="margin-top:53px;margin-left:200px;">
+		<header class="w3-container">
+			<h1>翻譯詞彙</h1>
+		</header>
 
-<html>
-<head>
-	<meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
-	<title>翻譯詞彙</title>
-	<link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css" />
-	<script type="text/javascript" src="/pathfinder/static/js/jquery-3.1.1.min.js"></script>
-	<script type="text/javascript" src="/pathfinder/static/js/base.js"></script>
-</head>
-
-<body>
-
-<xsl:apply-templates select="document('/pathfinder/navbar.xml')" />
-
-<div class="w3-main" style="margin-left:200px">
-<header class="w3-container">
-	<span class="w3-opennav w3-xlarge w3-hide-large" onclick="w3_open()">&#9776;</span>
-	<h1>翻譯詞彙</h1>
-</header>
-
-<div class="w3-container">
-	<table class="w3-table-all">
-		<thead>
-			<tr>
-				<th>原文</th>
-				<th>原文縮寫</th>
-				<th>中文翻譯</th>
-			</tr>
-		</thead>
+		<div class="w3-container">
+			<table class="w3-table-all">
+				<thead>
+					<tr>
+						<th>原文</th>
+						<th>原文縮寫</th>
+						<th>中文翻譯</th>
+					</tr>
+				</thead>
 		
-		<tbody>
-			<xsl:for-each select="t:term">
-				<tr>
-					<td><xsl:apply-templates select="t:name[@lang='en']" /></td>
-					<td><xsl:apply-templates select="t:abbr[@lang='en']" /></td>
-					<td><xsl:apply-templates select="t:name[@lang='zh-tw']" /></td>
-				</tr>
-			</xsl:for-each>
-		</tbody>
-	</table>
-</div>
-</div>
-</body>
-</html>
+				<tbody>
+					<xsl:for-each select="t:term">
+						<tr>
+							<td><xsl:apply-templates select="t:name[@lang='en']" /></td>
+							<td><xsl:apply-templates select="t:abbr[@lang='en']" /></td>
+							<td><xsl:apply-templates select="t:name[@lang='zh-tw']" /></td>
+						</tr>
+					</xsl:for-each>
+				</tbody>
+			</table>
+		</div>
+	</main>
+	</body>
+	</html>
 </xsl:template>
 
 <xsl:template match="t:ref">

@@ -5,43 +5,45 @@
 <xsl:import href="/pathfinder/static/xml/general.xsl" />
 
 <xsl:template match="books:books">
-	<nav class="w3-sidenav w3-collapse" style="width:200px;">
-		<a href="javascript:void(0)" onclick="w3_close(this)" class="w3-closenav w3-large w3-hide-large">關閉 &#215;</a>
-		<a href="/pathfinder/index.xml" class="w3-hover-none" ><img src="/pathfinder/static/img/PRD-Logo.png" alt="Pathfinder RPG" width="95%" /></a>
+	<nav id="sidenav" class="w3-sidenav w3-border-right" style="width:200px;top:53px;">
 		<xsl:apply-templates />
 	</nav>
-	
-	<script type="text/javascript">
-	function w3_open() {
-		$(".w3-sidenav.w3-collapse").css("display","block");
-	}
-	function w3_close(node) {
-		$(node).parent("nav").css("display","none");
-	}
-	</script>
 </xsl:template>
 
 <xsl:template match="books:book">
-	<h4><xsl:value-of select="books:name" /></h4>
-	<xsl:for-each select="books:chapters/books:chapter">
-		<a>
-			<xsl:choose>
-				<xsl:when test="@xlink:href">
-					<xsl:attribute name="href">
-						<xsl:value-of select="@xlink:href" />
-					</xsl:attribute>
-				</xsl:when>
-				<xsl:otherwise>
-					<xsl:attribute name="href">
-						<xsl:text>javascript:void(0)</xsl:text>
-					</xsl:attribute>
-					<xsl:attribute name="class">
-						<xsl:text>w3-hover-red</xsl:text>
-					</xsl:attribute>
-				</xsl:otherwise>
-			</xsl:choose>
-			<xsl:value-of select="text()" />
-		</a>
-	</xsl:for-each>
+	<a href="javascript:void(0)">
+		<xsl:attribute name="onclick">
+			<xsl:text>sidenav_toggle($('#</xsl:text>
+			<xsl:value-of select="@id" />
+			<xsl:text>'))</xsl:text>
+		</xsl:attribute>
+		<xsl:value-of select="books:name" />
+		<xsl:text> &#9660;</xsl:text>
+	</a>
+	<div class="w3-hide w3-border">
+		<xsl:attribute name="id">
+			<xsl:value-of select="@id" />
+		</xsl:attribute>
+		<xsl:for-each select="books:chapters/books:chapter">
+			<a>
+				<xsl:choose>
+					<xsl:when test="@xlink:href">
+						<xsl:attribute name="href">
+							<xsl:value-of select="@xlink:href" />
+						</xsl:attribute>
+					</xsl:when>
+					<xsl:otherwise>
+						<xsl:attribute name="href">
+							<xsl:text>javascript:void(0)</xsl:text>
+						</xsl:attribute>
+						<xsl:attribute name="class">
+							<xsl:text>w3-hover-red</xsl:text>
+						</xsl:attribute>
+					</xsl:otherwise>
+				</xsl:choose>
+				<xsl:value-of select="text()" />
+			</a>
+		</xsl:for-each>
+	</div>
 </xsl:template>
 </xsl:stylesheet> 

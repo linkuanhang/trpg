@@ -22,13 +22,29 @@
 		<script type="text/javascript" src="/pathfinder/static/js/base.js"></script>
 	</head>
 	
-	<body>
+	<body style="min-width:500px;">
+	
+	<nav class="w3-bar w3-border-bottom w3-white w3-top" style="min-width:500px;">
+		<div class="logo-container">
+			<a href="javascript:void(0)" onclick="nav_toggle();" class="w3-bar-item w3-hover-none w3-xlarge w3-button">&#8801;</a>
+			<a href="/pathfinder/index.xml" class="w3-bar-item"><img src="/pathfinder/static/img/PRD-Logo.png" alt="Pathfinder RPG" height="30px" /></a>
+		</div>
+		<div id="languages">
+			<div class="language w3-bar-item">
+				<input id="en" class="w3-check" type="checkbox" onclick="toggle_lang($(this))" />
+				<label class="w3-validate">English</label>
+			</div>
+			<div class="language w3-bar-item">
+				<input id="zh-tw" class="w3-check" type="checkbox" checked="checked" onclick="toggle_lang($(this))" />
+				<label class="w3-validate">中文（台灣）</label>
+			</div>
+		</div>
+	</nav>
 	
 	<xsl:apply-templates select="$nav" />
 	
-	<main class="w3-main" style="margin-left:200px">
+	<main style="margin-top:53px;margin-left:200px;">
 	<header class="w3-container">
-		<span class="w3-opennav w3-xlarge w3-hide-large" onclick="w3_open()">&#9776;</span>
 		<xsl:for-each select="$pageTitle">
 			<h1>
 				<xsl:attribute name="lang">
@@ -189,5 +205,24 @@
 		<xsl:apply-templates />
 	</a>
 	<xsl:text>部份</xsl:text>
+</xsl:template>
+
+<xsl:template match="gen:DR">
+	<math:math>
+		<math:mn><xsl:value-of select="@num" /></math:mn>
+	</math:math>
+	<xsl:text>/</xsl:text>
+	<xsl:apply-templates />
+</xsl:template>
+
+<xsl:template match="gen:multiply">
+	<xsl:choose>
+		<xsl:when test="namespace-uri(..)='http://www.w3.org/1999/xhtml'">
+			<math:mo>&#xD7;</math:mo><math:mn><xsl:value-of select="@value" /></math:mn>
+		</xsl:when>
+		<xsl:otherwise>
+			<math:math><math:mo>&#xD7;</math:mo><math:mn><xsl:value-of select="@value" /></math:mn></math:math>
+		</xsl:otherwise>
+	</xsl:choose>
 </xsl:template>
 </xsl:stylesheet>
