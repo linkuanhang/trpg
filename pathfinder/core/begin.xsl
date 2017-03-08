@@ -46,13 +46,12 @@
 			<xsl:text>: </xsl:text>
 			<xsl:apply-templates select="com:description[@lang='en'][position()=1]" />
 		</p>
-		<xsl:if test="com:name[@lang='zh-tw']">
-			<p lang="zh-tw">
-				<dfn style="font-style:normal;font-weight:bold;"><xsl:apply-templates select="com:name[@lang='zh-tw']" /></dfn>
-				<xsl:text>︰</xsl:text>
-				<xsl:apply-templates select="com:description[@lang='zh-tw'][position()=1]" />
-			</p>
-		</xsl:if>
+
+		<p lang="zh-tw">
+			<dfn style="font-style:normal;font-weight:bold;"><xsl:apply-templates select="com:name[@lang='zh-tw']" /></dfn>
+			<xsl:text>︰</xsl:text>
+			<xsl:apply-templates select="com:description[@lang='zh-tw'][position()=1]" />
+		</p>
 		
 		<xsl:for-each select="com:description[@lang='zh-tw'][position() &gt; 1]|com:description[@lang='en'][position() &gt; 1]">
 			<p>
@@ -66,6 +65,32 @@
 </xsl:template>
 
 <xsl:template match="cre:steps">
+	<article>
+		<xsl:for-each select="cre:step">
+			<p lang="en">
+				<b>
+					<xsl:text>Step </xsl:text>
+					<xsl:value-of select="position()" />
+					<xsl:text>—</xsl:text>
+					<xsl:apply-templates select="cre:title[@lang='en']" />
+				</b>
+				<xsl:text>: </xsl:text>
+				<xsl:apply-templates select="cre:description[@lang='en']" />
+			</p>
+			
+			<p lang="zh-tw">
+				<b>
+					<xsl:text>步驟</xsl:text>
+					<xsl:value-of select="position()" />
+					<xsl:text>——</xsl:text>
+					<xsl:apply-templates select="cre:title[@lang='zh-tw']" />
+				</b>
+				<xsl:text>︰</xsl:text>
+				<xsl:apply-templates select="cre:description[@lang='zh-tw']" />
+			</p>
+		</xsl:for-each>
+	</article>
+	<!--
 	<ol style="list-style-type:cjk-ideographic;">
 		<xsl:for-each select="cre:step">
 			<li>
@@ -75,6 +100,7 @@
 			</li>
 		</xsl:for-each>
 	</ol>
+	-->
 </xsl:template>
 
 <xsl:template match="ga:methods">

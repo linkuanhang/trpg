@@ -197,21 +197,132 @@
 					<com:description lang="zh-tw">這些<gen:name href="character" type="name" lang="zh-tw" />由<gen:name href="GM" type="name" lang="zh-tw" />控制。</com:description>
 				</com:term>
 				<com:term>
-					<com:name lang="en"></com:name>
-					<com:name lang="zh-tw"></com:name>
-					<com:description lang="en"></com:description>
-					<com:description lang="zh-tw"></com:description>
+					<com:name lang="en">Penalty</com:name>
+					<com:name lang="zh-tw"><gen:name href="penalty" type="name" lang="zh-tw" /></com:name>
+					<com:description lang="en">Penalties are numerical values that are subtracted from a check or statistical score. Penalties do not have a type and most penalties stack with one another.</com:description>
+					<com:description lang="zh-tw"><gen:name href="penalty" type="name" lang="zh-tw" />是從<gen:name href="check" type="name" lang="zh-tw" />結果和統計數據中減去的數值。<gen:name href="penalty" type="name" lang="zh-tw" />並無類型之分，因此多數<gen:name href="penalty" type="name" lang="zh-tw" />都會彼此<gen:name href="stack" type="name" lang="zh-tw" />。</com:description>
+				</com:term>
+				<com:term>
+					<com:name lang="en">Player Character (Character, PC)</com:name>
+					<com:name lang="zh-tw"><gen:name href="PC" type="name" lang="zh-tw" />〔<gen:name href="PC" type="abbr" lang="en" />〕</com:name>
+					<com:description lang="en">These are the characters portrayed by the players.</com:description>
+					<com:description lang="zh-tw">這些<gen:name href="character" type="name" lang="zh-tw" />由<gen:name href="player" type="name" lang="zh-tw" />控制。</com:description>
+				</com:term>
+				<com:term>
+					<com:name lang="en">Round</com:name>
+					<com:name lang="zh-tw"><gen:name href="round" type="name" lang="zh-tw" /></com:name>
+					<com:description lang="en">Combat is measured in rounds. During an individual round, all creatures have a chance to take a turn to act, in order of initiative. A round represents 6 seconds in the game world.</com:description>
+					<com:description lang="zh-tw"><gen:name href="combat" type="name" lang="zh-tw" />以<gen:name href="round" type="name" lang="zh-tw" />來計時。在獨立的一<gen:name href="round" type="name" lang="zh-tw" />中，所有<gen:name href="creature" type="name" lang="zh-tw" />按其<gen:name href="initiative" type="name" lang="zh-tw" />順序均有一<gen:name href="turn" type="name" lang="zh-tw" />行動機會。<gen:name href="game" type="name" lang="zh-tw" />世界中的一<gen:name href="round" type="name" lang="zh-tw" />包含6秒。</com:description>
+				</com:term>
+				<com:term>
+					<com:name lang="en">Rounding</com:name>
+					<com:name lang="zh-tw"><gen:name href="rounding" type="name" lang="zh-tw" /></com:name>
+					<com:description lang="en">Occasionally the rules ask you to round a result or value. Unless otherwise stated, always round down. For example, if you are asked to take half of 7, the result would be 3.</com:description>
+					<com:description lang="zh-tw">規則有時會要求你對結果或數值<gen:name href="rounding" type="name" lang="zh-tw" />，若無特別說明，總是<gen:name href="round_down" type="name" lang="zh-tw" />。譬如，若你需要對7減半<gen:name href="rounding" type="name" lang="zh-tw" />，那麼結果為3。</com:description>
+				</com:term>
+				<com:term>
+					<com:name lang="en">Saving Throw</com:name>
+					<com:name lang="zh-tw"><gen:name href="saving_throw" type="name" lang="zh-tw" /></com:name>
+					<com:description lang="en">When a creature is the subject of a dangerous spell or effect, it often receives a saving throw to mitigate the damage or result. Saving throws are passive, meaning that a character does not need to take an action to make a saving throw—they are made automatically. There are three types of saving throws: Fortitude (used to resist poisons, diseases, and other bodily ailments), Reflex (used to avoid effects that target an entire area, such as fireball), and Will (used to resist mental attacks and spells).</com:description>
+					<com:description lang="zh-tw">當<gen:name href="creature" type="name" lang="zh-tw" />成為某一危險<gen:name href="spell" type="name" lang="zh-tw" />或效果的對象時，他往往會擁有一次減輕其<gen:name href="damage" type="name" lang="zh-tw" />或效果的<gen:name href="saving_throw" type="name" lang="zh-tw" />機會。<gen:name href="saving_throw" type="name" lang="zh-tw" />是被動的，意味著<gen:name href="character" type="name" lang="zh-tw" />無需消耗<gen:name href="action" type="name" lang="zh-tw" />即可進行<gen:name href="saving_throw" type="name" lang="zh-tw" />——它們都是自動展開的。<gen:name href="saving_throw" type="name" lang="zh-tw" />包括三種類型︰<gen:name href="fortitude" type="name" lang="zh-tw" />（用來抵抗<gen:name href="poison" type="name" lang="zh-tw" />、<gen:name href="disease" type="name" lang="zh-tw" />和其他肉體危害）、<gen:name href="reflex" type="name" lang="zh-tw" />（用來避免影響整片區域的效果，如<gen:name href="fireball" type="name" lang="zh-tw" />等）和<gen:name href="will" type="name" lang="zh-tw" />（用來抵抗<gen:name href="mental_attack" type="name" lang="zh-tw" />和<gen:name href="spell" type="name" lang="zh-tw" />）。</com:description>
+				</com:term>
+				<com:term>
+					<com:name lang="en">Skill</com:name>
+					<com:name lang="zh-tw"><gen:name href="skill" type="name" lang="zh-tw" /></com:name>
+					<com:description lang="en">A skill represents a creature's ability to perform an ordinary task, such as climb a wall, sneak down a hallway, or spot an intruder. The number of ranks possessed by a creature in a given skill represents its proficiency in that skill. As a creature gains Hit Dice, it also gains additional skill ranks that can be added to its skills.</com:description>
+					<com:description lang="zh-tw"><gen:name href="skill" type="name" lang="zh-tw" />呈現了<gen:name href="creature" type="name" lang="zh-tw" />完成特定工作的能力，譬如爬過牆壁、在走廊中潛行、或偵察到侵襲者等等。<gen:name href="character" type="name" lang="zh-tw" />在特定<gen:name href="skill" type="name" lang="zh-tw" />上的受訓級數展現了其針對該<gen:name href="skill" type="name" lang="zh-tw" />的熟練程度。每當<gen:name href="creature" type="name" lang="zh-tw" />獲得<gen:name href="HD" type="name" lang="zh-tw" />，它將獲得新的<gen:name href="skill_rank" type="name" lang="zh-tw" />，並可用來提高其<gen:name href="skill" type="name" lang="zh-tw" />受訓級數。</com:description>
+				</com:term>
+				<com:term>
+					<com:name lang="en">Spell</com:name>
+					<com:name lang="zh-tw"><gen:name href="spell" type="name" lang="zh-tw" /></com:name>
+					<com:description lang="en">Spells can perform a wide variety of tasks, from harming enemies to bringing the dead back to life. Spells specify what they can target, what their effects are, and how they can be resisted or negated.</com:description>
+					<com:description lang="zh-tw"><gen:name href="spell" type="name" lang="zh-tw" />可以實現的內容範圍極廣，從傷害敵人到起死回生。<gen:name href="spell" type="name" lang="zh-tw" />按其<gen:name href="target" type="name" lang="zh-tw" />、<gen:name href="effect" type="name" lang="zh-tw" />、抵抗方式或無效化等類型來加以區分。</com:description>
+				</com:term>
+				<com:term>
+					<com:name lang="en">Spell-Like Abilities (Sp)</com:name>
+					<com:name lang="zh-tw"><gen:name href="Sp" type="name" lang="zh-tw" />〔<gen:name href="Sp" type="abbr" lang="en" />〕</com:name>
+					<com:description lang="en">Spell-like abilities function just like spells, but are granted through a special racial ability or by a specific class ability (as opposed to spells, which are gained by spellcasting classes as a character gains levels).</com:description>
+					<com:description lang="zh-tw"><gen:name href="Sp" type="name" lang="zh-tw" />的功能如同<gen:name href="spell" type="name" lang="zh-tw" />，但其通過特定的<gen:name href="race" type="name" lang="zh-tw" />能力或<gen:name href="class" type="name" lang="zh-tw" />能力來加以獲得（而<gen:name href="spell" type="name" lang="zh-tw" />則是通過在可施法的<gen:name href="class" type="name" lang="zh-tw" />上提升<gen:name href="level" type="name" lang="zh-tw" />來獲得）。</com:description>
+				</com:term>
+				<com:term>
+					<com:name lang="en">Spell Resistance (SR)</com:name>
+					<com:name lang="zh-tw"><gen:name href="SR" type="name" lang="zh-tw" />〔<gen:name href="SR" type="abbr" lang="en" />〕</com:name>
+					<com:description lang="en">Some creatures are resistant to magic and gain spell resistance. When a creature with spell resistance is targeted by a spell, the caster of the spell must make a caster level check to see if the spell affects the target. The DC of this check is equal to the target creature's SR (some spells do not allow SR checks).</com:description>
+					<com:description lang="zh-tw">某些<gen:name href="creature" type="name" lang="zh-tw" />擁有<gen:name href="SR" type="name" lang="zh-tw" />，能夠抵抗<gen:name href="magic" type="name" lang="zh-tw" />效果。當擁有<gen:name href="SR" type="name" lang="zh-tw" />的<gen:name href="creature" type="name" lang="zh-tw" />成為某一<gen:name href="spell" type="name" lang="zh-tw" />的<gen:name href="target" type="name" lang="zh-tw" />時，該<gen:name href="spell" type="name" lang="zh-tw" />的<gen:name href="caster" type="name" lang="zh-tw" />必須進行<gen:name href="CL_check" type="name" lang="zh-tw" />來決定該<gen:name href="spell" type="name" lang="zh-tw" />是否能夠影響到<gen:name href="target" type="name" lang="zh-tw" />。<gen:name href="check" type="name" lang="zh-tw" />的<gen:name href="DC" type="name" lang="zh-tw" />等同於<gen:name href="target_creature" type="name" lang="zh-tw" />的<gen:name href="SR" type="name" lang="zh-tw" />（某些<gen:name href="spell" type="name" lang="zh-tw" />可以無視<gen:name href="SR" type="name" lang="zh-tw" />，因此無需<gen:name href="check" type="name" lang="zh-tw" />）。</com:description>
+				</com:term>
+				<com:term>
+					<com:name lang="en">Stacking</com:name>
+					<com:name lang="zh-tw"><gen:name href="stack" type="name" lang="zh-tw" /></com:name>
+					<com:description lang="en">Stacking refers to the act of adding together bonuses or penalties that apply to one particular check or statistic. Generally speaking, most bonuses of the same type do not stack. Instead, only the highest bonus applies. Most penalties do stack, meaning that their values are added together. Penalties and bonuses generally stack with one another, meaning that the penalties might negate or exceed part or all of the bonuses, and vice versa.</com:description>
+					<com:description lang="zh-tw"><gen:name href="stack" type="name" lang="zh-tw" />是指對一次特定的<gen:name href="check" type="name" lang="zh-tw" />或一項統計數據，將所有<gen:name href="bonus" type="name" lang="zh-tw" />或<gen:name href="penalty" type="name" lang="zh-tw" />合併計算的行為。大體而言，大多數類型相同的<gen:name href="bonus" type="name" lang="zh-tw" />不會<gen:name href="stack" type="name" lang="zh-tw" />，而是只有最高者生效。多數<gen:name href="penalty" type="name" lang="zh-tw" />相互<gen:name href="stack" type="name" lang="zh-tw" />，意味著它們的數值將被合併計算。<gen:name href="penalty" type="name" lang="zh-tw" />和<gen:name href="bonus" type="name" lang="zh-tw" />通常相互<gen:name href="stack" type="name" lang="zh-tw" />，意味著<gen:name href="penalty" type="name" lang="zh-tw" />可能會抵消或超過<gen:name href="bonus" type="name" lang="zh-tw" />，反之亦然。</com:description>
+				</com:term>
+				<com:term>
+					<com:name lang="en">Supernatural Abilities (Su)</com:name>
+					<com:name lang="zh-tw"><gen:name href="Su" type="name" lang="zh-tw" /></com:name>
+					<com:description lang="en">Supernatural abilities are magical attacks, defenses, and qualities. These abilities can be always active or they can require a specific action to utilize. The supernatural ability's description includes information on how it is used and its effects.</com:description>
+					<com:description lang="zh-tw"><gen:name href="Su" type="name" lang="zh-tw" />是神奇的<gen:name href="attack" type="name" lang="zh-tw" />、防禦和計量效果。這些能力可能持續生效，也可能通過特定<gen:name href="action" type="name" lang="zh-tw" />來啟動。<gen:name href="Su" type="name" lang="zh-tw" />的敘述包括了其如何使用及<gen:name href="effect" type="name" lang="zh-tw" />為何等訊息。</com:description>
+				</com:term>
+				<com:term>
+					<com:name lang="en">Turn</com:name>
+					<com:name lang="zh-tw"><gen:name href="turn" type="name" lang="zh-tw" /></com:name>
+					<com:description lang="en">In a round, a creature receives one turn, during which it can perform a wide variety of actions. Generally in the course of one turn, a character can perform one standard action, one move action, one swift action, and a number of free actions. Less-common combinations of actions are permissible as well, see Combat for more details.</com:description>
+					<com:description lang="zh-tw">在一<gen:name href="round" type="name" lang="zh-tw" />裡，每個<gen:name href="creature" type="name" lang="zh-tw" />可以擁有一個<gen:name href="turn" type="name" lang="zh-tw" />，<gen:name href="creature" type="name" lang="zh-tw" />可以在其<gen:name href="turn" type="name" lang="zh-tw" />中展開一系列的<gen:name href="action" type="name" lang="zh-tw" />。大致而言，<gen:name href="character" type="name" lang="zh-tw" />在其<gen:name href="turn" type="name" lang="zh-tw" />中可以進行一個<gen:name href="standard_action" type="name" lang="zh-tw" />、一個<gen:name href="move_action" type="name" lang="zh-tw" />、一個<gen:name href="swift_action" type="name" lang="zh-tw" />以及一些<gen:name href="free_action" type="name" lang="zh-tw" />。較為罕見的<gen:name href="action" type="name" lang="zh-tw" />組合同樣存在，詳情請<gen:rlink href="javascript:void(0)"><gen:name href="combat" type="name" lang="zh-tw" /></gen:rlink>。</com:description>
 				</com:term>
 			</com:terms>
+		</section>
+		
+		<section>
+			<title lang="en">Generating a Character</title>
+			<title lang="zh-tw">創造<gen:name href="character" type="name" lang="zh-tw" /></title>
+			<paragraph lang="en">From the sly rogue to the stalwart paladin, the Pathfinder RPG allows you to make the character you want to play. When generating a character, start with your character's concept. Do you want a character who goes toe-to-toe with terrible monsters, matching sword and shield against claws and fangs? Or do you want a mystical seer who draws his powers from the great beyond to further his own ends? Nearly anything is possible.</paragraph>
+			<paragraph lang="en">Once you have a general concept worked out, use the following steps to bring your idea to life, recording the resulting information and statistics on your Pathfinder RPG character sheet, which can be found at the back of this book and photocopied for your convenience.</paragraph>
+			<cre:steps>
+				<cre:step>
+					<cre:title lang="en">Determine Ability Scores</cre:title>
+					<cre:title lang="zh-tw">決定<gen:name href="ability_score" type="name" lang="zh-tw" /></cre:title>
+					<cre:description lang="en">Start by generating your character's ability scores. These six scores determine your character's most basic attributes and are used to decide a wide variety of details and statistics. Some class selections require you to have better than average scores for some of your abilities.</cre:description>
+					<cre:description lang="zh-tw"></cre:description>
+				</cre:step>
+				<cre:step>
+					<cre:title lang="en">Pick Your Race</cre:title>
+					<cre:title lang="zh-tw">選定<gen:name href="race" type="name" lang="zh-tw" /></cre:title>
+					<cre:description lang="en">Next, pick your character's race, noting any modifiers to your ability scores and any other racial traits (see Races). There are seven basic races to choose from, although your GM might have others to add to the list. Each race lists the languages your character automatically knows, as well as a number of bonus languages. A character knows a number of additional bonus languages equal to his or her Intelligence modifier.</cre:description>
+					<cre:description lang="zh-tw"></cre:description>
+				</cre:step>
+				<cre:step>
+					<cre:title lang="en">Pick Your Class</cre:title>
+					<cre:title lang="zh-tw">選定<gen:name href="class" type="name" lang="zh-tw" /></cre:title>
+					<cre:description lang="en">A character's class represents a profession, such as fighter or wizard. If this is a new character, he starts at 1st level in his chosen class. As he gains experience points (XP) for defeating monsters, he goes up in level, granting him new powers and abilities.</cre:description>
+					<cre:description lang="zh-tw"></cre:description>
+				</cre:step>
+				<cre:step>
+					<cre:title lang="en">Pick Skills and Select Feats</cre:title>
+					<cre:title lang="zh-tw">選定<gen:name href="skill" type="name" lang="zh-tw" />與<gen:name href="feat" type="name" lang="zh-tw" /></cre:title>
+					<cre:description lang="en">Determine the number of skill ranks possessed by your character, based on his class and Intelligence modifier (and any other bonuses, such as the bonus received by humans). Then spend these ranks on skills, but remember that you cannot have more ranks than your level in any one skill (for a starting character, this is usually one). After skills, determine how many feats your character receives, based on his class and level, and select them from those presented in Feats.</cre:description>
+					<cre:description lang="zh-tw"></cre:description>
+				</cre:step>
+				<cre:step>
+					<cre:title lang="en">Buy Equipment</cre:title>
+					<cre:title lang="zh-tw">選購<gen:name href="equipment" type="name" lang="zh-tw" /></cre:title>
+					<cre:description lang="en">Each new character begins the game with an amount of gold, based on his class, that can be spent on a wide range of equipment and gear, from chainmail armor to leather backpacks. This gear helps your character survive while adventuring. Generally speaking, you cannot use this starting money to buy magic items without the consent of your GM.</cre:description>
+					<cre:description lang="zh-tw"></cre:description>
+				</cre:step>
+				<cre:step>
+					<cre:title lang="en">Finishing Details</cre:title>
+					<cre:title lang="zh-tw">完成細節</cre:title>
+					<cre:description lang="en">Finally, you need to determine all of a character's details, including his starting hit points (hp), Armor Class (AC), saving throws, initiative modifier, and attack values. All of these numbers are determined by the decisions made in previous steps. Aside from these, you need to decide on your character's name, alignment, and physical appearance. It is best to jot down a few personality traits as well, to help you play the character during the game. Additional rules (like age and alignment) are described in Additional Rules.</cre:description>
+					<cre:description lang="zh-tw"></cre:description>
+				</cre:step>
+			</cre:steps>
 		</section>
 	</body>
 	
 	<paragraphs>
 		<paragraph>
-			<title>創造<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#character" type="ch">character</gen:name></title>
+			
 			<contains>
 				<contain>從詭計多端的<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#rogue" type="ch">rogue</gen:name>到堅韌不屈的<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#paladin" type="ch">paladin</gen:name>，《<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#pathfinder" type="ch">pathfinder</gen:name>》允許你創造出想要扮演的各種<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#character" type="ch">character</gen:name>。在創造<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#character" type="ch">character</gen:name>時，首先應設定好你的<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#character" type="ch">character</gen:name>的大致輪廓。你是想要一位以劍盾和恐怖<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#monster" type="ch">monster</gen:name>的爪牙以血搏血的<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#character" type="ch">character</gen:name>，還是想要一位從超越自身與世界彼端之處獲取力量的神秘先知？一切皆有可能。當你確定了<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#character" type="ch">character</gen:name>的大致輪廓后，請通過以下步驟使<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#character" type="ch">character</gen:name>鮮活起來，並將必要的信息和統計數據記錄在『角色卡』上。</contain>
-				<contain>
+				<contain><!--
 					<cre:steps>
 						<cre:step>
 							<cre:title>決定<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#ability_score" type="ch">ability score</gen:name></cre:title>
@@ -237,7 +348,7 @@
 							<cre:title>完成細節</cre:title>
 							<cre:description>最後，你需要決定一名角色的所有細節，包括起始<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#HP" type="ch">HP</gen:name>、<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#AC" type="ch">AC</gen:name>、<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#saving_throw" type="ch">saving throw</gen:name>、『先攻加值』、『攻擊加值』等等。所有這些數值都由前幾個步驟中你所做出的選擇來決定。除此以外，你還需要決定你的<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#character" type="ch">character</gen:name>的姓名、<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#alignment" type="ch">alignment</gen:name>、體貌特徵等等。最好還能設定一些人格特徵，以協助你在遊戲中扮演該<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#character" type="ch">character</gen:name>。</cre:description>
 						</cre:step>
-					</cre:steps>
+					</cre:steps>-->
 				</contain>
 			</contains>
 		</paragraph>

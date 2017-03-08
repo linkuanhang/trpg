@@ -566,6 +566,10 @@
 		<name lang="en">Attack Roll</name>
 		<name lang="zh-tw"><ref href="#attack" type="name" lang="zh-tw" />檢定</name>
 	</term>
+	<term id="disarm">
+		<name lang="en">Disarm</name>
+		<name lang="zh-tw">卸武</name>
+	</term>
 	<term id="free_action">
 		<name lang="en">Free Action</name>
 		<name lang="zh-tw">自由<ref href="#action" type="name" lang="zh-tw" /></name>
@@ -582,25 +586,25 @@
 		<name lang="en">Grapple</name>
 		<name lang="zh-tw">擒抱</name>
 	</term>
-	<term id="standard_action">
-		<name lang="en">Standard Action</name>
-		<name lang="zh-tw">標準<ref href="#action" type="name" lang="zh-tw" /></name>
-	</term>
-	<term id="trip">
-		<name lang="en">Trip</name>
-		<name lang="zh-tw">絆摔</name>
-	</term>
-	<term id="disarm">
-		<name lang="en">Disarm</name>
-		<name lang="zh-tw">卸武</name>
+	<term id="mental_attack">
+		<name lang="en">Mental Attack</name>
+		<name lang="zh-tw">精神<ref href="#attack" type="name" lang="zh-tw" /></name>
 	</term>
 	<term id="move_action">
 		<name lang="en">Move Action</name>
 		<name lang="zh-tw">移動<ref href="#action" type="name" lang="zh-tw" /></name>
 	</term>
+	<term id="standard_action">
+		<name lang="en">Standard Action</name>
+		<name lang="zh-tw">標準<ref href="#action" type="name" lang="zh-tw" /></name>
+	</term>
 	<term id="swift_action">
 		<name lang="en">Swift Action</name>
 		<name lang="zh-tw">迅捷<ref href="#action" type="name" lang="zh-tw" /></name>
+	</term>
+	<term id="trip">
+		<name lang="en">Trip</name>
+		<name lang="zh-tw">絆摔</name>
 	</term>
 
 	<!-- Skills -->
@@ -647,6 +651,10 @@
 		<name lang="en">Caster</name>
 		<name lang="zh-tw">施法者</name>
 	</term>
+	<term id="CL_check">
+		<name lang="en">Caster Level Check</name>
+		<name lang="zh-tw"><ref href="#CL" type="name" lang="zh-tw" /><ref href="#check" type="name" lang="zh-tw" /></name>
+	</term>
 	<term id="concentration">
 		<name lang="en">Concentration</name>
 		<name lang="zh-tw">專注</name>
@@ -654,6 +662,10 @@
 	<term id="concentration_check">
 		<name lang="en">Concentration Check</name>
 		<name lang="zh-tw"><ref href="#concentration" type="name" lang="zh-tw" /><ref href="#check" type="name" lang="zh-tw" /></name>
+	</term>
+	<term id="fireball">
+		<name lang="en">Fireball</name>
+		<name lang="zh-tw">火球</name>
 	</term>
 	<term id="magic">
 		<name lang="en">Magic</name>
@@ -679,6 +691,10 @@
 	<term id="target">
 		<name lang="en">Target</name>
 		<name lang="zh-tw">目標</name>
+	</term>
+	<term id="target_creature">
+		<name lang="en">Target Creature</name>
+		<name lang="zh-tw"><ref href="#target" type="name" lang="zh-tw" /><ref href="#creature" type="name" lang="zh-tw" /></name>
 	</term>
 
 	<!-- aaa -->
