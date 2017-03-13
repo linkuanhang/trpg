@@ -3,6 +3,10 @@
 
 <terms xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="terms">
 	<!-- General terms -->
+	<term id="age">
+		<name lang="en">Age</name>
+		<name lang="zh-tw">年齡</name>
+	</term>
 	<term id="base">
 		<name lang="en">Base</name>
 		<name lang="zh-tw">基本</name>
@@ -11,9 +15,17 @@
 		<name lang="en">Bonus</name>
 		<name lang="zh-tw">加值</name>
 	</term>
+	<term id="bonus_language">
+		<name lang="en">Bonus Language</name>
+		<name lang="zh-tw">獎勵<ref href="#language" type="name" lang="zh-tw" /></name>
+	</term>
 	<term id="character">
 		<name lang="en">Character</name>
 		<name lang="zh-tw">角色</name>
+	</term>
+	<term id="character_sheet">
+		<name lang="en">Character Sheet</name>
+		<name lang="zh-tw"><ref href="#character" type="name" lang="zh-tw" />卡</name>
 	</term>
 	<term id="check">
 		<name lang="en">Check</name>
@@ -56,6 +68,10 @@
 	<term id="initiative_check">
 		<name lang="en">Initiative Check</name>
 		<name lang="zh-tw"><ref href="#initiative" type="name" lang="zh-tw" /><ref href="#check" type="name" lang="zh-tw" /></name>
+	</term>
+	<term id="language">
+		<name lang="en">Language</name>
+		<name lang="zh-tw">語言</name>
 	</term>
 	<term id="monster">
 		<name lang="en">Monster</name>
@@ -148,6 +164,11 @@
 		<name lang="zh-tw">魅力</name>
 		<abbr lang="en">Cha</abbr>
 	</term>
+	<term id="Cha_modifier">
+		<name lang="en">Charisma Modifier</name>
+		<name lang="zh-tw"><ref href="#Cha" type="name" lang="zh-tw" /><ref href="#modifier" type="name" lang="zh-tw" /></name>
+		<abbr lang="en"><ref href="#Cha" type="abbr" lang="en" /> modifier</abbr>
+	</term>
 	<term id="Cha_score">
 		<name lang="en">Charisma Score</name>
 		<name lang="zh-tw"><ref href="#Cha" type="name" lang="zh-tw" /><ref href="#ability_score" type="name" lang="zh-tw" /></name>
@@ -172,6 +193,11 @@
 		<name lang="zh-tw">體質</name>
 		<abbr lang="en">Con</abbr>
 	</term>
+	<term id="Con_modifier">
+		<name lang="en">Constitution Modifier</name>
+		<name lang="zh-tw"><ref href="#Con" type="name" lang="zh-tw" /><ref href="#modifier" type="name" lang="zh-tw" /></name>
+		<abbr lang="en"><ref href="#Con" type="abbr" lang="en" /> modifier</abbr>
+	</term>
 	<term id="Con_score">
 		<name lang="en">Constitution Score</name>
 		<name lang="zh-tw"><ref href="#Con" type="name" lang="zh-tw" /><ref href="#ability_score" type="name" lang="zh-tw" /></name>
@@ -186,6 +212,11 @@
 		<name lang="en">Dexterity</name>
 		<name lang="zh-tw">敏捷</name>
 		<abbr lang="en">Dex</abbr>
+	</term>
+	<term id="Dex_modifier">
+		<name lang="en">Dexterity Modifier</name>
+		<name lang="zh-tw"><ref href="#Dex" type="name" lang="zh-tw" /><ref href="#modifier" type="name" lang="zh-tw" /></name>
+		<abbr lang="en"><ref href="#Dex" type="abbr" lang="en" /> modifier</abbr>
 	</term>
 	<term id="Dex_score">
 		<name lang="en">Dexterity Score</name>
@@ -221,6 +252,11 @@
 		<name lang="zh-tw">智力</name>
 		<abbr lang="en">Int</abbr>
 	</term>
+	<term id="Int_modifier">
+		<name lang="en">Intelligence Modifier</name>
+		<name lang="zh-tw"><ref href="#Int" type="name" lang="zh-tw" /><ref href="#modifier" type="name" lang="zh-tw" /></name>
+		<abbr lang="en"><ref href="#Int" type="abbr" lang="en" /> modifier</abbr>
+	</term>
 	<term id="Int_score">
 		<name lang="en">Intelligence Score</name>
 		<name lang="zh-tw"><ref href="#Int" type="name" lang="zh-tw" /><ref href="#ability_score" type="name" lang="zh-tw" /></name>
@@ -255,6 +291,11 @@
 		<name lang="zh-tw">力量</name>
 		<abbr lang="en">Str</abbr>
 	</term>
+	<term id="Str_modifier">
+		<name lang="en">Strength Modifier</name>
+		<name lang="zh-tw"><ref href="#Str" type="name" lang="zh-tw" /><ref href="#modifier" type="name" lang="zh-tw" /></name>
+		<abbr lang="en"><ref href="#Str" type="abbr" lang="en" /> modifier</abbr>
+	</term>
 	<term id="Str_score">
 		<name lang="en">Strength Score</name>
 		<name lang="zh-tw"><ref href="#Str" type="name" lang="zh-tw" /><ref href="#ability_score" type="name" lang="zh-tw" /></name>
@@ -277,6 +318,11 @@
 		<name lang="en">Wisdom</name>
 		<name lang="zh-tw">感知</name>
 		<abbr lang="en">Wis</abbr>
+	</term>
+	<term id="Wis_modifier">
+		<name lang="en">Wisdom Modifier</name>
+		<name lang="zh-tw"><ref href="#Wis" type="name" lang="zh-tw" /><ref href="#modifier" type="name" lang="zh-tw" /></name>
+		<abbr lang="en"><ref href="#Wis" type="abbr" lang="en" /> modifier</abbr>
 	</term>
 	<term id="Wis_score">
 		<name lang="en">Wisdom Score</name>
@@ -356,9 +402,9 @@
 	</term>
 
 	<!-- Races -->
-	<term id="race">
-		<name lang="en">Race</name>
-		<name lang="zh-tw">種族</name>
+	<term id="basic_race">
+		<name lang="en">Basic Race</name>
+		<name lang="zh-tw">核心<ref href="#race" type="name" lang="zh-tw" /></name>
 	</term>
 	<term id="dwarf">
 		<name lang="en">Dwarves</name>
@@ -391,6 +437,14 @@
 	<term id="orc">
 		<name lang="en">Orcs</name>
 		<name lang="zh-tw">獸人</name>
+	</term>
+	<term id="race">
+		<name lang="en">Race</name>
+		<name lang="zh-tw">種族</name>
+	</term>
+	<term id="racial_trait">
+		<name lang="en">Racial Trait</name>
+		<name lang="zh-tw"><ref href="#race" type="name" lang="zh-tw" />特性</name>
 	</term>
 
 	<!-- Classes -->
@@ -494,8 +548,16 @@
 		<name lang="en">Item</name>
 		<name lang="zh-tw">物品</name>
 	</term>
+	<term id="leather_backpack">
+		<name lang="en">Leather Backpack</name>
+		<name lang="zh-tw">皮革背包</name>
+	</term>
 
 	<!-- Weapons -->
+	<term id="sword">
+		<name lang="en">Sword</name>
+		<name lang="zh-tw">劍</name>
+	</term>
 	<term id="weapon">
 		<name lang="en">Weapon</name>
 		<name lang="zh-tw">武器</name>
@@ -505,6 +567,14 @@
 	<term id="armor">
 		<name lang="en">Armors</name>
 		<name lang="zh-tw">盔甲</name>
+	</term>
+	<term id="chainmail_armor">
+		<name lang="en">Chainmail Armors</name>
+		<name lang="zh-tw">鎖鏈甲</name>
+	</term>
+	<term id="shield">
+		<name lang="en">Shield</name>
+		<name lang="zh-tw">盾</name>
 	</term>
 	
 	<!-- Combat -->

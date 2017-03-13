@@ -275,83 +275,196 @@
 			<title lang="en">Generating a Character</title>
 			<title lang="zh-tw">創造<gen:name href="character" type="name" lang="zh-tw" /></title>
 			<paragraph lang="en">From the sly rogue to the stalwart paladin, the Pathfinder RPG allows you to make the character you want to play. When generating a character, start with your character's concept. Do you want a character who goes toe-to-toe with terrible monsters, matching sword and shield against claws and fangs? Or do you want a mystical seer who draws his powers from the great beyond to further his own ends? Nearly anything is possible.</paragraph>
+			<paragraph lang="zh-tw">從詭計多端的<gen:name href="rogue" type="name" lang="zh-tw" />到堅韌不屈的<gen:name href="paladin" type="name" lang="zh-tw" />，<gen:name href="PFRPG" type="name" lang="zh-tw" />允許你創造出想要扮演的各種<gen:name href="character" type="name" lang="zh-tw" />。在創造<gen:name href="character" type="name" lang="zh-tw" />時，首先應設定好<gen:name href="character" type="name" lang="zh-tw" />的大致輪廓。你是想要一位以<gen:name href="sword" type="name" lang="zh-tw" />與<gen:name href="shield" type="name" lang="zh-tw" />和恐怖的<gen:name href="monster" type="name" lang="zh-tw" />以血搏血的<gen:name href="character" type="name" lang="zh-tw" />，還是想要一位從超越自身與世界彼端之處獲取力量的神秘先知？一切皆有可能。</paragraph>
 			<paragraph lang="en">Once you have a general concept worked out, use the following steps to bring your idea to life, recording the resulting information and statistics on your Pathfinder RPG character sheet, which can be found at the back of this book and photocopied for your convenience.</paragraph>
+			<paragraph lang="zh-tw">當你確定了<gen:name href="character" type="name" lang="zh-tw" />的大致輪廓后，請通過以下步驟使<gen:name href="character" type="name" lang="zh-tw" />鮮活起來，並將必要的訊息和統計數據記錄在<gen:name href="character_sheet" type="name" lang="zh-tw" />上，其附在本書後面以方便你影印。</paragraph>
 			<cre:steps>
 				<cre:step>
 					<cre:title lang="en">Determine Ability Scores</cre:title>
 					<cre:title lang="zh-tw">決定<gen:name href="ability_score" type="name" lang="zh-tw" /></cre:title>
 					<cre:description lang="en">Start by generating your character's ability scores. These six scores determine your character's most basic attributes and are used to decide a wide variety of details and statistics. Some class selections require you to have better than average scores for some of your abilities.</cre:description>
-					<cre:description lang="zh-tw"></cre:description>
+					<cre:description lang="zh-tw">一切從生成<gen:name href="character" type="name" lang="zh-tw" />的<gen:name href="ability_score" type="name" lang="zh-tw" />開始。這六項數值決定了<gen:name href="character" type="name" lang="zh-tw" />大部分的基本能力，並將被用來確定一系列的細節和統計數據。某些<gen:name href="class" type="name" lang="zh-tw" />會要求你的某項<gen:name href="ability_score" type="name" lang="zh-tw" />高於平均水準。</cre:description>
 				</cre:step>
 				<cre:step>
 					<cre:title lang="en">Pick Your Race</cre:title>
 					<cre:title lang="zh-tw">選定<gen:name href="race" type="name" lang="zh-tw" /></cre:title>
 					<cre:description lang="en">Next, pick your character's race, noting any modifiers to your ability scores and any other racial traits (see Races). There are seven basic races to choose from, although your GM might have others to add to the list. Each race lists the languages your character automatically knows, as well as a number of bonus languages. A character knows a number of additional bonus languages equal to his or her Intelligence modifier.</cre:description>
-					<cre:description lang="zh-tw"></cre:description>
+					<cre:description lang="zh-tw">其次請為你的<gen:name href="character" type="name" lang="zh-tw" />選定<gen:name href="race" type="name" lang="zh-tw" />，為<gen:name href="ability_score" type="name" lang="zh-tw" />加註所有的<gen:name href="modifier" type="name" lang="zh-tw" />，並記錄下其他獲得的<gen:name href="racial_trait" type="name" lang="zh-tw" />（<gen:rlink href="javascrip:void(0)"><gen:name href="race" type="name" lang="zh-tw" /></gen:rlink>）。你能夠從七大<gen:name href="basic_race" type="name" lang="zh-tw" />中挑選，而你的<gen:name href="GM" type="name" lang="zh-tw" />也許會增添可選用的<gen:name href="race" type="name" lang="zh-tw" />列表。每個<gen:name href="race" type="name" lang="zh-tw" />都列出了你的<gen:name href="character" type="name" lang="zh-tw" />將自動掌握的<gen:name href="language" type="name" lang="zh-tw" />，以及可能的<gen:name href="bonus_language" type="name" lang="zh-tw" />。<gen:name href="character" type="name" lang="zh-tw" />所掌握的額外<gen:name href="bonus_language" type="name" lang="zh-tw" />數量等同於他的<gen:name href="Int_modifier" type="name" lang="zh-tw" />。</cre:description>
 				</cre:step>
 				<cre:step>
 					<cre:title lang="en">Pick Your Class</cre:title>
 					<cre:title lang="zh-tw">選定<gen:name href="class" type="name" lang="zh-tw" /></cre:title>
 					<cre:description lang="en">A character's class represents a profession, such as fighter or wizard. If this is a new character, he starts at 1st level in his chosen class. As he gains experience points (XP) for defeating monsters, he goes up in level, granting him new powers and abilities.</cre:description>
-					<cre:description lang="zh-tw"></cre:description>
+					<cre:description lang="zh-tw"><gen:name href="character" type="name" lang="zh-tw" />的<gen:name href="class" type="name" lang="zh-tw" />呈現其專業方向，譬如<gen:name href="fighter" type="name" lang="zh-tw" />或<gen:name href="wizard" type="name" lang="zh-tw" />。若這是一位新<gen:name href="character" type="name" lang="zh-tw" />，他將以選定的<gen:name href="class" type="name" lang="zh-tw" />從1級開始冒險。當他通過打倒<gen:name href="monster" type="name" lang="zh-tw" />獲得了足夠多的<gen:name href="XP" type="name" lang="zh-tw" />〔<gen:name href="XP" type="abbr" lang="en" />〕並升級時，他將獲得新的特性和能力。</cre:description>
 				</cre:step>
 				<cre:step>
 					<cre:title lang="en">Pick Skills and Select Feats</cre:title>
 					<cre:title lang="zh-tw">選定<gen:name href="skill" type="name" lang="zh-tw" />與<gen:name href="feat" type="name" lang="zh-tw" /></cre:title>
 					<cre:description lang="en">Determine the number of skill ranks possessed by your character, based on his class and Intelligence modifier (and any other bonuses, such as the bonus received by humans). Then spend these ranks on skills, but remember that you cannot have more ranks than your level in any one skill (for a starting character, this is usually one). After skills, determine how many feats your character receives, based on his class and level, and select them from those presented in Feats.</cre:description>
-					<cre:description lang="zh-tw"></cre:description>
+					<cre:description lang="zh-tw">基於<gen:name href="character" type="name" lang="zh-tw" />的<gen:name href="level" type="name" lang="zh-tw" />和<gen:name href="Int_modifier" type="name" lang="zh-tw" />（以及其他<gen:name href="bonus" type="name" lang="zh-tw" />，譬如<gen:name href="human" type="name" lang="zh-tw" />的<gen:name href="bonus" type="name" lang="zh-tw" />），決定你的角色所擁有的技能點數。再將技能點數用來購買每種技能的受訓級數，不過要注意你不能使某一項技能的受訓級數超過角色等級（對初始角色而言通常為一級）。在選定技能之後，基於角色的職業和等級來確認角色掌握的專長數量，並從可選列表中挑選專長。</cre:description>
 				</cre:step>
 				<cre:step>
 					<cre:title lang="en">Buy Equipment</cre:title>
 					<cre:title lang="zh-tw">選購<gen:name href="equipment" type="name" lang="zh-tw" /></cre:title>
 					<cre:description lang="en">Each new character begins the game with an amount of gold, based on his class, that can be spent on a wide range of equipment and gear, from chainmail armor to leather backpacks. This gear helps your character survive while adventuring. Generally speaking, you cannot use this starting money to buy magic items without the consent of your GM.</cre:description>
-					<cre:description lang="zh-tw"></cre:description>
+					<cre:description lang="zh-tw">每位新<gen:name href="character" type="name" lang="zh-tw" />在起始時基於其<gen:name href="class" type="name" lang="zh-tw" />擁有一定數量的金錢，可以用來選購許多<gen:name href="equipment" type="name" lang="zh-tw" />與工具，從<gen:name href="chainmail_armor" type="name" lang="zh-tw" />到<gen:name href="leather_backpack" type="name" lang="zh-tw" />等。這些工具協助你的<gen:name href="character" type="name" lang="zh-tw" />在冒險中生存下來。一般而言，若無你的<gen:name href="GM" type="name" lang="zh-tw" />同意，你無法用起始金錢購買<gen:name href="magic_item" type="name" lang="zh-tw" />。</cre:description>
 				</cre:step>
 				<cre:step>
 					<cre:title lang="en">Finishing Details</cre:title>
 					<cre:title lang="zh-tw">完成細節</cre:title>
 					<cre:description lang="en">Finally, you need to determine all of a character's details, including his starting hit points (hp), Armor Class (AC), saving throws, initiative modifier, and attack values. All of these numbers are determined by the decisions made in previous steps. Aside from these, you need to decide on your character's name, alignment, and physical appearance. It is best to jot down a few personality traits as well, to help you play the character during the game. Additional rules (like age and alignment) are described in Additional Rules.</cre:description>
-					<cre:description lang="zh-tw"></cre:description>
+					<cre:description lang="zh-tw">最後，你需要決定一名<gen:name href="character" type="name" lang="zh-tw" />的所有細節，包括起始<gen:name href="HP" type="name" lang="zh-tw" />（<gen:name href="HP" type="abbr" lang="en" />）、<gen:name href="AC" type="name" lang="zh-tw" />（<gen:name href="AC" type="abbr" lang="en" />）、<gen:name href="saving_throw" type="name" lang="zh-tw" />、<gen:name href="initiative_modifier" type="name" lang="zh-tw" />以及<gen:name href="attack" type="name" lang="zh-tw" />數值等。所有這些數值都由前幾個步驟中你所做出的選擇來決定。除此以外，你還需要決定<gen:name href="character" type="name" lang="zh-tw" />的姓名、<gen:name href="alignment" type="name" lang="zh-tw" />、體貌特徵等。最好還能設定一些人格特徵，以協助你在<gen:name href="game" type="name" lang="zh-tw" />中扮演該<gen:name href="character" type="name" lang="zh-tw" />。額外的規則（譬如<gen:name href="age" type="name" lang="zh-tw" />與<gen:name href="alignment" type="name" lang="zh-tw" />）請<gen:rlink href="javascript:void(0)">額外規則</gen:rlink>。</cre:description>
 				</cre:step>
 			</cre:steps>
+		</section>
+		
+		<section>
+			<title lang="en">Ability Scores</title>
+			<title lang="zh-tw"><gen:name href="ability_score" type="name" lang="zh-tw" /></title>
+			<paragraph lang="en">Each character has six ability scores that represent his character's most basic attributes. They are his raw talent and prowess. While a character rarely rolls an ability check (using just an ability score), these scores, and the modifiers they create, affect nearly every aspect of a character's skills and abilities. Each ability score generally ranges from 3 to 18, although racial bonuses and penalties can alter this; an average ability score is 10.</paragraph>
+			<paragraph lang="zh-tw"></paragraph>
+			
+			<section>
+				<title lang="en">Generating Ability Scores</title>
+				<title lang="zh-tw">生成<gen:name href="ability_score" type="name" lang="zh-tw" /></title>
+				<paragraph lang="en">There are a number of different methods used to generate ability scores. Each of these methods gives a different level of flexibility and randomness to character generation. </paragraph>
+				<paragraph lang="zh-tw"></paragraph>
+				<paragraph lang="en">Racial modifiers (adjustments made to your ability scores due to your character's race—see Races) are applied after the scores are generated.</paragraph>
+				<paragraph lang="zh-tw"></paragraph>
+				<ga:methods>
+					<ga:method>
+						<ga:name lang="en">Standard</ga:name>
+						<ga:name lang="zh-tw">標準</ga:name>
+						<ga:description lang="en">Roll 4d6, discard the lowest die result, and add the three remaining results together. Record this total and repeat the process until six numbers are generated. Assign these totals to your ability scores as you see fit. This method is less random than Classic and tends to create characters with above-average ability scores.</ga:description>
+						<ga:description lang="zh-tw"></ga:description>
+					</ga:method>
+					<ga:method>
+						<ga:name lang="en">Classic</ga:name>
+						<ga:name lang="zh-tw">經典</ga:name>
+						<ga:description lang="en">Roll 3d6 and add the dice together. Record this total and repeat the process until you generate six numbers. Assign these results to your ability scores as you see fit. This method is quite random, and some characters will have clearly superior abilities. This randomness can be taken one step further, with the totals applied to specific ability scores in the order they are rolled. Characters generated using this method are difficult to fit to predetermined concepts, as their scores might not support given classes or personalities, and instead are best designed around their ability scores.</ga:description>
+						<ga:description lang="zh-tw"></ga:description>
+					</ga:method>
+					<ga:method>
+						<ga:name lang="en">Heroic</ga:name>
+						<ga:name lang="zh-tw">英雄</ga:name>
+						<ga:description lang="en">Roll 2d6 and add 6 to the sum of the dice. Record this total and repeat the process until six numbers are generated. Assign these totals to your ability scores as you see fit. This is less random than the Standard method and generates characters with mostly above-average scores.</ga:description>
+						<ga:description lang="zh-tw"></ga:description>
+					</ga:method>
+					<ga:method>
+						<ga:name lang="en">Dice Pool</ga:name>
+						<ga:name lang="zh-tw">骰池</ga:name>
+						<ga:description lang="en">Each character has a pool of 24d6 to assign to his statistics. Before the dice are rolled, the player selects the number of dice to roll for each score, with a minimum of 3d6 for each ability. Once the dice have been assigned, the player rolls each group and totals the result of the three highest dice. For more high-powered games, the GM should increase the total number of dice to 28. This method generates characters of a similar power to the Standard method.</ga:description>
+						<ga:description lang="zh-tw"></ga:description>
+					</ga:method>
+					<ga:method>
+						<ga:name lang="en">Purchase</ga:name>
+						<ga:name lang="zh-tw">購點</ga:name>
+						<ga:description lang="en">Each character receives a number of points to spend on increasing his basic attributes. In this method, all attributes start at a base of 10. A character can increase an individual score by spending some of his points. Likewise, he can gain more points to spend on other scores by decreasing one or more of his ability scores. No score can be reduced below 7 or raised above 18 using this method. See Table: Ability Score Costs for the costs of each score. After all the points are spent, apply any racial modifiers the character might have.</ga:description>
+						<ga:description lang="zh-tw"></ga:description>
+						<ga:description lang="en">The number of points you have to spend using the purchase method depends on the type of campaign you are playing. The standard value for a character is 15 points. Average nonplayer characters (NPCs) are typically built using as few as 3 points. See Table: Ability Score Points for a number of possible point values depending on the style of campaign. The purchase method emphasizes player choice and creates equally balanced characters. This system is typically used for organized play events, such as the Pathfinder Society (visit paizo.com/pathfinderSociety for more details on this exciting campaign).</ga:description>
+						<ga:description lang="zh-tw"></ga:description>
+						<ga:purchase_points>
+							<ga:title lang="en">Table: Ability Score Costs</ga:title>
+							<ga:title lang="zh-tw"></ga:title>
+							<ga:heads>
+								<ga:head lang="en">Score</ga:head>
+								<ga:head lang="zh-tw"></ga:head>
+								<ga:head lang="en">Points</ga:head>
+								<ga:head lang="zh-tw"></ga:head>
+							</ga:heads>
+							<ga:point>
+								<ga:ability>7</ga:ability>
+								<ga:purchase_point>-4</ga:purchase_point>
+							</ga:point>
+							<ga:point>
+								<ga:ability>8</ga:ability>
+								<ga:purchase_point>-2</ga:purchase_point>
+							</ga:point>
+							<ga:point>
+								<ga:ability>9</ga:ability>
+								<ga:purchase_point>1</ga:purchase_point>
+							</ga:point>
+							<ga:point>
+								<ga:ability>10</ga:ability>
+								<ga:purchase_point>0</ga:purchase_point>
+							</ga:point>
+							<ga:point>
+								<ga:ability>11</ga:ability>
+								<ga:purchase_point>1</ga:purchase_point>
+							</ga:point>
+							<ga:point>
+								<ga:ability>12</ga:ability>
+								<ga:purchase_point>2</ga:purchase_point>
+							</ga:point>
+							<ga:point>
+								<ga:ability>13</ga:ability>
+								<ga:purchase_point>3</ga:purchase_point>
+							</ga:point>
+							<ga:point>
+								<ga:ability>14</ga:ability>
+								<ga:purchase_point>5</ga:purchase_point>
+							</ga:point>
+							<ga:point>
+								<ga:ability>15</ga:ability>
+								<ga:purchase_point>7</ga:purchase_point>
+							</ga:point>
+							<ga:point>
+								<ga:ability>16</ga:ability>
+								<ga:purchase_point>10</ga:purchase_point>
+							</ga:point>
+							<ga:point>
+								<ga:ability>17</ga:ability>
+								<ga:purchase_point>13</ga:purchase_point>
+							</ga:point>
+							<ga:point>
+								<ga:ability>18</ga:ability>
+								<ga:purchase_point>17</ga:purchase_point>
+							</ga:point>
+						</ga:purchase_points>
+						<ga:fantasies>
+						<ga:title lang="en">Table: Ability Score Points</ga:title>
+							<ga:title lang="zh-tw"></ga:title>
+							<ga:heads>
+								<ga:head lang="en">Campaign Type</ga:head>
+								<ga:head lang="zh-tw">戰役類型</ga:head>
+								<ga:head lang="en">Points</ga:head>
+								<ga:head lang="zh-tw">購點設置</ga:head>
+							</ga:heads>
+							<ga:fantasy>
+								<ga:name lang="en">Low Fantasy</ga:name>
+								<ga:name lang="zh-tw">簡單戰役</ga:name>
+								<ga:point>10</ga:point>
+							</ga:fantasy>
+							<ga:fantasy>
+								<ga:name lang="en">Standard Fantasy</ga:name>
+								<ga:name lang="zh-tw">普通戰役</ga:name>
+								<ga:point>15</ga:point>
+							</ga:fantasy>
+							<ga:fantasy>
+								<ga:name lang="en">High Fantasy</ga:name>
+								<ga:name lang="zh-tw">困難戰役</ga:name>
+								<ga:point>20</ga:point>
+							</ga:fantasy>
+							<ga:fantasy>
+								<ga:name lang="en">Epic Fantasy</ga:name>
+								<ga:name lang="zh-tw">傳奇戰役</ga:name>
+								<ga:point>25</ga:point>
+							</ga:fantasy>
+						</ga:fantasies>
+					</ga:method>
+				</ga:methods>
+				
+				<section>
+					<title lang="en">Determine Bonuses</title>
+					<title lang="zh-tw"></title>
+					<paragraph lang="en">Each ability, after changes made because of race, has a modifier ranging from –5 to +5. Table: Ability Modifiers and Bonus Spells shows the modifier for each score. The modifier is the number you apply to the die roll when your character tries to do something related to that ability. You also use the modifier with some numbers that aren't die rolls. A positive modifier is called a bonus, and a negative modifier is called a penalty. The table also shows bonus spells, which you'll need to know about if your character is a spellcaster.</paragraph>
+					<paragraph lang="zh-tw"></paragraph>
+				</section>
+			</section>
 		</section>
 	</body>
 	
 	<paragraphs>
-		<paragraph>
-			
-			<contains>
-				<contain>從詭計多端的<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#rogue" type="ch">rogue</gen:name>到堅韌不屈的<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#paladin" type="ch">paladin</gen:name>，《<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#pathfinder" type="ch">pathfinder</gen:name>》允許你創造出想要扮演的各種<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#character" type="ch">character</gen:name>。在創造<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#character" type="ch">character</gen:name>時，首先應設定好你的<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#character" type="ch">character</gen:name>的大致輪廓。你是想要一位以劍盾和恐怖<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#monster" type="ch">monster</gen:name>的爪牙以血搏血的<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#character" type="ch">character</gen:name>，還是想要一位從超越自身與世界彼端之處獲取力量的神秘先知？一切皆有可能。當你確定了<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#character" type="ch">character</gen:name>的大致輪廓后，請通過以下步驟使<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#character" type="ch">character</gen:name>鮮活起來，並將必要的信息和統計數據記錄在『角色卡』上。</contain>
-				<contain><!--
-					<cre:steps>
-						<cre:step>
-							<cre:title>決定<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#ability_score" type="ch">ability score</gen:name></cre:title>
-							<cre:description>一切從生成<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#character" type="ch">character</gen:name>的<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#ability_score" type="ch">ability_score</gen:name>開始。這六項數值決定了你的<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#character" type="ch">character</gen:name>的基本能力，並將被用來確定一系列的細節和統計數據。某些<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#class" type="ch">class</gen:name>會要求你的某項『屬性』高於平均水準。</cre:description>
-						</cre:step>
-						<cre:step>
-							<cre:title>選定<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#race" type="ch">race</gen:name></cre:title>
-							<cre:description>其次請為你的<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#character" type="ch">character</gen:name>選定<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#race" type="ch">race</gen:name>，為<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#ability_score" type="ch">ability score</gen:name>進行<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#race" type="ch">race</gen:name>調整，並記錄下其他從中獲得的<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#race" type="ch">race</gen:name>特性（參見『<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#race" type="ch">race</gen:name>部分』）。你能夠從七大『核心種族』中挑選，而你的<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#GM" type="ch">GM</gen:name>也許會增添可選用的<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#race" type="ch">race</gen:name>列表。每個<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#race" type="ch">race</gen:name>都列出了你的<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#character" type="ch">character</gen:name>將自動掌握的『語言』，以及可能的『獎勵語言』。<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#character" type="ch">character</gen:name>所掌握的『額外語言』數量等同於他的『智力調整值』。</cre:description>
-						</cre:step>
-						<cre:step>
-							<cre:title>選定<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#class" type="ch">class</gen:name></cre:title>
-							<cre:description><gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#character" type="ch">character</gen:name>的<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#class" type="ch">class</gen:name>體現其專業方向，譬如<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#fighter" type="ch">fighter</gen:name>或<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#wizard" type="ch">wizard</gen:name>。若這是一位新<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#character" type="ch">character</gen:name>，他將以選定的<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#class" type="ch">class</gen:name>從1級開始冒險。當他通過打倒<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#monster" type="ch">monster</gen:name>獲得了足夠多的<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#XP" type="ch">XP</gen:name>並升級時，他將獲得新的『職業特性』和『能力』。</cre:description>
-						</cre:step>
-						<cre:step>
-							<cre:title>選定<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#skill" type="ch">skill</gen:name>和<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#feat" type="ch">feat</gen:name></cre:title>
-							<cre:description>基於其<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#level" type="ch">level</gen:name>和『智力修正』（以及其他<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#bonus" type="ch">bonus</gen:name>，譬如<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#humans" type="ch">humans</gen:name>的『種族獎勵』），決定你的<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#character" type="ch">character</gen:name>所擁有的『技能點數』。再將『技能點數』用來購買每種<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#skill" type="ch">skill</gen:name>的『受訓級數』，不過要注意你不能使某一項<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#skill" type="ch">skill</gen:name>的『受訓級數』超過<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#character_level" type="ch">character level</gen:name>（對初始<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#character" type="ch">character</gen:name>而言通常為1級）。在<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#skill" type="ch">skill</gen:name>之後，基於<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#class" type="ch">class</gen:name>和<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#level" type="ch">level</gen:name>來確認你的<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#character" type="ch">character</gen:name>掌握的<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#feat" type="ch">feat</gen:name>數量，並從可選列表中挑選<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#skill" type="ch">skill</gen:name>。</cre:description>
-						</cre:step>
-						<cre:step>
-							<cre:title>選購<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#equipment" type="ch">equipment</gen:name></cre:title>
-							<cre:description>每位新<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#character" type="ch">character</gen:name>在遊戲起始時基於其<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#class" type="ch">class</gen:name>擁有一定數量的『金錢』，可以用來在相當寬廣的範圍內選購<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#equipment" type="ch">equipment</gen:name>，從『鏈甲』到『皮背包』等等，不一而足。這些<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#equipment" type="ch">equipment</gen:name>協助你的<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#character" type="ch">character</gen:name>在冒險中生存下來。一般而言，若無你的<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#GM" type="ch">GM</gen:name>首肯，你是無法用『起始金錢』購買『魔法物品』的。</cre:description>
-						</cre:step>
-						<cre:step>
-							<cre:title>完成細節</cre:title>
-							<cre:description>最後，你需要決定一名角色的所有細節，包括起始<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#HP" type="ch">HP</gen:name>、<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#AC" type="ch">AC</gen:name>、<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#saving_throw" type="ch">saving throw</gen:name>、『先攻加值』、『攻擊加值』等等。所有這些數值都由前幾個步驟中你所做出的選擇來決定。除此以外，你還需要決定你的<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#character" type="ch">character</gen:name>的姓名、<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#alignment" type="ch">alignment</gen:name>、體貌特徵等等。最好還能設定一些人格特徵，以協助你在遊戲中扮演該<gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#character" type="ch">character</gen:name>。</cre:description>
-						</cre:step>
-					</cre:steps>-->
-				</contain>
-			</contains>
-		</paragraph>
 		<paragraph>
 			<title><gen:name xlink:type="simple" xlink:href="/pathfinder/static/xml/terms.xml#ability_score" type="total">ability score</gen:name></title>
 			<contains>
