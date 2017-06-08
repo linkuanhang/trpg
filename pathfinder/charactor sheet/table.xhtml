@@ -1,0 +1,1827 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html>
+<html lang="zh-tw" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>角色表</title>
+	<link rel="stylesheet" type="text/css" href="https://www.w3schools.com/w3css/4/w3pro.css" />
+	<link rel="stylesheet" type="text/css" href="https://www.w3schools.com/lib/w3-theme-grey.css" />
+	<link rel="stylesheet" type="text/css" href="table.css" />
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript" src="https://johnny.github.io/jquery-sortable/js/jquery-sortable-min.js"></script>
+	<script type="text/javascript" src="table.js"></script>
+</head>
+
+<!--
+<menu type="context" id="edit-menu">
+	<menuitem label="編輯內容" onclick="edit_content();"></menuitem>
+	<menuitem label="編輯網頁" onclick="edit_HTML();"></menuitem>
+</menu>
+
+<menu type="context" id="write-menu">
+	<menuitem label="寫入" onclick="write_edit();"></menuitem>
+</menu>
+-->
+
+<body>
+<div class="w3-centered"><div class="loader"></div></div>
+
+<div class="tabs-container w3-container" hidden="hidden">
+<img src="https://paizo.com/image/content/Logos/PathfinderRPGLogo_500.jpeg" height="60" alt="Pathfinder Roleplaying Game" /> 
+
+<div class="tabbar w3-bar">
+	<button class="tablink w3-bar-item w3-button" onclick="show_tab(this,'基本')">基本</button>
+	<button class="tablink w3-bar-item w3-button" onclick="show_tab(this,'職業')">職業</button>
+	<button class="tablink w3-bar-item w3-button" onclick="show_tab(this,'屬性')">屬性</button>
+	<button class="tablink w3-bar-item w3-button" onclick="show_tab(this,'戰鬥')">戰鬥</button>
+	<button class="tablink w3-bar-item w3-button" onclick="show_tab(this,'技能')">技能</button>
+	<button class="tablink w3-bar-item w3-button" onclick="show_tab(this,'能力')">能力</button>
+	<button class="tablink w3-bar-item w3-button" onclick="show_tab(this,'物品')">物品</button>
+	<button class="tablink w3-bar-item w3-button" onclick="show_tab(this,'法術')">法術</button>
+	<button class="tablink w3-bar-item w3-button w3-right" onclick="show_tab(this,'test')">編輯</button>
+</div>
+
+<div class="tabs">
+<div id="基本" class="tab edit w3-container w3-border" hidden="hidden">
+<p class="boxes w3-container">
+	<span class="box w3-tag w3-border w3-theme-light">
+		<strong class="title">角色名</strong>
+		<span id="角色名" class="value">翟</span>
+	</span>
+	
+	<span class="box w3-tag w3-border w3-theme-light">
+		<strong class="title">玩家名</strong>
+		<span id="玩家名" class="value">vCJD</span>
+	</span>
+	
+	<span class="box w3-tag w3-border w3-theme-light">
+		<strong class="title">性別</strong>
+		<span id="性別" class="value">男</span>
+	</span>
+	
+	<span class="box w3-tag w3-border w3-theme-light">
+		<strong class="title">種族</strong>
+		<span id="種族" class="value">人類</span>
+	</span>
+	
+	<span class="box w3-tag w3-border w3-theme-light">
+		<strong class="title">年齡</strong>
+		<span id="年齡" class="value">20</span>
+	</span>
+	
+	<span class="box w3-tag w3-border w3-theme-light">
+		<strong class="title">身高</strong>
+		<span id="身高" class="value">五呎三吋</span>
+	</span>
+	
+	<span class="box w3-tag w3-border w3-theme-light">
+		<strong class="title">體重</strong>
+		<span id="體重" class="value">160磅</span>
+	</span>
+	
+	<span class="box w3-tag w3-border w3-theme-light">
+		<strong class="title">髮色</strong>
+		<span id="髮色" class="value">黑</span>
+	</span>
+	
+	<span class="box w3-tag w3-border w3-theme-light">
+		<strong class="title">瞳色</strong>
+		<span id="瞳色" class="value">黑</span>
+	</span>
+</p>
+
+<section>
+<h2>角色經歷</h2>
+
+<p>翟出生在大陸東南方一個名叫「山松」的小國，由於山松親近精靈等非人類的種族，因而受到北方很多國家的仇視，翟出生不久後，山松便遭北方強國「青靈」入侵，翟的父親帶著一支隊伍與襁褓中的翟掩護著一些精靈奮勇殺出青靈軍的重圍，最終雖然成功護送部份精靈離開山松，然而山松軍已潰不成軍，翟的父親也身受重傷，一路被青靈軍追殺到「鳳城」，被一位路過的武僧——「玄」所救，而翟的父親傷勢過重，臨終前將自己的兒子託付給玄，由於當時翟還沒有名字，玄便將掛在翟胸前石板上的「翟」字作為翟的名字。</p>
+<p>玄為「祆教」的信徒，因而玄將翟寄養在當時祆教唯一離戰區比較遠的據點中。祆教為大陸南方的一個宗教，與北方的永恆聖火教差不多時間興起，祆教在大陸南方勢力不算大，據點都幾乎都分佈在戰場附近，以救濟因戰爭而流離失所的難民為主。祆教所崇拜的聖物與北方的永恆聖火教相似——永不熄滅的火焰，不過祆教與永恆聖火教不一樣的地方在於祆教對於非人族群也給予相同的救濟。</p>
+<p>翟幼年時期幾乎都待在祆教據點中，由於翟所在的據點離戰區較遠，所以翟幼年過得非常快樂，也因長期接觸祆教的團員，而感染了善良的氣息。翟五歲那年，北方勢力漸漸南下，戰火也跟著往南方延伸，甚至擴張到翟成長的據點，那年翟初次體會到戰爭所帶來的痛苦，於是下定決心加入祆教，想跟隨著玄在各個不同的戰區幫助有困難的人。不過當時玄認為翟還太過年幼，不適合入教，但還是讓翟參與救濟的行動。</p>
+<p>過了不久，翟慢慢培養出樂於助人的個性，潛移默化中也燃起了對永恆聖火的喜愛，玄見翟如此向善，決定傳授翟他的所學。一開始，玄先要求翟苦練基本功，舉凡平常據點中的例行公事如挑水、砍柴、打掃、簡單地農耕與生火煮飯等都盡量交由翟來完成，不時還要載上貨物到處分送物資，或者蹲馬步以及打沙包。七年後，玄認為翟具備了基本的武僧素質，因而開始教授翟武僧的基本招式，並開始與翟對打訓練。</p>
+<p>翟十八歲那年，永恆聖火教的作風有了巨大的變化，本是象徵救贖的聖火被用於火刑柱，其信徒甚至開始屠殺人數不多的異族與打壓其他教團，在戰場附近救援的祆教首當其衝，遭到永恆聖火教的屠殺，諸多祆教信徒被冠上「異教徒」的名號而送上火刑柱處死，由於玄也是祆教的信徒，因此也遭到永恆聖火教的追殺，連帶著跟在玄身邊的翟也被視為追殺的目標。但由於玄實在太過善良，認為追殺他們的人只是誤入歧途，不忍心對那些人痛下殺手，於是玄和翟只是一昧地逃跑，即使無可避免需要刀刃相向，玄也只是把人打暈，不願傷到他們分毫，因此追殺玄和翟的教徒越來越多。</p>
+<p>之後玄和翟在「藏風原」被數十個永恆聖火教的信徒圍剿，其中玄為了救翟而被長劍貫穿上腹，也因此失手奪走了永恆聖火教信徒的生命。翟帶著奄奄一息的玄躲進藏風原一處的山洞中，玄只對翟說了一些話便斷了氣息，翟抱著玄的屍首放聲哭喊了將近一個時辰，直到淚盡喑啞才默默地將玄和其他永恆聖火教信徒的屍體放入洞窟中，並在洞口用力地猛擊石壁，使洞口完全坍塌。翟出了洞之後轉身對著坍塌的洞口拜了一拜，嘴裡唸唸有詞，隨即便落寞地離開藏風原，踏上了流浪的生活。</p>
+
+<section>
+<h3>角色外貌描寫</h3>
+
+<p>翟身長五尺三寸，道貌岸然，身體因自小習武而結實，手腳俐落，用以攻擊的武器就是拳頭。</p>
+</section>
+</section>
+</div>
+
+<div id="職業" class="tab w3-container w3-border edit" hidden="hidden">
+<p class="boxes w3-container">
+	<span class="box w3-tag w3-border w3-theme-light">
+		<strong class="title">等級</strong>
+		<span id="等級" class="value" data-eval="sum_node(get('#職業數值 .職業等級'));" data-ref="職業數值">0</span>
+	</span>
+	
+	<span class="box w3-tag w3-border w3-theme-light">
+		<strong class="title">體型</strong>
+		<select id="體型" class="value w3-border-0 w3-center" style="background:rgba(0, 0, 0, 0);">
+			<option value="-8">超巨型體型</option>
+			<option value="-4">巨型體型</option>
+			<option value="-2">超大型體型</option>
+			<option value="-1">大型體型</option>
+			<option value="0" selected="selected">中等體型</option>
+			<option value="1">小型體型</option>
+			<option value="2">超小型體型</option>
+			<option value="4">微型體型</option>
+			<option value="8">超微型體型</option>
+		</select>
+	</span>
+	
+	<span class="box w3-tag w3-border w3-theme-light">
+		<strong class="title">陣營</strong>
+		<span id="陣營" class="value">秩序善良</span>
+	</span>
+	
+	<span class="box w3-tag w3-border w3-theme-light">
+		<strong class="title">信仰</strong>
+		<span id="信仰" class="value">無</span>
+	</span>
+	
+	<span class="box w3-tag w3-border w3-theme-light">
+		<strong class="title">經驗值</strong>
+		<span id="經驗值" class="value">16000</span>
+		<span>/</span>
+		<span id="升等經驗值" class="value" data-eval="5*Math.pow(10,Math.floor(Math.sqrt(copy_one('#等級'))))*Math.round((400*(Math.pow(2,Math.floor((copy_one('#等級')+1)/2))-1)+600*(Math.pow(2,Math.floor(copy_one('#等級')/2))-1))/Math.pow(10,Math.floor(Math.sqrt(copy_one('#等級')))))" data-ref="等級">0</span>
+	</span>
+</p>
+
+<table id="職業數值" class="w3-table-all w3-centered w3-panel">
+	<thead>
+		<tr>
+			<th>天賦職業</th>
+			<th>職業名稱</th>
+			<th>職業等級</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td class="天賦職業"><input class="value" type="checkbox" checked="checked" disabled="disabled" /></td>
+			<td class="職業名稱"><span class="value">武僧</span></td>
+			<td class="職業等級"><span id="武僧等級" class="value">5</span></td>
+		</tr>
+		<tr>
+			<td class="天賦職業"><input class="value" type="checkbox" disabled="disabled" /></td>
+			<td class="職業名稱"><span class="value">術士</span></td>
+			<td class="職業等級"><span id="術士等級" class="value">1</span></td>
+		</tr>
+	</tbody>
+	<tfoot>
+	</tfoot>
+</table>
+</div>
+
+<div id="屬性" class="tab w3-container w3-border edit" hidden="hidden">
+<div id="力量屬性" class="block w3-panel w3-border">
+	<h3 class="title">力量</h3>
+	
+	<p class="depvars boxes w3-container">
+		<span class="box w3-tag w3-border w3-theme-light">
+			<strong class="title">總值</strong>
+			<span id="力量總值" class="value" data-eval="make_value(this);" data-mod="get('#力量總調整值');">0</span>
+		</span>
+		
+		<span class="box w3-tag w3-border w3-theme-light">
+			<strong class="title">調整值</strong>
+			<span id="力量總調整值" class="value" data-eval="add_sign(Math.floor(copy_one('#力量總值')/2)-5,'+');">0</span>
+		</span>
+		
+		<span class="box w3-tag w3-border w3-theme-light">
+			<strong class="title">基本值</strong>
+			<span id="力量基本值" class="value" data-eval="make_value(this);" data-mod="get('#力量基本調整值');">0</span>
+		</span>
+		
+		<span class="box w3-tag w3-border w3-theme-light">
+			<strong class="title">基本調整值</strong>
+			<span id="力量基本調整值" class="value" data-eval="add_sign(Math.floor(copy_one('#力量基本值')/2)-5,'+');">0</span>
+		</span>
+		
+		<span class="box w3-tag w3-border w3-theme-light">
+			<strong class="title">臨時調整值</strong>
+			<input class="value w3-border-0 w3-center" type="number" style="width:5em" value="0" data-mod="get('#力量總值');" />
+		</span>
+	</p>
+	
+	<p class="indvars boxes w3-container">
+		<span class="box w3-tag w3-border w3-theme-light">
+			<input class="value" type="checkbox" checked="checked" disabled="disabled" data-mod="get('#力量總值,#力量基本值');" />
+			<strong class="title">原始值</strong>
+			<span class="value" data-mod="get('#力量總值,#力量基本值');">12</span>
+		</span>
+	</p>
+</div>
+
+<div id="敏捷屬性" class="block w3-panel w3-border">
+	<h3 class="title">敏捷</h3>
+	
+	<p class="depvars boxes w3-container">
+		<span class="box w3-tag w3-border w3-theme-light">
+			<strong class="title">總值</strong>
+			<span id="敏捷總值" class="value" data-eval="make_value(this);" data-mod="get('#敏捷總調整值');">0</span>
+		</span>
+		
+		<span class="box w3-tag w3-border w3-theme-light">
+			<strong class="title">調整值</strong>
+			<span id="敏捷總調整值" class="value" data-eval="add_sign(Math.floor(copy_one('#敏捷總值')/2)-5,'+');">0</span>
+		</span>
+		
+		<span class="box w3-tag w3-border w3-theme-light">
+			<strong class="title">基本值</strong>
+			<span id="敏捷基本值" class="value" data-eval="make_value(this);" data-mod="get('#敏捷基本調整值');">0</span>
+		</span>
+		
+		<span class="box w3-tag w3-border w3-theme-light">
+			<strong class="title">基本調整值</strong>
+			<span id="敏捷基本調整值" class="value" data-eval="add_sign(Math.floor(copy_one('#敏捷基本值')/2)-5,'+');">0</span>
+		</span>
+		
+		<span class="box w3-tag w3-border w3-theme-light">
+			<strong class="title">臨時調整值</strong>
+			<input class="value w3-border-0 w3-center" type="number" style="width:5em" value="0" data-mod="get('#敏捷總值');" />
+		</span>
+	</p>
+	
+	<p class="indvars boxes w3-container">
+		<span class="box w3-tag w3-border w3-theme-light">
+			<input class="value" type="checkbox" checked="checked" disabled="disabled" data-mod="get('#敏捷總值,#敏捷基本值');" />
+			<strong class="title">原始值</strong>
+			<span class="value" data-mod="get('#敏捷總值,#敏捷基本值');">14</span>
+		</span>
+		
+		<span class="box w3-tag w3-border w3-theme-light">
+			<input class="value" type="checkbox" checked="checked" disabled="disabled" data-mod="get('#敏捷總值,#敏捷基本值');" />
+			<strong class="title">人類屬性加值</strong>
+			<span class="value" data-mod="get('#敏捷總值,#敏捷基本值');">+2</span>
+		</span>
+		
+		<span class="box w3-tag w3-border w3-theme-light">
+			<input id="敏捷增強加值確認" class="value" type="checkbox" data-mod="get('#敏捷總值');" />
+			<strong class="title">增強加值</strong>
+			<span class="value" data-mod="get('#敏捷總值');">+4</span>
+		</span>
+		
+		<span class="box w3-tag w3-border w3-theme-light">
+			<input id="屬性死亡減值確認" class="value" type="checkbox" data-mod="get('#敏捷總值,#敏捷基本值');" />
+			<strong class="title">死亡減值</strong>
+			<span class="value" data-mod="get('#敏捷總值,#敏捷基本值');">-2</span>
+		</span>
+	</p>
+</div>
+
+<div id="體質屬性" class="block w3-panel w3-border">
+	<h3 class="title">體質</h3>
+
+	<p class="depvars boxes w3-container">
+		<span class="box w3-tag w3-border w3-theme-light">
+			<strong class="title">總值</strong>
+			<span id="體質總值" class="value" data-eval="make_value(this);" data-mod="get('#體質總調整值');">0</span>
+		</span>
+		
+		<span class="box w3-tag w3-border w3-theme-light">
+			<strong class="title">調整值</strong>
+			<span id="體質總調整值" class="value" data-eval="add_sign(Math.floor(copy_one('#體質總值')/2)-5,'+');">0</span>
+		</span>
+		
+		<span class="box w3-tag w3-border w3-theme-light">
+			<strong class="title">基本值</strong>
+			<span id="體質基本值" class="value" data-eval="make_value(this);" data-mod="get('#體質基本調整值');">0</span>
+		</span>
+		
+		<span class="box w3-tag w3-border w3-theme-light">
+			<strong class="title">基本調整值</strong>
+			<span id="體質基本調整值" class="value" data-eval="add_sign(Math.floor(copy_one('#體質基本值')/2)-5,'+');">0</span>
+		</span>
+		
+		<span class="box w3-tag w3-border w3-theme-light">
+			<strong class="title">臨時調整值</strong>
+			<input class="value w3-border-0 w3-center" type="number" style="width:5em" value="0" data-mod="get('#體質總值');" />
+		</span>
+	</p>
+	
+	<p class="indvars boxes w3-container">
+		<span class="box w3-tag w3-border w3-theme-light">
+			<input class="value" type="checkbox" checked="checked" disabled="disabled" data-mod="get('#體質總值,#體質基本值');" />
+			<strong class="title">原始值</strong>
+			<span class="value" data-mod="get('#體質總值,#體質基本值');">13</span>
+		</span>
+	</p>
+</div>
+
+<div id="智力屬性" class="block w3-panel w3-border">
+	<h3 class="title">智力</h3>
+
+	<p class="depvars boxes w3-container">
+		<span class="box w3-tag w3-border w3-theme-light">
+			<strong class="title">總值</strong>
+			<span id="智力總值" class="value" data-eval="make_value(this);" data-mod="get('#智力總調整值');">0</span>
+		</span>
+		
+		<span class="box w3-tag w3-border w3-theme-light">
+			<strong class="title">調整值</strong>
+			<span id="智力總調整值" class="value" data-eval="add_sign(Math.floor(copy_one('#智力總值')/2)-5,'+');">0</span>
+		</span>
+		
+		<span class="box w3-tag w3-border w3-theme-light">
+			<strong class="title">基本值</strong>
+			<span id="智力基本值" class="value" data-eval="make_value(this);" data-mod="get('#智力基本調整值');">0</span>
+		</span>
+		
+		<span class="box w3-tag w3-border w3-theme-light">
+			<strong class="title">基本調整值</strong>
+			<span id="智力基本調整值" class="value" data-eval="add_sign(Math.floor(copy_one('#智力基本值')/2)-5,'+');">0</span>
+		</span>
+		
+		<span class="box w3-tag w3-border w3-theme-light">
+			<strong class="title">臨時調整值</strong>
+			<input class="value w3-border-0 w3-center" type="number" style="width:5em" value="0" data-mod="get('#智力總值');" />
+		</span>
+	</p>
+	
+	<p class="indvars w3-container">
+		<span class="box w3-tag w3-border w3-theme-light">
+			<input class="value" type="checkbox" checked="checked" disabled="disabled" data-mod="get('#智力總值,#智力基本值');" />
+			<strong class="title">原始值</strong>
+			<span class="value" data-mod="get('#智力總值,#智力基本值');">12</span>
+		</span>
+	</p>
+</div>
+
+<div id="感知屬性" class="block w3-panel w3-border">
+	<h3 class="值區塊名">感知</h3>
+
+	<p class="depvars w3-container">
+		<span class="box w3-tag w3-border w3-theme-light">
+			<strong class="title">總值</strong>
+			<span id="感知總值" class="value" data-eval="make_value(this);" data-mod="get('#感知總調整值');">0</span>
+		</span>
+		
+		<span class="box w3-tag w3-border w3-theme-light">
+			<strong class="title">調整值</strong>
+			<span id="感知總調整值" class="value" data-eval="add_sign(Math.floor(copy_one('#感知總值')/2)-5,'+');">0</span>
+		</span>
+		
+		<span class="box w3-tag w3-border w3-theme-light">
+			<strong class="title">基本值</strong>
+			<span id="感知基本值" class="value" data-eval="make_value(this);" data-mod="get('#感知基本調整值');">0</span>
+		</span>
+		
+		<span class="box w3-tag w3-border w3-theme-light">
+			<strong class="title">基本調整值</strong>
+			<span id="感知基本調整值" class="value" data-eval="add_sign(Math.floor(copy_one('#感知基本值')/2)-5,'+');">0</span>
+		</span>
+		
+		<span class="box w3-tag w3-border w3-theme-light">
+			<strong class="title">臨時調整值</strong>
+			<input class="value w3-border-0 w3-center" type="number" style="width:5em" value="0" data-mod="get('#感知總值');" />
+		</span>
+	</p>
+	
+	<p class="indvars w3-container">
+		<span class="box w3-tag w3-border w3-theme-light">
+			<input class="value" type="checkbox" checked="checked" disabled="disabled" data-mod="get('#感知總值,#感知基本值');" />
+			<strong class="title">原始值</strong>
+			<span class="value" data-mod="get('#感知總值,#感知基本值');">12</span>
+		</span>
+	</p>
+</div>
+
+<div id="魅力屬性" class="block w3-panel w3-border">
+	<h3 class="title">魅力</h3>
+
+	<p class="depvars w3-container">
+		<span class="box w3-tag w3-border w3-theme-light">
+			<strong class="title">總值</strong>
+			<span id="魅力總值" class="value" data-eval="make_value(this);" data-mod="get('#魅力總調整值');">0</span>
+		</span>
+		
+		<span class="box w3-tag w3-border w3-theme-light">
+			<strong class="title">調整值</strong>
+			<span id="魅力總調整值" class="value" data-eval="add_sign(Math.floor(copy_one('#魅力總值')/2)-5,'+');">0</span>
+		</span>
+		
+		<span class="box w3-tag w3-border w3-theme-light">
+			<strong class="title">基本值</strong>
+			<span id="魅力基本值" class="value" data-eval="make_value(this);" data-mod="get('#魅力基本調整值');">0</span>
+		</span>
+		
+		<span class="box w3-tag w3-border w3-theme-light">
+			<strong class="title">基本調整值</strong>
+			<span id="魅力基本調整值" class="value" data-eval="add_sign(Math.floor(copy_one('#魅力基本值')/2)-5,'+');">0</span>
+		</span>
+		
+		<span class="box w3-tag w3-border w3-theme-light">
+			<strong class="title">臨時調整值</strong>
+			<input class="value w3-border-0 w3-center" type="number" style="width:5em" value="0" data-mod="get('#魅力總值');" />
+		</span>
+	</p>
+	
+	<p class="indvars w3-container">
+		<span class="box w3-tag w3-border w3-theme-light">
+			<input class="value" type="checkbox" checked="checked" disabled="disabled" data-mod="get('#魅力總值,#魅力基本值');" />
+			<strong class="title">原始值</strong>
+			<span class="value" data-mod="get('#魅力總值,#魅力基本值');">11</span>
+		</span>
+		
+		<span class="box w3-tag w3-border w3-theme-light">
+			<input id="魅力增強加值確認" class="value" type="checkbox" data-mod="get('#魅力總值,#魅力基本值');" />
+			<strong class="title">增強加值</strong>
+			<span class="value" data-mod="get('#魅力總值,#魅力基本值');">+10</span>
+		</span>
+	</p>
+</div>
+</div>
+
+<div id="戰鬥" class="tab w3-container w3-border edit" hidden="hidden">
+<h2>攻擊</h2>
+
+<p class="boxes w3-container">
+	<span class="box w3-tag w3-border w3-theme-light">
+		<strong class="title">基本攻擊加值</strong>
+		<span id="基本攻擊加值" class="value" data-eval="add_sign(Math.floor(0.75*copy_one('#武僧等級'))+Math.floor(0.5*copy_one('#術士等級')),'+');" data-ref="職業數值">0</span>
+	</span>
+	
+	<span class="box w3-tag w3-border w3-theme-light">
+		<strong class="title">先攻權調整值</strong>
+		<span id="先攻權調整值" class="value" data-eval="add_sign(copy_one('#敏捷總調整值')+copy_one('#先攻權臨時調整值'),'+');" data-ref="敏捷總調整值">0</span>
+	</span>
+	
+	<span class="box w3-tag w3-border w3-theme-light">
+		<strong class="title">先攻權臨時調整值</strong>
+		<input id="先攻權臨時調整值" class="value w3-border-0 w3-center" type="number" style="width:5em" value="0" data-mod="get('#先攻權調整值');" />
+	</span>
+</p>
+
+<div id="速度" class="block w3-panel w3-border">
+	<h3 class="title">速度</h3>
+
+	<p class="depvars w3-container">
+		<span class="box w3-tag w3-border w3-theme-light">
+			<strong class="title">總值</strong>
+			<span id="速度總值" class="value" data-eval="make_value(this);">0</span>
+		</span>
+		
+		<span class="box w3-tag w3-border w3-theme-light">
+			<strong class="title">基本值</strong>
+			<span id="速度基本值" class="value" data-eval="make_value(this);">0</span>
+		</span>
+		
+		<span class="box w3-tag w3-border w3-theme-light">
+			<strong class="title">臨時調整值</strong>
+			<input class="value w3-border-0 w3-center" type="number" style="width:5em" value="0" step="5" data-mod="get('#速度總值');" />
+		</span>
+	</p>
+	
+	<p class="indvars w3-container">
+		<span class="box w3-tag w3-border w3-theme-light">
+			<input class="value" type="checkbox" checked="checked" disabled="disabled" data-mod="get('#速度總值,#速度基本值');" />
+			<strong class="title">原始值</strong>
+			<span class="value" data-mod="get('#速度總值,#速度基本值');">30</span>
+		</span>
+		
+		<span class="box w3-tag w3-border w3-theme-light">
+			<input class="value" type="checkbox" checked="checked" disabled="disabled" data-mod="get('#速度總值');" />
+			<strong class="title">阻礙減值</strong>
+			<span class="value" data-mod="get('#速度總值');">-0</span>
+		</span>
+		
+		<span class="box w3-tag w3-border w3-theme-light">
+			<input class="value" type="checkbox" checked="checked" disabled="disabled" data-mod="get('#速度總值');" />
+			<strong class="title">武僧速度加值</strong>
+			<span class="value" data-eval="add_sign(Math.floor(copy_one('#武僧等級')/3)*10,'+');" data-ref="職業數值" data-mod="get('#速度總值');">0</span>
+		</span>
+	</p>
+</div>
+
+<div id="近戰攻擊" class="block w3-panel w3-border">
+	<h3 class="title">近戰攻擊</h3>
+
+	<p class="depvars w3-container">
+		<span class="box w3-tag w3-border w3-theme-light">
+			<strong class="title">攻擊加值</strong>
+			<span id="近戰攻擊加值" class="value" data-eval="add_sign(make_value(this),'+');">0</span>
+		</span>
+		
+		<span class="box w3-tag w3-border w3-theme-light">
+			<strong class="title">攻擊臨時調整值</strong>
+			<input class="value w3-border-0 w3-center" type="number" style="width:5em" value="0" data-mod="get('#近戰攻擊加值');" />
+		</span>
+		
+		<span class="box w3-tag w3-border w3-theme-light">
+			<strong class="title">傷害加值</strong>
+			<span id="近戰傷害加值" class="value" data-eval="add_sign(make_value(this),'+');">0</span>
+		</span>
+		
+		<span class="box w3-tag w3-border w3-theme-light">
+			<strong class="title">傷害臨時調整值</strong>
+			<input class="value w3-border-0 w3-center" type="number" style="width:5em" value="0" data-mod="get('#近戰傷害加值');" />
+		</span>
+	</p>
+	
+	<p class="indvars w3-container">
+		<span class="box w3-tag w3-border w3-theme-light">
+			<input class="value" type="checkbox" checked="checked" disabled="disabled" data-mod="get('#近戰攻擊加值')" />
+			<strong class="title">基本攻擊加值</strong>
+			<span class="value" data-eval="add_sign(copy_one('#基本攻擊加值'),'+');" data-ref="基本攻擊加值" data-mod="get('#近戰攻擊加值')">0</span>
+		</span>
+		
+		<span class="box w3-tag w3-border w3-theme-light">
+			<input class="value" type="checkbox" checked="checked" disabled="disabled" data-mod="get('#近戰攻擊加值,#近戰傷害加值');" />
+			<strong class="title">力量調整值</strong>
+			<span class="value" data-eval="add_sign(copy_one('#力量總調整值'),'+');" data-ref="力量總調整值" data-mod="get('#近戰攻擊加值,#近戰傷害加值');">0</span>
+		</span>
+		
+		<span class="box w3-tag w3-border w3-theme-light">
+			<input class="value" type="checkbox" checked="checked" disabled="disabled" data-mod="get('#近戰攻擊加值');" />
+			<strong class="title">體型調整值</strong>
+			<span class="value" data-eval="add_sign(copy_one('#體型'),'+');" data-ref="體型" data-mod="get('#近戰攻擊加值');">0</span>
+		</span>
+		
+		<span class="box w3-tag w3-border w3-theme-light">
+			<input class="value" type="checkbox" data-mod="get('#近戰傷害加值');" />
+			<strong class="title">雙手加值</strong>
+			<span class="value" data-eval="add_sign(Math.max(Math.floor(0.5*copy_one('#力量總調整值')),0),'+');" data-ref="力量總調整值" data-mod="get('#近戰傷害加值');">0</span>
+		</span>
+		
+		<span class="box w3-tag w3-border w3-theme-light">
+			<input class="value" type="checkbox" data-mod="get('#近戰傷害加值');" />
+			<strong class="title">副手減值</strong>
+			<span class="value" data-eval="add_sign(-Math.max(Math.ceil(0.5*copy_one('#力量總調整值')),0),'-');" data-ref="力量總調整值" data-mod="get('#近戰傷害加值');">0</span>
+		</span>
+	</p>
+</div>
+
+<div id="遠程攻擊" class="block w3-panel w3-border">
+	<h3 class="title">遠程攻擊</h3>
+
+	<p class="depvars w3-container">
+		<span class="box w3-tag w3-border w3-theme-light">
+			<strong class="title">攻擊加值</strong>
+			<span id="遠程攻擊加值" class="value" data-eval="add_sign(make_value(this),'+');">0</span>
+		</span>
+		
+		<span class="box w3-tag w3-border w3-theme-light">
+			<strong class="title">攻擊臨時調整值</strong>
+			<input class="value w3-border-0 w3-center" type="number" style="width:5em" value="0" data-mod="get('#遠程攻擊加值');" />
+		</span>
+		
+		<span class="box w3-tag w3-border w3-theme-light">
+			<strong class="title">傷害加值</strong>
+			<span id="遠程傷害加值" class="value" data-eval="add_sign(make_value(this),'+');">0</span>
+		</span>
+		
+		<span class="box w3-tag w3-border w3-theme-light">
+			<strong class="title">傷害臨時調整值</strong>
+			<input class="value w3-border-0 w3-center" type="number" style="width:5em" value="0" data-mod="get('#遠程傷害加值');" />
+		</span>
+	</p>
+	
+	<p class="indvars w3-container">
+		<span class="box w3-tag w3-border w3-theme-light">
+			<input class="value" type="checkbox" checked="checked" disabled="disabled" data-mod="get('#遠程攻擊加值')" />
+			<strong class="title">基本攻擊加值</strong>
+			<span class="value" data-eval="add_sign(copy_one('#基本攻擊加值'),'+');" data-ref="基本攻擊加值" data-mod="get('#遠程攻擊加值')">0</span>
+		</span>
+		
+		<span class="box w3-tag w3-border w3-theme-light">
+			<input class="value" type="checkbox" checked="checked" disabled="disabled" data-mod="get('#遠程攻擊加值');" />
+			<strong class="title">敏捷調整值</strong>
+			<span class="value" data-eval="add_sign(copy_one('#敏捷總調整值'),'+');" data-ref="敏捷總調整值" data-mod="get('#遠程攻擊加值');">0</span>
+		</span>
+		
+		<span class="box w3-tag w3-border w3-theme-light">
+			<input class="value" type="checkbox" checked="checked" disabled="disabled" data-mod="get('#遠程攻擊加值');" />
+			<strong class="title">體型調整值</strong>
+			<span class="value" data-eval="add_sign(copy_one('#體型'),'+');" data-ref="體型" data-mod="get('#遠程攻擊加值');">0</span>
+		</span>
+		
+		<span class="box w3-tag w3-border w3-theme-light">
+			<input class="value" type="checkbox" data-mod="get('#遠程傷害加值');" />
+			<strong class="title">力量減值</strong>
+			<span class="value" data-eval="add_sign(Math.min(copy_one('#力量總調整值'),0),'-');" data-ref="力量總調整值" data-mod="get('#遠程傷害加值');">0</span>
+		</span>
+		
+		<span class="box w3-tag w3-border w3-theme-light">
+			<input class="value" type="checkbox" data-mod="get('#遠程傷害加值');" />
+			<strong class="title">力量加值</strong>
+			<span class="value" data-eval="add_sign(Math.max(copy_one('#力量總調整值'),0),'+');" data-ref="力量總調整值" data-mod="get('#遠程傷害加值');">0</span>
+		</span>
+	</p>
+</div>
+
+<div id="戰技加值" class="block w3-panel w3-border">
+	<h3 class="title">戰技加值</h3>
+
+	<p class="depvars w3-container">
+		<span class="box w3-tag w3-border w3-theme-light">
+			<strong class="title">總值</strong>
+			<span id="戰技總加值" class="value" data-eval="add_sign(make_value(this),'+');">0</span>
+		</span>
+		
+		<span class="box w3-tag w3-border w3-theme-light">
+			<strong class="title">臨時調整值</strong>
+			<input class="value w3-border-0 w3-center" type="number" style="width:5em" value="0" data-mod="get('#戰技總加值');" />
+		</span>
+	</p>
+	
+	<p class="indvars w3-container">
+		<span class="box w3-tag w3-border w3-theme-light">
+			<input class="value" type="checkbox" checked="checked" disabled="disabled" data-mod="get('#戰技總加值')" />
+			<strong class="title">基本攻擊加值</strong>
+			<span class="value" data-eval="add_sign(copy_one('#基本攻擊加值'),'+');" data-ref="基本攻擊加值" data-mod="get('#戰技總加值')">0</span>
+		</span>
+		
+		<span class="box w3-tag w3-border w3-theme-light">
+			<input class="value" type="checkbox" checked="checked" disabled="disabled" data-mod="get('#戰技總加值');" />
+			<strong class="title">力量調整值</strong>
+			<span class="value" data-eval="add_sign(copy_one('#力量總調整值'),'+');" data-ref="力量總調整值" data-mod="get('#戰技總加值');">0</span>
+		</span>
+		
+		<span class="box w3-tag w3-border w3-theme-light">
+			<input class="value" type="checkbox" checked="checked" disabled="disabled" data-mod="get('#戰技總加值');" />
+			<strong class="title">特殊體型調整值</strong>
+			<span class="value" data-eval="add_sign(-copy_one('#體型'),'+');" data-ref="體型" data-mod="get('#戰技總加值');">0</span>
+		</span>
+	</p>
+</div>
+
+<table id="武器數值" class="w3-table-all w3-centered w3-panel">
+	<thead>
+		<tr>
+			<th>武器狀態</th>
+			<th>武器類別</th>
+			<th>武器名稱</th>
+			<th>武器傷害</th>
+			<th>武器重擊</th>
+			<th>武器攻擊範圍</th>
+			<th>武器攻擊類型</th>
+			<th>武器特性</th>
+			<th>武器彈藥</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td class="武器狀態"><input class="value" type="checkbox" checked="checked" /></td>
+			<td class="武器類別"><span class="value">簡單徒手近戰</span></td>
+			<td class="武器名稱"><span class="value">徒手打擊</span></td>
+			<td class="武器傷害"><span class="value">1d6</span></td>
+			<td class="武器重擊"><span class="value">20/×2</span></td>
+			<td class="武器攻擊範圍"><span class="value">5呎</span></td>
+			<td class="武器攻擊類型"><span class="value">鈍擊</span></td>
+			<td class="武器特性"><span class="value">非致命傷害</span></td>
+			<td class="武器彈藥"><input class="value w3-border-0 w3-center" type="number" style="width:3em;" value="0" min="0" /></td>
+		</tr>
+		<tr>
+			<td class="武器狀態"><input class="value" type="checkbox" checked="checked" /></td>
+			<td class="武器類別"><span class="value">簡易遠程</span></td>
+			<td class="武器名稱"><span class="value">輕弩</span></td>
+			<td class="武器傷害"><span class="value">1d8</span></td>
+			<td class="武器重擊"><span class="value">19-20/×2</span></td>
+			<td class="武器攻擊範圍"><span class="value">80呎</span></td>
+			<td class="武器攻擊類型"><span class="value">穿刺</span></td>
+			<td class="武器特性"><span class="value">—</span></td>
+			<td class="武器彈藥"><input id="輕弩彈藥" class="value store w3-border-0 w3-center" type="number" style="width:3em;" value="10" min="0" /></td>
+		</tr>
+		<tr>
+			<td class="武器狀態"><input class="value" type="checkbox" /></td>
+			<td class="武器類別"><span class="value">簡單單手近戰</span></td>
+			<td class="武器名稱"><span class="value">木棒</span></td>
+			<td class="武器傷害"><span class="value">1d8</span></td>
+			<td class="武器重擊"><span class="value">20/×2</span></td>
+			<td class="武器攻擊範圍"><span class="value">10呎</span></td>
+			<td class="武器攻擊類型"><span class="value">鈍擊</span></td>
+			<td class="武器特性"><span class="value">—</span></td>
+			<td class="武器彈藥"><input class="value store w3-border-0 w3-center" type="number" style="width:3em;" value="0" min="0" /></td>
+		</tr>
+	</tbody>
+	<tfoot>
+	</tfoot>
+</table>
+
+<h2>防禦</h2>
+
+<p class="boxes w3-container">
+	<span class="box w3-tag w3-border w3-theme-light">
+		<strong class="title">法術抗性</strong>
+		<span id="法術抗性" class="value">+3</span>
+	</span>
+	
+	<span class="box w3-tag w3-border w3-theme-light">
+		<strong class="title">傷害減免</strong>
+		<span id="傷害減免" class="value">-3</span>
+	</span>
+</p>
+
+<div id="生命值" class="block w3-panel w3-border">
+	<h3 class="title">生命值</h3>
+
+	<p class="depvars w3-container">
+		<span class="box w3-tag w3-border w3-theme-light">
+			<strong class="title">總值</strong>
+			<span id="生命總值" class="value" data-eval="add_sign(make_value(this),'+');">0</span>
+		</span>
+		
+		<span class="box w3-tag w3-border w3-theme-light">
+			<strong class="title">臨時生命值</strong>
+			<input class="value w3-border-0 w3-center" type="number" style="width:5em" min="0" value="0" data-mod="get('#生命總值');" />
+		</span>
+		
+		<span class="box w3-tag w3-border w3-theme-light">
+			<strong class="title">傷害</strong>
+			<input class="value w3-border-0 w3-center" type="number" style="width:5em" max="0" value="0" data-mod="get('#生命總值');" />
+		</span>
+		
+		<span class="box w3-tag w3-border w3-theme-light">
+			<strong class="title">非致命傷害</strong>
+			<input class="value w3-border-0 w3-center" type="number" style="width:5em" min="0" value="0" />
+		</span>
+	</p>
+	
+	<p class="indvars w3-container">
+		<span class="box w3-tag w3-border w3-theme-light">
+			<input class="value" type="checkbox" checked="checked" disabled="disabled" data-mod="get('#生命總值');" />
+			<strong class="title">體質加值</strong>
+			<span class="value" data-eval="add_sign(Math.max(copy_one('#體質總調整值'),0)*copy_one('#等級'),'+');" data-ref="體質總調整值 等級" data-mod="get('#生命總值');">0</span>
+		</span>
+		
+		<span class="box w3-tag w3-border w3-theme-light">
+			<input class="value" type="checkbox" checked="checked" disabled="disabled" data-mod="get('#生命總值');" />
+			<strong class="title">武僧一級生命骰</strong>
+			<span class="value" data-mod="get('#生命總值');">8</span>
+		</span>
+		
+		<span class="box w3-tag w3-border w3-theme-light">
+			<input class="value" type="checkbox" checked="checked" disabled="disabled" data-mod="get('#生命總值');" />
+			<strong class="title">角色一級生命獎勵</strong>
+			<span class="value" data-mod="get('#生命總值');">1</span>
+		</span>
+		
+		<span class="box w3-tag w3-border w3-theme-light">
+			<input class="value" type="checkbox" checked="checked" disabled="disabled" data-mod="get('#生命總值');" />
+			<strong class="title">武僧二級生命骰</strong>
+			<span class="value" data-mod="get('#生命總值');">5</span>
+		</span>
+		
+		<span class="box w3-tag w3-border w3-theme-light">
+			<input class="value" type="checkbox" checked="checked" disabled="disabled" data-mod="get('#生命總值');" />
+			<strong class="title">角色二級生命獎勵</strong>
+			<span class="value" data-mod="get('#生命總值');">1</span>
+		</span>
+		
+		<span class="box w3-tag w3-border w3-theme-light">
+			<input class="value" type="checkbox" checked="checked" disabled="disabled" data-mod="get('#生命總值');" />
+			<strong class="title">武僧三級生命骰</strong>
+			<span class="value" data-mod="get('#生命總值');">5</span>
+		</span>
+		
+		<span class="box w3-tag w3-border w3-theme-light">
+			<input class="value" type="checkbox" checked="checked" disabled="disabled" data-mod="get('#生命總值');" />
+			<strong class="title">角色三級生命獎勵</strong>
+			<span class="value" data-mod="get('#生命總值');">1</span>
+		</span>
+		
+		<span class="box w3-tag w3-border w3-theme-light">
+			<input class="value" type="checkbox" checked="checked" disabled="disabled" data-mod="get('#生命總值');" />
+			<strong class="title">武僧四級生命骰</strong>
+			<span class="value" data-mod="get('#生命總值');">1</span>
+		</span>
+		
+		<span class="box w3-tag w3-border w3-theme-light">
+			<input class="value" type="checkbox" checked="checked" disabled="disabled" data-mod="get('#生命總值');" />
+			<strong class="title">角色四級生命獎勵</strong>
+			<span class="value" data-mod="get('#生命總值');">1</span>
+		</span>
+		
+		<span class="box w3-tag w3-border w3-theme-light">
+			<input class="value" type="checkbox" checked="checked" disabled="disabled" data-mod="get('#生命總值');" />
+			<strong class="title">武僧五級生命骰</strong>
+			<span class="value" data-mod="get('#生命總值');">3</span>
+		</span>
+		
+		<span class="box w3-tag w3-border w3-theme-light">
+			<input class="value" type="checkbox" checked="checked" disabled="disabled" data-mod="get('#生命總值');" />
+			<strong class="title">角色五級生命獎勵</strong>
+			<span class="value" data-mod="get('#生命總值');">1</span>
+		</span>
+		
+		<span class="box w3-tag w3-border w3-theme-light">
+			<input class="value" type="checkbox" checked="checked" disabled="disabled" data-mod="get('#生命總值');" />
+			<strong class="title">術士一級生命骰</strong>
+			<span class="value" data-mod="get('#生命總值');">2</span>
+		</span>
+	</p>
+</div>
+
+<div id="防護等級" class="block w3-panel w3-border">
+	<h3 class="title">防護等級</h3>
+
+	<p class="depvars w3-container">
+		<span class="box w3-tag w3-border w3-theme-light">
+			<strong class="title">總值</strong>
+			<span id="防護等級總值" class="value" data-eval="make_value(this);">0</span>
+		</span>
+		
+		<span class="box w3-tag w3-border w3-theme-light">
+			<strong class="title">接觸攻擊</strong>
+			<span id="接觸攻擊防護等級" class="value" data-eval="make_value(this);">0</span>
+		</span>
+		
+		<span class="box w3-tag w3-border w3-theme-light">
+			<strong class="title">措手不及</strong>
+			<span id="措手不及防護等級" class="value" data-eval="make_value(this);">0</span>
+		</span>
+		
+		<span class="box w3-tag w3-border w3-theme-light">
+			<strong class="title">臨時調整值</strong>
+			<input class="value w3-border-0 w3-center" type="number" style="width:5em" value="0" data-mod="get('#防護等級總值,#接觸攻擊防護等級,#措手不及防護等級');" />
+		</span>
+	</p>
+	
+	<p class="indvars w3-container">
+		<span class="box w3-tag w3-border w3-theme-light">
+			<input class="value" type="checkbox" checked="checked" disabled="disabled" data-mod="get('#防護等級總值,#接觸攻擊防護等級,#措手不及防護等級');" />
+			<strong class="title">基本值</strong>
+			<span class="value" data-mod="get('#防護等級總值,#接觸攻擊防護等級,#措手不及防護等級');">10</span>
+		</span>
+		
+		<span class="box w3-tag w3-border w3-theme-light">
+			<input class="value" type="checkbox" checked="checked" disabled="disabled" data-mod="get('#防護等級總值,#措手不及防護等級');" />
+			<strong class="title">防具加值</strong>
+			<span class="value" data-eval="add_sign(sum_node(get('.防具加值',get('#防具數值 .防具狀態').filter('*:checked'))),'+');" data-ref="防具數值" data-mod="get('#防護等級總值,#措手不及防護等級');">0</span>
+		</span>
+		
+		<span class="box w3-tag w3-border w3-theme-light">
+			<input class="value" type="checkbox" checked="checked" disabled="disabled" data-mod="get('#防護等級總值,#措手不及防護等級');" />
+			<strong class="title">增強加值</strong>
+			<span class="value" data-mod="get('#防護等級總值,#措手不及防護等級');">+0</span>
+		</span>
+		
+		<span class="box w3-tag w3-border w3-theme-light">
+			<input class="value" type="checkbox" checked="checked" disabled="disabled" data-mod="get('#防護等級總值,#措手不及防護等級');" />
+			<strong class="title">天生防具加值</strong>
+			<span class="value">+0</span>
+		</span>
+		
+		<span class="box w3-tag w3-border w3-theme-light">
+			<input class="value" type="checkbox" checked="checked" disabled="disabled" data-mod="get('#防護等級總值,#接觸攻擊防護等級');" />
+			<strong class="title">敏捷調整值</strong>
+			<span class="value" data-eval="add_sign(Math.min.apply(Math,get('.最大敏捷加值',get('#防具數值 .防具狀態').filter('*:checked')).map(function(){return copy_one(this)}).get().concat(copy_one('#敏捷總調整值'))),'+');" data-ref="敏捷總調整值 防具數值" data-mod="get('#防護等級總值,#接觸攻擊防護等級');">0</span>
+		</span>
+		
+		<span class="box w3-tag w3-border w3-theme-light">
+			<input class="value" type="checkbox" checked="checked" disabled="disabled" data-mod="get('#措手不及防護等級');" />
+			<strong class="title">措手不及減值</strong>
+			<span class="value" data-eval="add_sign(Math.min(copy_one('#敏捷總調整值'),0),'-');" data-ref="敏捷總調整值" data-mod="get('#措手不及防護等級');">0</span>
+		</span>
+		
+		<span class="box w3-tag w3-border w3-theme-light">
+			<input class="value" type="checkbox" checked="checked" disabled="disabled" data-mod="get('#防護等級總值,#接觸攻擊防護等級,#措手不及防護等級');" />
+			<strong class="title">體型調整值</strong>
+			<span class="value" data-eval="add_sign(copy_one('#體型'),'+')" data-ref="體型" data-mod="get('#防護等級總值,#接觸攻擊防護等級,#措手不及防護等級');">0</span>
+		</span>
+		
+		<span class="box w3-tag w3-border w3-theme-light">
+			<input class="value" type="checkbox" checked="checked" disabled="disabled" data-mod="get('#防護等級總值,#接觸攻擊防護等級');" />
+			<strong class="title">專長閃避加值</strong>
+			<span class="value" data-mod="get('#防護等級總值,#接觸攻擊防護等級');">+1</span>
+		</span>
+	</p>
+</div>
+
+<div id="強韌豁免" class="block w3-panel w3-border">
+	<h3 class="title">強韌豁免</h3>
+
+	<p class="depvars w3-container">
+		<span class="box w3-tag w3-border w3-theme-light">
+			<strong class="title">總值</strong>
+			<span id="強韌豁免加值" class="value" data-eval="add_sign(make_value(this),'+');">0</span>
+		</span>
+		
+		<span class="box w3-tag w3-border w3-theme-light">
+			<strong class="title">臨時調整值</strong>
+			<input class="value w3-border-0 w3-center" type="number" style="width:5em" value="0" data-mod="get('#強韌豁免加值');" />
+		</span>
+	</p>
+	
+	<p class="indvars w3-container">
+		<span class="box w3-tag w3-border w3-theme-light">
+			<input class="value" type="checkbox" checked="checked" disabled="disabled" data-mod="get('#強韌豁免加值')" />
+			<strong class="title">基本值</strong>
+			<span class="value" data-eval="add_sign(Math.floor(copy_one('#武僧等級')/2)+2+Math.floor(copy_one('#術士等級')/3),'+');" data-ref="職業等級" data-mod="get('#強韌豁免加值')">0</span>
+		</span>
+		
+		<span class="box w3-tag w3-border w3-theme-light">
+			<input class="value" type="checkbox" checked="checked" disabled="disabled" data-mod="get('#強韌豁免加值');" />
+			<strong class="title">體質調整值</strong>
+			<span class="value" data-eval="add_sign(copy_one('#體質總調整值'),'+');" data-ref="體質總調整值" data-mod="get('#強韌豁免加值');">0</span>
+		</span>
+	</p>
+</div>
+
+<div id="反射豁免" class="block w3-panel w3-border">
+	<h3 class="title">反射豁免</h3>
+
+	<p class="depvars w3-container">
+		<span class="box w3-tag w3-border w3-theme-light">
+			<strong class="title">總值</strong>
+			<span id="反射豁免加值" class="value" data-eval="add_sign(make_value(this),'+');">0</span>
+		</span>
+		
+		<span class="box w3-tag w3-border w3-theme-light">
+			<strong class="title">臨時調整值</strong>
+			<input class="value w3-border-0 w3-center" type="number" style="width:5em" value="0" data-mod="get('#反射豁免加值');" />
+		</span>
+	</p>
+	
+	<p class="indvars w3-container">
+		<span class="box w3-tag w3-border w3-theme-light">
+			<input class="value" type="checkbox" checked="checked" disabled="disabled" data-mod="get('#反射豁免加值')" />
+			<strong class="title">基本值</strong>
+			<span class="value" data-eval="add_sign(Math.floor(copy_one('#武僧等級')/2)+2+Math.floor(copy_one('#術士等級')/3),'+');" data-ref="職業等級" data-mod="get('#反射豁免加值')">0</span>
+		</span>
+		
+		<span class="box w3-tag w3-border w3-theme-light">
+			<input class="value" type="checkbox" checked="checked" disabled="disabled" data-mod="get('#反射豁免加值');" />
+			<strong class="title">敏捷調整值</strong>
+			<span class="value" data-eval="add_sign(copy_one('#敏捷總調整值'),'+');" data-ref="敏捷總調整值" data-mod="get('#反射豁免加值');">0</span>
+		</span>
+	</p>
+</div>
+
+<div id="意志豁免" class="block w3-panel w3-border">
+	<h3 class="title">意志豁免</h3>
+
+	<p class="depvars w3-container">
+		<span class="box w3-tag w3-border w3-theme-light">
+			<strong class="title">總值</strong>
+			<span id="意志豁免加值" class="value" data-eval="add_sign(make_value(this),'+');">0</span>
+		</span>
+		
+		<span class="box w3-tag w3-border w3-theme-light">
+			<strong class="title">臨時調整值</strong>
+			<input class="value w3-border-0 w3-center" type="number" style="width:5em" value="0" data-mod="get('#意志豁免加值');" />
+		</span>
+	</p>
+	
+	<p class="indvars w3-container">
+		<span class="box w3-tag w3-border w3-theme-light">
+			<input class="value" type="checkbox" checked="checked" disabled="disabled" data-mod="get('#意志豁免加值')" />
+			<strong class="title">基本值</strong>
+			<span class="value" data-eval="add_sign(Math.floor(copy_one('#武僧等級')/2)+2+Math.floor(copy_one('#術士等級')/2)+2,'+');" data-ref="職業等級" data-mod="get('#意志豁免加值')">0</span>
+		</span>
+		
+		<span class="box w3-tag w3-border w3-theme-light">
+			<input class="value" type="checkbox" checked="checked" disabled="disabled" data-mod="get('#意志豁免加值');" />
+			<strong class="title">感知調整值</strong>
+			<span class="value" data-eval="add_sign(copy_one('#感知總調整值'),'+');" data-ref="感知總調整值" data-mod="get('#意志豁免加值');">0</span>
+		</span>
+	</p>
+</div>
+
+<div id="戰技防禦" class="block w3-panel w3-border">
+	<h3 class="title">戰技防禦</h3>
+
+	<p class="depvars w3-container">
+		<span class="box w3-tag w3-border w3-theme-light">
+			<strong class="title">總值</strong>
+			<span id="戰技防禦總值" class="value" data-eval="make_value(this);">0</span>
+		</span>
+		
+		<span class="box w3-tag w3-border w3-theme-light">
+			<strong class="title">措手不及</strong>
+			<span id="措手不及戰技防禦" class="value" data-eval="make_value(this);">0</span>
+		</span>
+		
+		<span class="box w3-tag w3-border w3-theme-light">
+			<strong class="title">臨時調整值</strong>
+			<input class="value w3-border-0 w3-center" type="number" style="width:5em" value="0" data-mod="get('#戰技防禦總值,#措手不及戰技防禦');" />
+		</span>
+	</p>
+	
+	<p class="indvars w3-container">
+		<span class="box w3-tag w3-border w3-theme-light">
+			<input class="value" type="checkbox" checked="checked" disabled="disabled" data-mod="get('#戰技防禦總值,#措手不及戰技防禦');" />
+			<strong class="title">基本值</strong>
+			<span class="value" data-mod="get('#戰技防禦總值,#措手不及戰技防禦');">10</span>
+		</span>
+		
+		<span class="box w3-tag w3-border w3-theme-light">
+			<input class="value" type="checkbox" checked="checked" disabled="disabled" data-mod="get('#戰技防禦總值,#措手不及戰技防禦');" />
+			<strong class="title">基本攻擊加值</strong>
+			<span class="value" data-eval="add_sign(copy_one('#基本攻擊加值'),'+');" data-ref="基本攻擊加值" data-mod="get('#戰技防禦總值,#措手不及戰技防禦');">0</span>
+		</span>
+		
+		<span class="box w3-tag w3-border w3-theme-light">
+			<input class="value" type="checkbox" checked="checked" disabled="disabled" data-mod="get('#戰技防禦總值,#措手不及戰技防禦');" />
+			<strong class="title">力量調整值</strong>
+			<span class="value" data-eval="add_sign(copy_one('#力量總調整值'),'+');" data-ref="力量總調整值 防具數值" data-mod="get('#戰技防禦總值,#措手不及戰技防禦');">0</span>
+		</span>
+		
+		<span class="box w3-tag w3-border w3-theme-light">
+			<input class="value" type="checkbox" checked="checked" disabled="disabled" data-mod="get('#戰技防禦總值');" />
+			<strong class="title">敏捷調整值</strong>
+			<span class="value" data-eval="add_sign(copy_one('#敏捷總調整值'),'+');" data-ref="敏捷總調整值" data-mod="get('#戰技防禦總值');">0</span>
+		</span>
+		
+		<span class="box w3-tag w3-border w3-theme-light">
+			<input class="value" type="checkbox" checked="checked" disabled="disabled" data-mod="get('#措手不及戰技防禦');" />
+			<strong class="title">措手不及減值</strong>
+			<span class="value" data-eval="add_sign(Math.min(copy_one('#敏捷總調整值'),0),'-');" data-ref="敏捷總調整值" data-mod="get('#措手不及戰技防禦');">0</span>
+		</span>
+		
+		<span class="box w3-tag w3-border w3-theme-light">
+			<input class="value" type="checkbox" checked="checked" disabled="disabled" data-mod="get('#戰技防禦總值,#措手不及戰技防禦');" />
+			<strong class="title">特殊體型調整值</strong>
+			<span class="value" data-eval="add_sign(-copy_one('#體型'),'+')" data-ref="體型" data-mod="get('#戰技防禦總值,#措手不及戰技防禦');">0</span>
+		</span>
+	</p>
+</div>
+
+<table id="防具數值" class="w3-table-all w3-centered w3-panel">
+	<thead>
+		<tr>
+			<th>防具狀態</th>
+			<th>防具類別</th>
+			<th>防具名稱</th>
+			<th>防具加值</th>
+			<th>最大敏捷加值</th>
+			<th>防具檢定減值</th>
+			<th>奧術失敗率</th>
+			<th>速度</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td class="防具狀態"><input class="value" type="checkbox" checked="checked" /></td>
+			<td class="防具類別"><span class="value">輕型盔甲</span></td>
+			<td class="防具名稱"><span class="value">皮甲</span></td>
+			<td class="防具加值"><span class="value">+2</span></td>
+			<td class="最大敏捷加值"><span class="value">+Infinity</span></td>
+			<td class="防具檢定減值"><span class="value">-0</span></td>
+			<td class="奧術失敗率"><span class="value">0.1</span></td>
+			<td class="速度"><span class="value">30</span></td>
+		</tr>
+		<tr>
+			<td class="防具狀態"><input class="value" type="checkbox" /></td>
+			<td class="防具類別"><span class="value">輕型盔甲</span></td>
+			<td class="防具名稱"><span class="value">二甲</span></td>
+			<td class="防具加值"><span class="value">+4</span></td>
+			<td class="最大敏捷加值"><span class="value">+2</span></td>
+			<td class="防具檢定減值"><span class="value">-2</span></td>
+			<td class="奧術失敗率"><span class="value">0.5</span></td>
+			<td class="速度"><span class="value">20</span></td>
+		</tr>
+		<tr>
+			<td class="防具狀態"><input class="value" type="checkbox" /></td>
+			<td class="防具類別"><span class="value">輕型盔甲</span></td>
+			<td class="防具名稱"><span class="value">二盾</span></td>
+			<td class="防具加值"><span class="value">+1</span></td>
+			<td class="最大敏捷加值"><span class="value">+4</span></td>
+			<td class="防具檢定減值"><span class="value">-5</span></td>
+			<td class="奧術失敗率"><span class="value">0.2</span></td>
+			<td class="速度"><span class="value">20</span></td>
+		</tr>
+	</tbody>
+	<tfoot>
+	</tfoot>
+</table>
+</div>
+
+<div id="技能" class="tab w3-container w3-border edit" hidden="hidden">
+<p class="boxes w3-container">
+	<span class="box w3-tag w3-border w3-theme-light">
+		<strong class="title">總技能點</strong>
+		<span id="總技能點" class="value" data-eval="(4+copy_one('#智力基本調整值'))*copy_one('#武僧等級')+(2+copy_one('#智力基本調整值'))*copy_one('#術士等級');" data-ref="智力基本調整值 職業等級">0</span>
+	</span>
+	
+	<span class="box w3-tag w3-border w3-theme-light">
+		<strong class="title">可用技能點</strong>
+		<span id="可用技能點" class="value w3-border-0 w3-center" data-eval="copy_one('#總技能點')-sum_node(get('#技能數值 .技能等級'));" data-ref="總技能點 技能數值">0</span>
+	</span>
+</p>
+
+<table id="技能數值" class="w3-table-all w3-centered w3-panel">
+	<thead>
+		<tr>
+			<th>本職技能</th>
+			<th>技能名稱</th>
+			<th>核心屬性</th>
+			<th>技能調整值</th>
+			<th>屬性調整值</th>
+			<th>阻礙減值</th>
+			<th>技能等級</th>
+			<th>其他調整值</th>
+			<th>臨時調整值</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td class="本職技能"><input class="value" type="checkbox" checked="checked" disabled="disabled" data-mod="get('.技能調整值',this);" /></td>
+			<td class="技能名稱"><span class="value">特技動作</span></td>
+			<td class="核心屬性"><span class="value">敏捷</span></td>
+			<td class="技能調整值"><span class="value" data-eval="add_sign(sum_node(get('.屬性調整值,.阻礙減值,.技能等級,.其他調整值,.臨時調整值',this))+(copy_one(get('.本職技能',this),true)&amp;&amp;(copy_one(get('.技能等級',this))>0)?3:0),'+');">0</span></td>
+			<td class="屬性調整值"><span class="value" data-eval="add_sign(copy_one('#敏捷總調整值'),'+');" data-ref="敏捷總調整值" data-mod="get('.技能調整值',this);">0</span></td>
+			<td class="阻礙減值"><span class="value" data-eval="add_sign(['敏捷','力量'].indexOf(copy_one(get('.核心屬性',this),true))&lt;0?0:sum_node(get('.防具檢定減值',get('#防具數值 .防具狀態').filter('*:checked'))),'-')" data-ref="防具數值" data-mod="get('.技能調整值',this);">-0</span></td>
+			<td class="技能等級"><span class="value" data-mod="get('.技能調整值',this);">4</span></td>
+			<td class="其他調整值"><span class="value" data-mod="get('.技能調整值',this);">+0</span></td>
+			<td class="臨時調整值"><input class="value w3-border-0 w3-center" type="number" style="width:5em" value="0" data-mod="get('.技能調整值',this);" /></td>
+		</tr>
+		<tr>
+			<td class="本職技能"><input class="value" type="checkbox" disabled="disabled" data-mod="get('.技能調整值',this);" /></td>
+			<td class="技能名稱"><span class="value">估價</span></td>
+			<td class="核心屬性"><span class="value">智力</span></td>
+			<td class="技能調整值"><span class="value" data-eval="add_sign(sum_node(get('.屬性調整值,.阻礙減值,.技能等級,.其他調整值,.臨時調整值',this))+(copy_one(get('.本職技能',this),true)&amp;&amp;(copy_one(get('.技能等級',this))>0)?3:0),'+');">+0</span></td>
+			<td class="屬性調整值"><span class="value" data-eval="add_sign(copy_one('#智力總調整值'),'+');" data-ref="智力總調整值" data-mod="get('.技能調整值',this);">0</span></td>
+			<td class="阻礙減值"><span class="value" data-eval="add_sign(['敏捷','力量'].indexOf(copy_one(get('.核心屬性',this),true))&lt;0?0:sum_node(get('.防具檢定減值',get('#防具數值 .防具狀態').filter('*:checked'))),'-')" data-ref="防具數值" data-mod="get('.技能調整值',this);">-0</span></td>
+			<td class="技能等級"><span class="value" data-mod="get('.技能調整值',this);">0</span></td>
+			<td class="其他調整值"><span class="value" data-mod="get('.技能調整值',this);">+0</span></td>
+			<td class="臨時調整值"><input class="value w3-border-0 w3-center" type="number" style="width:5em" value="0" data-mod="get('.技能調整值',this);" /></td>
+		</tr>
+		<tr>
+			<td class="本職技能"><input class="value" type="checkbox" disabled="disabled" data-mod="get('.技能調整值',this);" /></td>
+			<td class="技能名稱"><span class="value">唬騙</span></td>
+			<td class="核心屬性"><span class="value">魅力</span></td>
+			<td class="技能調整值"><span class="value" data-eval="add_sign(sum_node(get('.屬性調整值,.阻礙減值,.技能等級,.其他調整值,.臨時調整值',this))+(copy_one(get('.本職技能',this),true)&amp;&amp;(copy_one(get('.技能等級',this))>0)?3:0),'+');">+0</span></td>
+			<td class="屬性調整值"><span class="value" data-eval="add_sign(copy_one('#魅力總調整值'),'+');" data-ref="魅力總調整值" data-mod="get('.技能調整值',this);">+0</span></td>
+			<td class="阻礙減值"><span class="value" data-eval="add_sign(['敏捷','力量'].indexOf(copy_one(get('.核心屬性',this),true))&lt;0?0:sum_node(get('.防具檢定減值',get('#防具數值 .防具狀態').filter('*:checked'))),'-')" data-ref="防具數值" data-mod="get('.技能調整值',this);">-0</span></td>
+			<td class="技能等級"><span class="value" data-mod="get('.技能調整值',this);">0</span></td>
+			<td class="其他調整值"><span class="value" data-mod="get('.技能調整值',this);">+0</span></td>
+			<td class="臨時調整值"><input class="value w3-border-0 w3-center" type="number" style="width:5em" value="0" data-mod="get('.技能調整值',this);" /></td>
+		</tr>
+		<tr>
+			<td class="本職技能"><input class="value" type="checkbox" checked="checked" disabled="disabled" data-mod="get('.技能調整值',this);" /></td>
+			<td class="技能名稱"><span class="value">攀爬</span></td>
+			<td class="核心屬性"><span class="value">力量</span></td>
+			<td class="技能調整值"><span class="value" data-eval="add_sign(sum_node(get('.屬性調整值,.阻礙減值,.技能等級,.其他調整值,.臨時調整值',this))+(copy_one(get('.本職技能',this),true)&amp;&amp;(copy_one(get('.技能等級',this))>0)?3:0),'+');">+0</span></td>
+			<td class="屬性調整值"><span class="value" data-eval="add_sign(copy_one('#力量總調整值'),'+');" data-ref="力量總調整值" data-mod="get('.技能調整值',this);">+0</span></td>
+			<td class="阻礙減值"><span class="value" data-eval="add_sign(['敏捷','力量'].indexOf(copy_one(get('.核心屬性',this),true))&lt;0?0:sum_node(get('.防具檢定減值',get('#防具數值 .防具狀態').filter('*:checked'))),'-')" data-ref="防具數值" data-mod="get('.技能調整值',this);">-0</span></td>
+			<td class="技能等級"><span class="value" data-mod="get('.技能調整值',this);">4</span></td>
+			<td class="其他調整值"><span class="value" data-mod="get('.技能調整值',this);">+0</span></td>
+			<td class="臨時調整值"><input class="value w3-border-0 w3-center" type="number" style="width:5em" value="0" data-mod="get('.技能調整值',this);" /></td>
+		</tr>
+		<tr>
+			<td class="本職技能"><input class="value" type="checkbox" checked="checked" disabled="disabled" data-mod="get('.技能調整值',this);" /></td>
+			<td class="技能名稱"><span class="value">手藝（）</span></td>
+			<td class="核心屬性"><span class="value">智力</span></td>
+			<td class="技能調整值"><span class="value" data-eval="add_sign(sum_node(get('.屬性調整值,.阻礙減值,.技能等級,.其他調整值,.臨時調整值',this))+(copy_one(get('.本職技能',this),true)&amp;&amp;(copy_one(get('.技能等級',this))>0)?3:0),'+');">+0</span></td>
+			<td class="屬性調整值"><span class="value" data-eval="add_sign(copy_one('#智力總調整值'),'+');" data-ref="智力總調整值" data-mod="get('.技能調整值',this);">+0</span></td>
+			<td class="阻礙減值"><span class="value" data-eval="add_sign(['敏捷','力量'].indexOf(copy_one(get('.核心屬性',this),true))&lt;0?0:sum_node(get('.防具檢定減值',get('#防具數值 .防具狀態').filter('*:checked'))),'-')" data-ref="防具數值" data-mod="get('.技能調整值',this);">-0</span></td>
+			<td class="技能等級"><span class="value" data-mod="get('.技能調整值',this);">0</span></td>
+			<td class="其他調整值"><span class="value" data-mod="get('.技能調整值',this);">+0</span></td>
+			<td class="臨時調整值"><input class="value w3-border-0 w3-center" type="number" style="width:5em" value="0" data-mod="get('.技能調整值',this);" /></td>
+		</tr>
+		<tr>
+			<td class="本職技能"><input class="value" type="checkbox" disabled="disabled" data-mod="get('.技能調整值',this);" /></td>
+			<td class="技能名稱"><span class="value">手藝（）</span></td>
+			<td class="核心屬性"><span class="value">智力</span></td>
+			<td class="技能調整值"><span class="value" data-eval="add_sign(sum_node(get('.屬性調整值,.阻礙減值,.技能等級,.其他調整值,.臨時調整值',this))+(copy_one(get('.本職技能',this),true)&amp;&amp;(copy_one(get('.技能等級',this))>0)?3:0),'+');">+0</span></td>
+			<td class="屬性調整值"><span class="value" data-eval="add_sign(copy_one('#智力總調整值'),'+');" data-ref="智力總調整值" data-mod="get('.技能調整值',this);">+0</span></td>
+			<td class="阻礙減值"><span class="value" data-eval="add_sign(['敏捷','力量'].indexOf(copy_one(get('.核心屬性',this),true))&lt;0?0:sum_node(get('.防具檢定減值',get('#防具數值 .防具狀態').filter('*:checked'))),'-')" data-ref="防具數值" data-mod="get('.技能調整值',this);">-0</span></td>
+			<td class="技能等級"><span class="value" data-mod="get('.技能調整值',this);">0</span></td>
+			<td class="其他調整值"><span class="value" data-mod="get('.技能調整值',this);">+0</span></td>
+			<td class="臨時調整值"><input class="value w3-border-0 w3-center" type="number" style="width:5em" value="0" data-mod="get('.技能調整值',this);" /></td>
+		</tr>
+		<tr>
+			<td class="本職技能"><input class="value" type="checkbox" disabled="disabled" data-mod="get('.技能調整值',this);" /></td>
+			<td class="技能名稱"><span class="value">手藝（）</span></td>
+			<td class="核心屬性"><span class="value">智力</span></td>
+			<td class="技能調整值"><span class="value" data-eval="add_sign(sum_node(get('.屬性調整值,.阻礙減值,.技能等級,.其他調整值,.臨時調整值',this))+(copy_one(get('.本職技能',this),true)&amp;&amp;(copy_one(get('.技能等級',this))>0)?3:0),'+');">+0</span></td>
+			<td class="屬性調整值"><span class="value" data-eval="add_sign(copy_one('#智力總調整值'),'+');" data-ref="智力總調整值" data-mod="get('.技能調整值',this);">+0</span></td>
+			<td class="阻礙減值"><span class="value" data-eval="add_sign(['敏捷','力量'].indexOf(copy_one(get('.核心屬性',this),true))&lt;0?0:sum_node(get('.防具檢定減值',get('#防具數值 .防具狀態').filter('*:checked'))),'-')" data-ref="防具數值" data-mod="get('.技能調整值',this);">-0</span></td>
+			<td class="技能等級"><span class="value" data-mod="get('.技能調整值',this);">0</span></td>
+			<td class="其他調整值"><span class="value" data-mod="get('.技能調整值',this);">+0</span></td>
+			<td class="臨時調整值"><input class="value w3-border-0 w3-center" type="number" style="width:5em" value="0" data-mod="get('.技能調整值',this);" /></td>
+		</tr>
+		<tr>
+			<td class="本職技能"><input class="value" type="checkbox" disabled="disabled" data-mod="get('.技能調整值',this);" /></td>
+			<td class="技能名稱"><span class="value">交涉</span></td>
+			<td class="核心屬性"><span class="value">魅力</span></td>
+			<td class="技能調整值"><span class="value" data-eval="add_sign(sum_node(get('.屬性調整值,.阻礙減值,.技能等級,.其他調整值,.臨時調整值',this))+(copy_one(get('.本職技能',this),true)&amp;&amp;(copy_one(get('.技能等級',this))>0)?3:0),'+');">+0</span></td>
+			<td class="屬性調整值"><span class="value" data-eval="add_sign(copy_one('#魅力總調整值'),'+');" data-ref="魅力總調整值" data-mod="get('.技能調整值',this);">+0</span></td>
+			<td class="阻礙減值"><span class="value" data-eval="add_sign(['敏捷','力量'].indexOf(copy_one(get('.核心屬性',this),true))&lt;0?0:sum_node(get('.防具檢定減值',get('#防具數值 .防具狀態').filter('*:checked'))),'-')" data-ref="防具數值" data-mod="get('.技能調整值',this);">-0</span></td>
+			<td class="技能等級"><span class="value" data-mod="get('.技能調整值',this);">0</span></td>
+			<td class="其他調整值"><span class="value" data-mod="get('.技能調整值',this);">+0</span></td>
+			<td class="臨時調整值"><input class="value w3-border-0 w3-center" type="number" style="width:5em" value="0" data-mod="get('.技能調整值',this);" /></td>
+		</tr>
+		<tr>
+			<td class="本職技能"><input class="value" type="checkbox" disabled="disabled" data-mod="get('.技能調整值',this);" /></td>
+			<td class="技能名稱"><span class="value">解除裝置</span><span>*</span></td>
+			<td class="核心屬性"><span class="value">敏捷</span></td>
+			<td class="技能調整值"><span class="value" data-eval="add_sign(sum_node(get('.屬性調整值,.阻礙減值,.技能等級,.其他調整值,.臨時調整值',this))+(copy_one(get('.本職技能',this),true)&amp;&amp;(copy_one(get('.技能等級',this))>0)?3:0),'+');">+0</span></td>
+			<td class="屬性調整值"><span class="value" data-eval="add_sign(copy_one('#敏捷總調整值'),'+');" data-ref="敏捷總調整值" data-mod="get('.技能調整值',this);">+0</span></td>
+			<td class="阻礙減值"><span class="value" data-eval="add_sign(['敏捷','力量'].indexOf(copy_one(get('.核心屬性',this),true))&lt;0?0:sum_node(get('.防具檢定減值',get('#防具數值 .防具狀態').filter('*:checked'))),'-')" data-ref="防具數值" data-mod="get('.技能調整值',this);">-0</span></td>
+			<td class="技能等級"><span class="value" data-mod="get('.技能調整值',this);">0</span></td>
+			<td class="其他調整值"><span class="value" data-mod="get('.技能調整值',this);">+0</span></td>
+			<td class="臨時調整值"><input class="value w3-border-0 w3-center" type="number" style="width:5em" value="0" data-mod="get('.技能調整值',this);" /></td>
+		</tr>
+		<tr>
+			<td class="本職技能"><input class="value" type="checkbox" disabled="disabled" data-mod="get('.技能調整值',this);" /></td>
+			<td class="技能名稱"><span class="value">易容</span></td>
+			<td class="核心屬性"><span class="value">魅力</span></td>
+			<td class="技能調整值"><span class="value" data-eval="add_sign(sum_node(get('.屬性調整值,.阻礙減值,.技能等級,.其他調整值,.臨時調整值',this))+(copy_one(get('.本職技能',this),true)&amp;&amp;(copy_one(get('.技能等級',this))>0)?3:0),'+');">+0</span></td>
+			<td class="屬性調整值"><span class="value" data-eval="add_sign(copy_one('#魅力總調整值'),'+');" data-ref="魅力總調整值" data-mod="get('.技能調整值',this);">+0</span></td>
+			<td class="阻礙減值"><span class="value" data-eval="add_sign(['敏捷','力量'].indexOf(copy_one(get('.核心屬性',this),true))&lt;0?0:sum_node(get('.防具檢定減值',get('#防具數值 .防具狀態').filter('*:checked'))),'-')" data-ref="防具數值" data-mod="get('.技能調整值',this);">-0</span></td>
+			<td class="技能等級"><span class="value" data-mod="get('.技能調整值',this);">0</span></td>
+			<td class="其他調整值"><span class="value" data-mod="get('.技能調整值',this);">+0</span></td>
+			<td class="臨時調整值"><input class="value w3-border-0 w3-center" type="number" style="width:5em" value="0" data-mod="get('.技能調整值',this);" /></td>
+		</tr>
+		<tr>
+			<td class="本職技能"><input class="value" type="checkbox" checked="checked" disabled="disabled" data-mod="get('.技能調整值',this);" /></td>
+			<td class="技能名稱"><span class="value">逃脫術</span></td>
+			<td class="核心屬性"><span class="value">敏捷</span></td>
+			<td class="技能調整值"><span class="value" data-eval="add_sign(sum_node(get('.屬性調整值,.阻礙減值,.技能等級,.其他調整值,.臨時調整值',this))+(copy_one(get('.本職技能',this),true)&amp;&amp;(copy_one(get('.技能等級',this))>0)?3:0),'+');">+0</span></td>
+			<td class="屬性調整值"><span class="value" data-eval="add_sign(copy_one(get('#敏捷總調整值')),'+');" data-ref="敏捷總調整值" data-mod="get('.技能調整值',this);">+0</span></td>
+			<td class="阻礙減值"><span class="value" data-eval="add_sign(['敏捷','力量'].indexOf(copy_one(get('.核心屬性',this),true))&lt;0?0:sum_node(get('.防具檢定減值',get('#防具數值 .防具狀態').filter('*:checked'))),'-')" data-ref="防具數值" data-mod="get('.技能調整值',this);">-0</span></td>
+			<td class="技能等級"><span class="value" data-mod="get('.技能調整值',this);">4</span></td>
+			<td class="其他調整值"><span class="value" data-mod="get('.技能調整值',this);">+0</span></td>
+			<td class="臨時調整值"><input class="value w3-border-0 w3-center" type="number" style="width:5em" value="0" data-mod="get('.技能調整值',this);" /></td>
+		</tr>
+		<tr>
+			<td class="本職技能"><input class="value" type="checkbox" disabled="disabled" data-mod="get('.技能調整值',this);" /></td>
+			<td class="技能名稱"><span class="value">飛行</span></td>
+			<td class="核心屬性"><span class="value">敏捷</span></td>
+			<td class="技能調整值"><span class="value" data-eval="add_sign(sum_node(get('.屬性調整值,.阻礙減值,.技能等級,.其他調整值,.臨時調整值',this))+(copy_one(get('.本職技能',this),true)&amp;&amp;(copy_one(get('.技能等級',this))>0)?3:0),'+');">+0</span></td>
+			<td class="屬性調整值"><span class="value" data-eval="add_sign(copy_one('#敏捷總調整值'),'+');" data-ref="敏捷總調整值" data-mod="get('.技能調整值',this);">+0</span></td>
+			<td class="阻礙減值"><span class="value" data-eval="add_sign(['敏捷','力量'].indexOf(copy_one(get('.核心屬性',this),true))&lt;0?0:sum_node(get('.防具檢定減值',get('#防具數值 .防具狀態').filter('*:checked'))),'-')" data-ref="防具數值" data-mod="get('.技能調整值',this);">-0</span></td>
+			<td class="技能等級"><span class="value" data-mod="get('.技能調整值',this);">0</span></td>
+			<td class="其他調整值"><span class="value" data-mod="get('.技能調整值',this);">+0</span></td>
+			<td class="臨時調整值"><input class="value w3-border-0 w3-center" type="number" style="width:5em" value="0" data-mod="get('.技能調整值',this);" /></td>
+		</tr>
+		<tr>
+			<td class="本職技能"><input class="value" type="checkbox" disabled="disabled" data-mod="get('.技能調整值',this);" /></td>
+			<td class="技能名稱"><span class="value">馴養動物</span><span>*</span></td>
+			<td class="核心屬性"><span class="value">魅力</span></td>
+			<td class="技能調整值"><span class="value" data-eval="add_sign(sum_node(get('.屬性調整值,.阻礙減值,.技能等級,.其他調整值,.臨時調整值',this))+(copy_one(get('.本職技能',this),true)&amp;&amp;(copy_one(get('.技能等級',this))>0)?3:0),'+');">+0</span></td>
+			<td class="屬性調整值"><span class="value" data-eval="add_sign(copy_one(get('#魅力總調整值')),'+');" data-ref="魅力總調整值" data-mod="get('.技能調整值',this);">+0</span></td>
+			<td class="阻礙減值"><span class="value" data-eval="add_sign(['敏捷','力量'].indexOf(copy_one(get('.核心屬性',this),true))&lt;0?0:sum_node(get('.防具檢定減值',get('#防具數值 .防具狀態').filter('*:checked'))),'-')" data-ref="防具數值" data-mod="get('.技能調整值',this);">-0</span></td>
+			<td class="技能等級"><span class="value" data-mod="get('.技能調整值',this);">0</span></td>
+			<td class="其他調整值"><span class="value" data-mod="get('.技能調整值',this);">+0</span></td>
+			<td class="臨時調整值"><input class="value w3-border-0 w3-center" type="number" style="width:5em" value="0" data-mod="get('.技能調整值',this);" /></td>
+		</tr>
+		<tr>
+			<td class="本職技能"><input class="value" type="checkbox" disabled="disabled" data-mod="get('.技能調整值',this);" /></td>
+			<td class="技能名稱"><span class="value">醫療</span></td>
+			<td class="核心屬性"><span class="value">感知</span></td>
+			<td class="技能調整值"><span class="value" data-eval="add_sign(sum_node(get('.屬性調整值,.阻礙減值,.技能等級,.其他調整值,.臨時調整值',this))+(copy_one(get('.本職技能',this),true)&amp;&amp;(copy_one(get('.技能等級',this))>0)?3:0),'+');">+0</span></td>
+			<td class="屬性調整值"><span class="value" data-eval="add_sign(copy_one('#感知總調整值'),'+');" data-ref="感知總調整值" data-mod="get('.技能調整值',this);">0</span></td>
+			<td class="阻礙減值"><span class="value" data-eval="add_sign(['敏捷','力量'].indexOf(copy_one(get('.核心屬性',this),true))&lt;0?0:sum_node(get('.防具檢定減值',get('#防具數值 .防具狀態').filter('*:checked'))),'-')" data-ref="防具數值" data-mod="get('.技能調整值',this);">-0</span></td>
+			<td class="技能等級"><span class="value" data-mod="get('.技能調整值',this);">0</span></td>
+			<td class="其他調整值"><span class="value" data-mod="get('.技能調整值',this);">+0</span></td>
+			<td class="臨時調整值"><input class="value w3-border-0 w3-center" type="number" style="width:5em" value="0" data-mod="get('.技能調整值',this);" /></td>
+		</tr>
+		<tr>
+			<td class="本職技能"><input class="value" type="checkbox" checked="checked" disabled="disabled" data-mod="get('.技能調整值',this);" /></td>
+			<td class="技能名稱"><span class="value">威嚇</span></td>
+			<td class="核心屬性"><span class="value">魅力</span></td>
+			<td class="技能調整值"><span class="value" data-eval="add_sign(sum_node(get('.屬性調整值,.阻礙減值,.技能等級,.其他調整值,.臨時調整值',this))+(copy_one(get('.本職技能',this),true)&amp;&amp;(copy_one(get('.技能等級',this))>0)?3:0),'+');">+0</span></td>
+			<td class="屬性調整值"><span class="value" data-eval="add_sign(copy_one('#魅力總調整值'),'+');" data-ref="魅力總調整值" data-mod="get('.技能調整值',this);">+0</span></td>
+			<td class="阻礙減值"><span class="value" data-eval="add_sign(['敏捷','力量'].indexOf(copy_one(get('.核心屬性',this),true))&lt;0?0:sum_node(get('.防具檢定減值',get('#防具數值 .防具狀態').filter('*:checked'))),'-')" data-ref="防具數值" data-mod="get('.技能調整值',this);">-0</span></td>
+			<td class="技能等級"><span class="value" data-mod="get('.技能調整值',this);">0</span></td>
+			<td class="其他調整值"><span class="value" data-mod="get('.技能調整值',this);">+0</span></td>
+			<td class="臨時調整值"><input class="value w3-border-0 w3-center" type="number" style="width:5em" value="0" data-mod="get('.技能調整值',this);" /></td>
+		</tr>
+		<tr>
+			<td class="本職技能"><input class="value" type="checkbox" disabled="disabled" data-mod="get('.技能調整值',this);" /></td>
+			<td class="技能名稱"><span class="value">知識︰奧術</span><span>*</span></td>
+			<td class="核心屬性"><span class="value">智力</span></td>
+			<td class="技能調整值"><span class="value" data-eval="add_sign(sum_node(get('.屬性調整值,.阻礙減值,.技能等級,.其他調整值,.臨時調整值',this))+(copy_one(get('.本職技能',this),true)&amp;&amp;(copy_one(get('.技能等級',this))>0)?3:0),'+');">+0</span></td>
+			<td class="屬性調整值"><span class="value" data-eval="add_sign(copy_one('#智力總調整值'),'+');" data-ref="智力總調整值" data-mod="get('.技能調整值',this);">+0</span></td>
+			<td class="阻礙減值"><span class="value" data-eval="add_sign(['敏捷','力量'].indexOf(copy_one(get('.核心屬性',this),true))&lt;0?0:sum_node(get('.防具檢定減值',get('#防具數值 .防具狀態').filter('*:checked'))),'-')" data-ref="防具數值" data-mod="get('.技能調整值',this);">-0</span></td>
+			<td class="技能等級"><span class="value" data-mod="get('.技能調整值',this);">0</span></td>
+			<td class="其他調整值"><span class="value" data-mod="get('.技能調整值',this);">+0</span></td>
+			<td class="臨時調整值"><input class="value w3-border-0 w3-center" type="number" style="width:5em" value="0" data-mod="get('.技能調整值',this);" /></td>
+		</tr>
+		<tr>
+			<td class="本職技能"><input class="value" type="checkbox" disabled="disabled" data-mod="get('.技能調整值',this);" /></td>
+			<td class="技能名稱"><span class="value">知識︰地城</span><span>*</span></td>
+			<td class="核心屬性"><span class="value">智力</span></td>
+			<td class="技能調整值"><span class="value" data-eval="add_sign(sum_node(get('.屬性調整值,.阻礙減值,.技能等級,.其他調整值,.臨時調整值',this))+(copy_one(get('.本職技能',this),true)&amp;&amp;(copy_one(get('.技能等級',this))>0)?3:0),'+');">+0</span></td>
+			<td class="屬性調整值"><span class="value" data-eval="add_sign(copy_one('#智力總調整值'),'+');" data-ref="智力總調整值" data-mod="get('.技能調整值',this);">+0</span></td>
+			<td class="阻礙減值"><span class="value" data-eval="add_sign(['敏捷','力量'].indexOf(copy_one(get('.核心屬性',this),true))&lt;0?0:sum_node(get('.防具檢定減值',get('#防具數值 .防具狀態').filter('*:checked'))),'-')" data-ref="防具數值" data-mod="get('.技能調整值',this);">-0</span></td>
+			<td class="技能等級"><span class="value" data-mod="get('.技能調整值',this);">0</span></td>
+			<td class="其他調整值"><span class="value" data-mod="get('.技能調整值',this);">+0</span></td>
+			<td class="臨時調整值"><input class="value w3-border-0 w3-center" type="number" style="width:5em" value="0" data-mod="get('.技能調整值',this);" /></td>
+		</tr>
+		<tr>
+			<td class="本職技能"><input class="value" type="checkbox" disabled="disabled" data-mod="get('.技能調整值',this);" /></td>
+			<td class="技能名稱"><span class="value">知識︰工程學</span><span>*</span></td>
+			<td class="核心屬性"><span class="value">智力</span></td>
+			<td class="技能調整值"><span class="value" data-eval="add_sign(sum_node(get('.屬性調整值,.阻礙減值,.技能等級,.其他調整值,.臨時調整值',this))+(copy_one(get('.本職技能',this),true)&amp;&amp;(copy_one(get('.技能等級',this))>0)?3:0),'+');">+0</span></td>
+			<td class="屬性調整值"><span class="value" data-eval="add_sign(copy_one('#智力總調整值'),'+');" data-ref="智力總調整值" data-mod="get('.技能調整值',this);">+0</span></td>
+			<td class="阻礙減值"><span class="value" data-eval="add_sign(['敏捷','力量'].indexOf(copy_one(get('.核心屬性',this),true))&lt;0?0:sum_node(get('.防具檢定減值',get('#防具數值 .防具狀態').filter('*:checked'))),'-')" data-ref="防具數值" data-mod="get('.技能調整值',this);">-0</span></td>
+			<td class="技能等級"><span class="value" data-mod="get('.技能調整值',this);">0</span></td>
+			<td class="其他調整值"><span class="value" data-mod="get('.技能調整值',this);">+0</span></td>
+			<td class="臨時調整值"><input class="value w3-border-0 w3-center" type="number" style="width:5em" value="0" data-mod="get('.技能調整值',this);" /></td>
+		</tr>
+		<tr>
+			<td class="本職技能"><input class="value" type="checkbox" disabled="disabled" data-mod="get('.技能調整值',this);" /></td>
+			<td class="技能名稱"><span class="value">知識︰地理</span><span>*</span></td>
+			<td class="核心屬性"><span class="value">智力</span></td>
+			<td class="技能調整值"><span class="value" data-eval="add_sign(sum_node(get('.屬性調整值,.阻礙減值,.技能等級,.其他調整值,.臨時調整值',this))+(copy_one(get('.本職技能',this),true)&amp;&amp;(copy_one(get('.技能等級',this))>0)?3:0),'+');">+0</span></td>
+			<td class="屬性調整值"><span class="value" data-eval="add_sign(copy_one('#智力總調整值'),'+');" data-ref="智力總調整值" data-mod="get('.技能調整值',this);">+0</span></td>
+			<td class="阻礙減值"><span class="value" data-eval="add_sign(['敏捷','力量'].indexOf(copy_one(get('.核心屬性',this),true))&lt;0?0:sum_node(get('.防具檢定減值',get('#防具數值 .防具狀態').filter('*:checked'))),'-')" data-ref="防具數值" data-mod="get('.技能調整值',this);">-0</span></td>
+			<td class="技能等級"><span class="value" data-mod="get('.技能調整值',this);">0</span></td>
+			<td class="其他調整值"><span class="value" data-mod="get('.技能調整值',this);">+0</span></td>
+			<td class="臨時調整值"><input class="value w3-border-0 w3-center" type="number" style="width:5em" value="0" data-mod="get('.技能調整值',this);" /></td>
+		</tr>
+		<tr>
+			<td class="本職技能"><input class="value" type="checkbox" checked="checked" disabled="disabled" data-mod="get('.技能調整值',this);" /></td>
+			<td class="技能名稱"><span class="value">知識︰歷史</span><span>*</span></td>
+			<td class="核心屬性"><span class="value">智力</span></td>
+			<td class="技能調整值"><span class="value" data-eval="add_sign(sum_node(get('.屬性調整值,.阻礙減值,.技能等級,.其他調整值,.臨時調整值',this))+(copy_one(get('.本職技能',this),true)&amp;&amp;(copy_one(get('.技能等級',this))>0)?3:0),'+');">+0</span></td>
+			<td class="屬性調整值"><span class="value" data-eval="add_sign(copy_one('#智力總調整值'),'+');" data-ref="智力總調整值" data-mod="get('.技能調整值',this);">+0</span></td>
+			<td class="阻礙減值"><span class="value" data-eval="add_sign(['敏捷','力量'].indexOf(copy_one(get('.核心屬性',this),true))&lt;0?0:sum_node(get('.防具檢定減值',get('#防具數值 .防具狀態').filter('*:checked'))),'-')" data-ref="防具數值" data-mod="get('.技能調整值',this);">-0</span></td>
+			<td class="技能等級"><span class="value" data-mod="get('.技能調整值',this);">0</span></td>
+			<td class="其他調整值"><span class="value" data-mod="get('.技能調整值',this);">+0</span></td>
+			<td class="臨時調整值"><input class="value w3-border-0 w3-center" type="number" style="width:5em" value="0" data-mod="get('.技能調整值',this);" /></td>
+		</tr>
+		<tr>
+			<td class="本職技能"><input class="value" type="checkbox" disabled="disabled" data-mod="get('.技能調整值',this);" /></td>
+			<td class="技能名稱"><span class="value">知識︰本地</span><span>*</span></td>
+			<td class="核心屬性"><span class="value">智力</span></td>
+			<td class="技能調整值"><span class="value" data-eval="add_sign(sum_node(get('.屬性調整值,.阻礙減值,.技能等級,.其他調整值,.臨時調整值',this))+(copy_one(get('.本職技能',this),true)&amp;&amp;(copy_one(get('.技能等級',this))>0)?3:0),'+');">+0</span></td>
+			<td class="屬性調整值"><span class="value" data-eval="add_sign(copy_one('#智力總調整值'),'+');" data-ref="智力總調整值" data-mod="get('.技能調整值',this);">+0</span></td>
+			<td class="阻礙減值"><span class="value" data-eval="add_sign(['敏捷','力量'].indexOf(copy_one(get('.核心屬性',this),true))&lt;0?0:sum_node(get('.防具檢定減值',get('#防具數值 .防具狀態').filter('*:checked'))),'-')" data-ref="防具數值" data-mod="get('.技能調整值',this);">-0</span></td>
+			<td class="技能等級"><span class="value" data-mod="get('.技能調整值',this);">0</span></td>
+			<td class="其他調整值"><span class="value" data-mod="get('.技能調整值',this);">+0</span></td>
+			<td class="臨時調整值"><input class="value w3-border-0 w3-center" type="number" style="width:5em" value="0" data-mod="get('.技能調整值',this);" /></td>
+		</tr>
+		<tr>
+			<td class="本職技能"><input class="value" type="checkbox" disabled="disabled" data-mod="get('.技能調整值',this);" /></td>
+			<td class="技能名稱"><span class="value">知識︰自然</span><span>*</span></td>
+			<td class="核心屬性"><span class="value">智力</span></td>
+			<td class="技能調整值"><span class="value" data-eval="add_sign(sum_node(get('.屬性調整值,.阻礙減值,.技能等級,.其他調整值,.臨時調整值',this))+(copy_one(get('.本職技能',this),true)&amp;&amp;(copy_one(get('.技能等級',this))>0)?3:0),'+');">+0</span></td>
+			<td class="屬性調整值"><span class="value" data-eval="add_sign(copy_one('#智力總調整值'),'+');" data-ref="智力總調整值" data-mod="get('.技能調整值',this);">+0</span></td>
+			<td class="阻礙減值"><span class="value" data-eval="add_sign(['敏捷','力量'].indexOf(copy_one(get('.核心屬性',this),true))&lt;0?0:sum_node(get('.防具檢定減值',get('#防具數值 .防具狀態').filter('*:checked'))),'-')" data-ref="防具數值" data-mod="get('.技能調整值',this);">-0</span></td>
+			<td class="技能等級"><span class="value" data-mod="get('.技能調整值',this);">0</span></td>
+			<td class="其他調整值"><span class="value" data-mod="get('.技能調整值',this);">+0</span></td>
+			<td class="臨時調整值"><input class="value w3-border-0 w3-center" type="number" style="width:5em" value="0" data-mod="get('.技能調整值',this);" /></td>
+		</tr>
+		<tr>
+			<td class="本職技能"><input class="value" type="checkbox" disabled="disabled" data-mod="get('.技能調整值',this);" /></td>
+			<td class="技能名稱"><span class="value">知識︰貴族"</span><span>*</span></td>
+			<td class="核心屬性"><span class="value">智力</span></td>
+			<td class="技能調整值"><span class="value" data-eval="add_sign(sum_node(get('.屬性調整值,.阻礙減值,.技能等級,.其他調整值,.臨時調整值',this))+(copy_one(get('.本職技能',this),true)&amp;&amp;(copy_one(get('.技能等級',this))>0)?3:0),'+');">+0</span></td>
+			<td class="屬性調整值"><span class="value" data-eval="add_sign(copy_one('#智力總調整值'),'+');" data-ref="智力總調整值" data-mod="get('.技能調整值',this);">+0</span></td>
+			<td class="阻礙減值"><span class="value" data-eval="add_sign(['敏捷','力量'].indexOf(copy_one(get('.核心屬性',this),true))&lt;0?0:sum_node(get('.防具檢定減值',get('#防具數值 .防具狀態').filter('*:checked'))),'-')" data-ref="防具數值" data-mod="get('.技能調整值',this);">-0</span></td>
+			<td class="技能等級"><span class="value" data-mod="get('.技能調整值',this);">0</span></td>
+			<td class="其他調整值"><span class="value" data-mod="get('.技能調整值',this);">+0</span></td>
+			<td class="臨時調整值"><input class="value w3-border-0 w3-center" type="number" style="width:5em" value="0" data-mod="get('.技能調整值',this);" /></td>
+		</tr>
+		<tr>
+			<td class="本職技能"><input class="value" type="checkbox" disabled="disabled" data-mod="get('.技能調整值',this);" /></td>
+			<td class="技能名稱"><span class="value">知識︰界域</span><span>*</span></td>
+			<td class="核心屬性"><span class="value">智力</span></td>
+			<td class="技能調整值"><span class="value" data-eval="add_sign(sum_node(get('.屬性調整值,.阻礙減值,.技能等級,.其他調整值,.臨時調整值',this))+(copy_one(get('.本職技能',this),true)&amp;&amp;(copy_one(get('.技能等級',this))>0)?3:0),'+');">+0</span></td>
+			<td class="屬性調整值"><span class="value" data-eval="add_sign(copy_one('#智力總調整值'),'+');" data-ref="智力總調整值" data-mod="get('.技能調整值',this);">+0</span></td>
+			<td class="阻礙減值"><span class="value" data-eval="add_sign(['敏捷','力量'].indexOf(copy_one(get('.核心屬性',this),true))&lt;0?0:sum_node(get('.防具檢定減值',get('#防具數值 .防具狀態').filter('*:checked'))),'-')" data-ref="防具數值" data-mod="get('.技能調整值',this);">-0</span></td>
+			<td class="技能等級"><span class="value" data-mod="get('.技能調整值',this);">0</span></td>
+			<td class="其他調整值"><span class="value" data-mod="get('.技能調整值',this);">+0</span></td>
+			<td class="臨時調整值"><input class="value w3-border-0 w3-center" type="number" style="width:5em" value="0" data-mod="get('.技能調整值',this);" /></td>
+		</tr>
+		<tr>
+			<td class="本職技能"><input class="value" type="checkbox" checked="checked" disabled="disabled" data-mod="get('.技能調整值',this);" /></td>
+			<td class="技能名稱"><span class="value">知識︰宗教"</span><span>*</span></td>
+			<td class="核心屬性"><span class="value">智力</span></td>
+			<td class="技能調整值"><span class="value" data-eval="add_sign(sum_node(get('.屬性調整值,.阻礙減值,.技能等級,.其他調整值,.臨時調整值',this))+(copy_one(get('.本職技能',this),true)&amp;&amp;(copy_one(get('.技能等級',this))>0)?3:0),'+');">+0</span></td>
+			<td class="屬性調整值"><span class="value" data-eval="add_sign(copy_one('#智力總調整值'),'+');" data-ref="智力總調整值" data-mod="get('.技能調整值',this);">+0</span></td>
+			<td class="阻礙減值"><span class="value" data-eval="add_sign(['敏捷','力量'].indexOf(copy_one(get('.核心屬性',this),true))&lt;0?0:sum_node(get('.防具檢定減值',get('#防具數值 .防具狀態').filter('*:checked'))),'-')" data-ref="防具數值" data-mod="get('.技能調整值',this);">-0</span></td>
+			<td class="技能等級"><span class="value" data-mod="get('.技能調整值',this);">0</span></td>
+			<td class="其他調整值"><span class="value" data-mod="get('.技能調整值',this);">+0</span></td>
+			<td class="臨時調整值"><input class="value w3-border-0 w3-center" type="number" style="width:5em" value="0" data-mod="get('.技能調整值',this);" /></td>
+		</tr>
+		<tr>
+			<td class="本職技能"><input class="value" type="checkbox" disabled="disabled" data-mod="get('.技能調整值',this);" /></td>
+			<td class="技能名稱"><span class="value">語言學</span><span>*</span></td>
+			<td class="核心屬性"><span class="value">智力</span></td>
+			<td class="技能調整值"><span class="value" data-eval="add_sign(sum_node(get('.屬性調整值,.阻礙減值,.技能等級,.其他調整值,.臨時調整值',this))+(copy_one(get('.本職技能',this),true)&amp;&amp;(copy_one(get('.技能等級',this))>0)?3:0),'+');">+0</span></td>
+			<td class="屬性調整值"><span class="value" data-eval="add_sign(copy_one('#智力總調整值'),'+');" data-ref="智力總調整值" data-mod="get('.技能調整值',this);">+0</span></td>
+			<td class="阻礙減值"><span class="value" data-eval="add_sign(['敏捷','力量'].indexOf(copy_one(get('.核心屬性',this),true))&lt;0?0:sum_node(get('.防具檢定減值',get('#防具數值 .防具狀態').filter('*:checked'))),'-')" data-ref="防具數值" data-mod="get('.技能調整值',this);">-0</span></td>
+			<td class="技能等級"><span class="value" data-mod="get('.技能調整值',this);">0</span></td>
+			<td class="其他調整值"><span class="value" data-mod="get('.技能調整值',this);">+0</span></td>
+			<td class="臨時調整值"><input class="value w3-border-0 w3-center" type="number" style="width:5em" value="0" data-mod="get('.技能調整值',this);" /></td>
+		</tr>
+		<tr>
+			<td class="本職技能"><input class="value" type="checkbox" checked="checked" disabled="disabled" data-mod="get('.技能調整值',this);" /></td>
+			<td class="技能名稱"><span class="value">察覺</span></td>
+			<td class="核心屬性"><span class="value">感知</span></td>
+			<td class="技能調整值"><span class="value" data-eval="add_sign(sum_node(get('.屬性調整值,.阻礙減值,.技能等級,.其他調整值,.臨時調整值',this))+(copy_one(get('.本職技能',this),true)&amp;&amp;(copy_one(get('.技能等級',this))>0)?3:0),'+');">+0</span></td>
+			<td class="屬性調整值"><span class="value" data-eval="add_sign(copy_one('#感知總調整值'),'+');" data-ref="感知總調整值" data-mod="get('.技能調整值',this);">+0</span></td>
+			<td class="阻礙減值"><span class="value" data-eval="add_sign(['敏捷','力量'].indexOf(copy_one(get('.核心屬性',this),true))&lt;0?0:sum_node(get('.防具檢定減值',get('#防具數值 .防具狀態').filter('*:checked'))),'-')" data-ref="防具數值" data-mod="get('.技能調整值',this);">-0</span></td>
+			<td class="技能等級"><span class="value" data-mod="get('.技能調整值',this);">5</span></td>
+			<td class="其他調整值"><span class="value" data-mod="get('.技能調整值',this);">+0</span></td>
+			<td class="臨時調整值"><input class="value w3-border-0 w3-center" type="number" style="width:5em" value="0" data-mod="get('.技能調整值',this);" /></td>
+		</tr>
+		<tr>
+			<td class="本職技能"><input class="value" type="checkbox" checked="checked" disabled="disabled" data-mod="get('.技能調整值',this);" /></td>
+			<td class="技能名稱"><span class="value">表演（）</span></td>
+			<td class="核心屬性"><span class="value">魅力</span></td>
+			<td class="技能調整值"><span class="value" data-eval="add_sign(sum_node(get('.屬性調整值,.阻礙減值,.技能等級,.其他調整值,.臨時調整值',this))+(copy_one(get('.本職技能',this),true)&amp;&amp;(copy_one(get('.技能等級',this))>0)?3:0),'+');">+0</span></td>
+			<td class="屬性調整值"><span class="value" data-eval="add_sign(copy_one('#魅力總調整值'),'+');" data-ref="魅力總調整值" data-mod="get('.技能調整值',this);">+0</span></td>
+			<td class="阻礙減值"><span class="value" data-eval="add_sign(['敏捷','力量'].indexOf(copy_one(get('.核心屬性',this),true))&lt;0?0:sum_node(get('.防具檢定減值',get('#防具數值 .防具狀態').filter('*:checked'))),'-')" data-ref="防具數值" data-mod="get('.技能調整值',this);">-0</span></td>
+			<td class="技能等級"><span class="value" data-mod="get('.技能調整值',this);">0</span></td>
+			<td class="其他調整值"><span class="value" data-mod="get('.技能調整值',this);">+0</span></td>
+			<td class="臨時調整值"><input class="value w3-border-0 w3-center" type="number" style="width:5em" value="0" data-mod="get('.技能調整值',this);" /></td>
+		</tr>
+		<tr>
+			<td class="本職技能"><input class="value" type="checkbox" disabled="disabled" data-mod="get('.技能調整值',this);" /></td>
+			<td class="技能名稱"><span class="value">表演（）</span></td>
+			<td class="核心屬性"><span class="value">魅力</span></td>
+			<td class="技能調整值"><span class="value" data-eval="add_sign(sum_node(get('.屬性調整值,.阻礙減值,.技能等級,.其他調整值,.臨時調整值',this))+(copy_one(get('.本職技能',this),true)&amp;&amp;(copy_one(get('.技能等級',this))>0)?3:0),'+');">+0</span></td>
+			<td class="屬性調整值"><span class="value" data-eval="add_sign(copy_one('#魅力總調整值'),'+');" data-ref="魅力總調整值" data-mod="get('.技能調整值',this);">+0</span></td>
+			<td class="阻礙減值"><span class="value" data-eval="add_sign(['敏捷','力量'].indexOf(copy_one(get('.核心屬性',this),true))&lt;0?0:sum_node(get('.防具檢定減值',get('#防具數值 .防具狀態').filter('*:checked'))),'-')" data-ref="防具數值" data-mod="get('.技能調整值',this);">-0</span></td>
+			<td class="技能等級"><span class="value" data-mod="get('.技能調整值',this);">0</span></td>
+			<td class="其他調整值"><span class="value" data-mod="get('.技能調整值',this);">+0</span></td>
+			<td class="臨時調整值"><input class="value w3-border-0 w3-center" type="number" style="width:5em" value="0" data-mod="get('.技能調整值',this);" /></td>
+		</tr>
+		<tr>
+			<td class="本職技能"><input class="value" type="checkbox" checked="checked" disabled="disabled" data-mod="get('.技能調整值',this);" /></td>
+			<td class="技能名稱"><span class="value">專業（）</span><span>*</span></td>
+			<td class="核心屬性"><span class="value">感知</span></td>
+			<td class="技能調整值"><span class="value" data-eval="add_sign(sum_node(get('.屬性調整值,.阻礙減值,.技能等級,.其他調整值,.臨時調整值',this))+(copy_one(get('.本職技能',this),true)&amp;&amp;(copy_one(get('.技能等級',this))>0)?3:0),'+');">+0</span></td>
+			<td class="屬性調整值"><span class="value" data-eval="add_sign(copy_one('#感知總調整值'),'+');" data-ref="感知總調整值" data-mod="get('.技能調整值',this);">+0</span></td>
+			<td class="阻礙減值"><span class="value" data-eval="add_sign(['敏捷','力量'].indexOf(copy_one(get('.核心屬性',this),true))&lt;0?0:sum_node(get('.防具檢定減值',get('#防具數值 .防具狀態').filter('*:checked'))),'-')" data-ref="防具數值" data-mod="get('.技能調整值',this);">-0</span></td>
+			<td class="技能等級"><span class="value" data-mod="get('.技能調整值',this);">0</span></td>
+			<td class="其他調整值"><span class="value" data-mod="get('.技能調整值',this);">+0</span></td>
+			<td class="臨時調整值"><input class="value w3-border-0 w3-center" type="number" style="width:5em" value="0" data-mod="get('.技能調整值',this);" /></td>
+		</tr>
+		<tr>
+			<td class="本職技能"><input class="value" type="checkbox" disabled="disabled" data-mod="get('.技能調整值',this);" /></td>
+			<td class="技能名稱"><span class="value">專業（）</span><span>*</span></td>
+			<td class="核心屬性"><span class="value">感知</span></td>
+			<td class="技能調整值"><span class="value" data-eval="add_sign(sum_node(get('.屬性調整值,.阻礙減值,.技能等級,.其他調整值,.臨時調整值',this))+(copy_one(get('.本職技能',this),true)&amp;&amp;(copy_one(get('.技能等級',this))>0)?3:0),'+');">+0</span></td>
+			<td class="屬性調整值"><span class="value" data-eval="add_sign(copy_one('#感知總調整值'),'+');" data-ref="感知總調整值" data-mod="get('.技能調整值',this);">+0</span></td>
+			<td class="阻礙減值"><span class="value" data-eval="add_sign(['敏捷','力量'].indexOf(copy_one(get('.核心屬性',this),true))&lt;0?0:sum_node(get('.防具檢定減值',get('#防具數值 .防具狀態').filter('*:checked'))),'-')" data-ref="防具數值" data-mod="get('.技能調整值',this);">-0</span></td>
+			<td class="技能等級"><span class="value" data-mod="get('.技能調整值',this);">0</span></td>
+			<td class="其他調整值"><span class="value" data-mod="get('.技能調整值',this);">+0</span></td>
+			<td class="臨時調整值"><input class="value w3-border-0 w3-center" type="number" style="width:5em" value="0" data-mod="get('.技能調整值',this);" /></td>
+		</tr>
+		<tr>
+			<td class="本職技能"><input class="value" type="checkbox" disabled="disabled" data-mod="get('.技能調整值',this);" /></td>
+			<td class="技能名稱"><span class="value">專業（）</span><span>*</span></td>
+			<td class="核心屬性"><span class="value">感知</span></td>
+			<td class="技能調整值"><span class="value" data-eval="add_sign(sum_node(get('.屬性調整值,.阻礙減值,.技能等級,.其他調整值,.臨時調整值',this))+(copy_one(get('.本職技能',this),true)&amp;&amp;(copy_one(get('.技能等級',this))>0)?3:0),'+');">+0</span></td>
+			<td class="屬性調整值"><span class="value" data-eval="add_sign(copy_one('#感知總調整值'),'+');" data-ref="感知總調整值" data-mod="get('.技能調整值',this);">+0</span></td>
+			<td class="阻礙減值"><span class="value" data-eval="add_sign(['敏捷','力量'].indexOf(copy_one(get('.核心屬性',this),true))&lt;0?0:sum_node(get('.防具檢定減值',get('#防具數值 .防具狀態').filter('*:checked'))),'-')" data-ref="防具數值" data-mod="get('.技能調整值',this);">-0</span></td>
+			<td class="技能等級"><span class="value" data-mod="get('.技能調整值',this);">0</span></td>
+			<td class="其他調整值"><span class="value" data-mod="get('.技能調整值',this);">+0</span></td>
+			<td class="臨時調整值"><input class="value w3-border-0 w3-center" type="number" style="width:5em" value="0" data-mod="get('.技能調整值',this);" /></td>
+		</tr>
+		<tr>
+			<td class="本職技能"><input class="value" type="checkbox" checked="checked" disabled="disabled" data-mod="get('.技能調整值',this);" /></td>
+			<td class="技能名稱"><span class="value">騎術</span></td>
+			<td class="核心屬性"><span class="value">敏捷</span></td>
+			<td class="技能調整值"><span class="value" data-eval="add_sign(sum_node(get('.屬性調整值,.阻礙減值,.技能等級,.其他調整值,.臨時調整值',this))+(copy_one(get('.本職技能',this),true)&amp;&amp;(copy_one(get('.技能等級',this))>0)?3:0),'+');">+0</span></td>
+			<td class="屬性調整值"><span class="value" data-eval="add_sign(copy_one('#敏捷總調整值'),'+');" data-ref="敏捷總調整值" data-mod="get('.技能調整值',this);">+0</span></td>
+			<td class="阻礙減值"><span class="value" data-eval="add_sign(['敏捷','力量'].indexOf(copy_one(get('.核心屬性',this),true))&lt;0?0:sum_node(get('.防具檢定減值',get('#防具數值 .防具狀態').filter('*:checked'))),'-')" data-ref="防具數值" data-mod="get('.技能調整值',this);">-0</span></td>
+			<td class="技能等級"><span class="value" data-mod="get('.技能調整值',this);">0</span></td>
+			<td class="其他調整值"><span class="value" data-mod="get('.技能調整值',this);">+0</span></td>
+			<td class="臨時調整值"><input class="value w3-border-0 w3-center" type="number" style="width:5em" value="0" data-mod="get('.技能調整值',this);" /></td>
+		</tr>
+		<tr>
+			<td class="本職技能"><input class="value" type="checkbox" checked="checked" disabled="disabled" data-mod="get('.技能調整值',this);" /></td>
+			<td class="技能名稱"><span class="value">察言觀色</span></td>
+			<td class="核心屬性"><span class="value">感知</span></td>
+			<td class="技能調整值"><span class="value" data-eval="add_sign(sum_node(get('.屬性調整值,.阻礙減值,.技能等級,.其他調整值,.臨時調整值',this))+(copy_one(get('.本職技能',this),true)&amp;&amp;(copy_one(get('.技能等級',this))>0)?3:0),'+');">+0</span></td>
+			<td class="屬性調整值"><span class="value" data-eval="add_sign(copy_one('#感知總調整值'),'+');" data-ref="感知總調整值" data-mod="get('.技能調整值',this);">+0</span></td>
+			<td class="阻礙減值"><span class="value" data-eval="add_sign(['敏捷','力量'].indexOf(copy_one(get('.核心屬性',this),true))&lt;0?0:sum_node(get('.防具檢定減值',get('#防具數值 .防具狀態').filter('*:checked'))),'-')" data-ref="防具數值" data-mod="get('.技能調整值',this);">-0</span></td>
+			<td class="技能等級"><span class="value" data-mod="get('.技能調整值',this);">0</span></td>
+			<td class="其他調整值"><span class="value" data-mod="get('.技能調整值',this);">+0</span></td>
+			<td class="臨時調整值"><input class="value w3-border-0 w3-center" type="number" style="width:5em" value="0" data-mod="get('.技能調整值',this);" /></td>
+		</tr>
+		<tr>
+			<td class="本職技能"><input class="value" type="checkbox" disabled="disabled" data-mod="get('.技能調整值',this);" /></td>
+			<td class="技能名稱"><span class="value">手上功夫</span><span>*</span></td>
+			<td class="核心屬性"><span class="value">敏捷</span></td>
+			<td class="技能調整值"><span class="value" data-eval="add_sign(sum_node(get('.屬性調整值,.阻礙減值,.技能等級,.其他調整值,.臨時調整值',this))+(copy_one(get('.本職技能',this),true)&amp;&amp;(copy_one(get('.技能等級',this))>0)?3:0),'+');">+0</span></td>
+			<td class="屬性調整值"><span class="value" data-eval="add_sign(copy_one('#敏捷總調整值'),'+');" data-ref="敏捷總調整值" data-mod="get('.技能調整值',this);">+0</span></td>
+			<td class="阻礙減值"><span class="value" data-eval="add_sign(['敏捷','力量'].indexOf(copy_one(get('.核心屬性',this),true))&lt;0?0:sum_node(get('.防具檢定減值',get('#防具數值 .防具狀態').filter('*:checked'))),'-')" data-ref="防具數值" data-mod="get('.技能調整值',this);">-0</span></td>
+			<td class="技能等級"><span class="value" data-mod="get('.技能調整值',this);">0</span></td>
+			<td class="其他調整值"><span class="value" data-mod="get('.技能調整值',this);">+0</span></td>
+			<td class="臨時調整值"><input class="value w3-border-0 w3-center" type="number" style="width:5em" value="0" data-mod="get('.技能調整值',this);" /></td>
+		</tr>
+		<tr>
+			<td class="本職技能"><input class="value" type="checkbox" disabled="disabled" data-mod="get('.技能調整值',this);" /></td>
+			<td class="技能名稱"><span class="value">辨識法術</span><span>*</span></td>
+			<td class="核心屬性"><span class="value">智力</span></td>
+			<td class="技能調整值"><span class="value" data-eval="add_sign(sum_node(get('.屬性調整值,.阻礙減值,.技能等級,.其他調整值,.臨時調整值',this))+(copy_one(get('.本職技能',this),true)&amp;&amp;(copy_one(get('.技能等級',this))>0)?3:0),'+');">+0</span></td>
+			<td class="屬性調整值"><span class="value" data-eval="add_sign(copy_one('#智力總調整值'),'+');" data-ref="智力總調整值" data-mod="get('.技能調整值',this);">+0</span></td>
+			<td class="阻礙減值"><span class="value" data-eval="add_sign(['敏捷','力量'].indexOf(copy_one(get('.核心屬性',this),true))&lt;0?0:sum_node(get('.防具檢定減值',get('#防具數值 .防具狀態').filter('*:checked'))),'-')" data-ref="防具數值" data-mod="get('.技能調整值',this);">-0</span></td>
+			<td class="技能等級"><span class="value" data-mod="get('.技能調整值',this);">0</span></td>
+			<td class="其他調整值"><span class="value" data-mod="get('.技能調整值',this);">+0</span></td>
+			<td class="臨時調整值"><input class="value w3-border-0 w3-center" type="number" style="width:5em" value="0" data-mod="get('.技能調整值',this);" /></td>
+		</tr>
+		<tr>
+			<td class="本職技能"><input class="value" type="checkbox" checked="checked" disabled="disabled" data-mod="get('.技能調整值',this);" /></td>
+			<td class="技能名稱"><span class="value">潛行</span></td>
+			<td class="核心屬性"><span class="value">敏捷</span></td>
+			<td class="技能調整值"><span class="value" data-eval="add_sign(sum_node(get('.屬性調整值,.阻礙減值,.技能等級,.其他調整值,.臨時調整值',this))+(copy_one(get('.本職技能',this),true)&amp;&amp;(copy_one(get('.技能等級',this))>0)?3:0),'+');">+0</span></td>
+			<td class="屬性調整值"><span class="value" data-eval="add_sign(copy_one(get('#敏捷總調整值')),'+');" data-ref="敏捷總調整值" data-mod="get('.技能調整值',this);">+0</span></td>
+			<td class="阻礙減值"><span class="value" data-eval="add_sign(['敏捷','力量'].indexOf(copy_one(get('.核心屬性',this),true))&lt;0?0:sum_node(get('.防具檢定減值',get('#防具數值 .防具狀態').filter('*:checked'))),'-')" data-ref="防具數值" data-mod="get('.技能調整值',this);">-0</span></td>
+			<td class="技能等級"><span class="value" data-mod="get('.技能調整值',this);">4</span></td>
+			<td class="其他調整值"><span class="value" data-mod="get('.技能調整值',this);">+0</span></td>
+			<td class="臨時調整值"><input class="value w3-border-0 w3-center" type="number" style="width:5em" value="0" data-mod="get('.技能調整值',this);" /></td>
+		</tr>
+		<tr>
+			<td class="本職技能"><input class="value" type="checkbox" disabled="disabled" data-mod="get('.技能調整值',this);" /></td>
+			<td class="技能名稱"><span class="value">生存</span></td>
+			<td class="核心屬性"><span class="value">感知</span></td>
+			<td class="技能調整值"><span class="value" data-eval="add_sign(sum_node(get('.屬性調整值,.阻礙減值,.技能等級,.其他調整值,.臨時調整值',this))+(copy_one(get('.本職技能',this),true)&amp;&amp;(copy_one(get('.技能等級',this))>0)?3:0),'+');">+0</span></td>
+			<td class="屬性調整值"><span class="value" data-eval="add_sign(copy_one('#感知總調整值'),'+');" data-ref="感知總調整值" data-mod="get('.技能調整值',this);">+0</span></td>
+			<td class="阻礙減值"><span class="value" data-eval="add_sign(['敏捷','力量'].indexOf(copy_one(get('.核心屬性',this),true))&lt;0?0:sum_node(get('.防具檢定減值',get('#防具數值 .防具狀態').filter('*:checked'))),'-')" data-ref="防具數值" data-mod="get('.技能調整值',this);">-0</span></td>
+			<td class="技能等級"><span class="value" data-mod="get('.技能調整值',this);">0</span></td>
+			<td class="其他調整值"><span class="value" data-mod="get('.技能調整值',this);">+0</span></td>
+			<td class="臨時調整值"><input class="value w3-border-0 w3-center" type="number" style="width:5em" value="0" data-mod="get('.技能調整值',this);" /></td>
+		</tr>
+		<tr>
+			<td class="本職技能"><input class="value" type="checkbox" checked="checked" disabled="disabled" data-mod="get('.技能調整值',this);" /></td>
+			<td class="技能名稱"><span class="value">游泳</span></td>
+			<td class="核心屬性"><span class="value">力量</span></td>
+			<td class="技能調整值"><span class="value" data-eval="add_sign(sum_node(get('.屬性調整值,.阻礙減值,.技能等級,.其他調整值,.臨時調整值',this))+(copy_one(get('.本職技能',this),true)&amp;&amp;(copy_one(get('.技能等級',this))>0)?3:0),'+');">+0</span></td>
+			<td class="屬性調整值"><span class="value" data-eval="add_sign(copy_one('#力量總調整值'),'+');" data-ref="力量總調整值" data-mod="get('.技能調整值',this);">+0</span></td>
+			<td class="阻礙減值"><span class="value" data-eval="add_sign(['敏捷','力量'].indexOf(copy_one(get('.核心屬性',this),true))&lt;0?0:sum_node(get('.防具檢定減值',get('#防具數值 .防具狀態').filter('*:checked'))),'-')" data-ref="防具數值" data-mod="get('.技能調整值',this);">-0</span></td>
+			<td class="技能等級"><span class="value" data-mod="get('.技能調整值',this);">4</span></td>
+			<td class="其他調整值"><span class="value" data-mod="get('.技能調整值',this);">+0</span></td>
+			<td class="臨時調整值"><input class="value w3-border-0 w3-center" type="number" style="width:5em" value="0" data-mod="get('.技能調整值',this);" /></td>
+		</tr>
+		<tr>
+			<td class="本職技能"><input class="value" type="checkbox" disabled="disabled" data-mod="get('.技能調整值',this);" /></td>
+			<td class="技能名稱"><span class="value">使用魔法裝置</span><span>*</span></td>
+			<td class="核心屬性"><span class="value">魅力</span></td>
+			<td class="技能調整值"><span class="value" data-eval="add_sign(sum_node(get('.屬性調整值,.阻礙減值,.技能等級,.其他調整值,.臨時調整值',this))+(copy_one(get('.本職技能',this),true)&amp;&amp;(copy_one(get('.技能等級',this))>0)?3:0),'+');">+0</span></td>
+			<td class="屬性調整值"><span class="value" data-eval="add_sign(copy_one(get('#魅力總調整值')),'+');" data-ref="魅力總調整值" data-mod="get('.技能調整值',this);">+0</span></td>
+			<td class="阻礙減值"><span class="value" data-eval="add_sign(['敏捷','力量'].indexOf(copy_one(get('.核心屬性',this),true))&lt;0?0:sum_node(get('.防具檢定減值',get('#防具數值 .防具狀態').filter('*:checked'))),'-')" data-ref="防具數值" data-mod="get('.技能調整值',this);">-0</span></td>
+			<td class="技能等級"><span class="value" data-mod="get('.技能調整值',this);">0</span></td>
+			<td class="其他調整值"><span class="value" data-mod="get('.技能調整值',this);">+0</span></td>
+			<td class="臨時調整值"><input class="value w3-border-0 w3-center" type="number" style="width:5em" value="0" data-mod="get('.技能調整值',this);" /></td>
+		</tr>
+	</tbody>
+	<tfoot>
+	</tfoot>
+</table>
+</div>
+
+<div id="能力" class="tab w3-container w3-border edit" hidden="hidden">
+<p class="boxes w3-container">
+	<span class="box w3-tag w3-border w3-theme-light">
+		<strong class="title">震懾拳</strong>
+		<input class="value w3-border-0 w3-center" type="number" style="width:5em" value="5" />
+		<span>/</span>
+		<span class="value" data-eval="copy_one('#武僧等級')+Math.floor((copy_one('#等級')-copy_one('#武僧等級'))/4);" data-ref="等級 等級數值">0</span>
+	</span>
+</p>
+
+<section>
+<h3>武器和防具擅長</h3>
+
+<p>武僧擅長木棒、弩（輕型或重型）、匕首、手斧、標槍、單鐮、雙節棍、木棍、十手、短矛、短劍、手裡劍、破魔錐、投石索與矛。武僧不擅長任何盔甲或盾牌。當他穿戴盔甲、盾牌或者達到中、重載時，武僧將會失去他的防護等級加值、快速移動與疾風連擊職業能力。</p>
+<p>術士擅長使用所有的簡單武器。他們不擅長使用任何盔甲或盾牌。任何防具都會限制術士的手勢，因而導致術士施展具有姿態成分的法術時失敗。</p>
+</section>
+
+<section>
+<h3>震懾拳</h3>
+
+<p>1級起，武僧獲得震懾拳作為獎勵專長，即使他並未滿足先決條件。4級時與之後的每4級，武僧都可以在他的震懾拳上附加一種新的狀態（Condition）。這狀態將會取代原來的效果（震懾目標1輪），成功的檢定可以忽略此狀態。4級時，武僧的震懾拳可以令目標疲乏（Fatigued）。8級時，可以令目標惡心（Sickened）1分鍾。12級時，可以令目標恍惚1d6+1輪。16級時，可以令對手目盲或耳聾。20級時，可以令目標麻痹達1d6+1輪。武僧必須在攻擊骰投出前選擇他要使用何種狀態。這些效果不會其本身造成的效果疊加（一個生物若是被震懾拳打到惡心，他並不會因為吃了另一記震懾拳而變成反胃），但是可以延長狀態的持續時間。</p>
+<p>你必須在投擲攻擊骰之前宣告使用此專長（因此，未命中會導致嚐試失敗）。震懾拳在正常造成傷害的同時，還會強製受到你徒手擊打傷害的敵人進行一次DC為「10+1/2你的角色等級+感知調整值」的強韌豁免檢定。豁免檢定失敗的防禦者將被震懾1輪（直到你的下一輪開始前）。被震懾的人物不能行動，失去防護等級上的任何敏捷加值，並且防護等級承受-2減值。每4級你每天可以多嚐試一次震懾攻擊（見下），每輪不能超過1次。構裝、泥怪、植物、不死、虛體生物和免疫重擊的生物不會被震懾。</p>
+<p>武僧1級時獲得「震懾拳」做為獎勵專長，即使他不滿足所需先決條件。武僧每天可嚐試的震懾攻擊的次數等同於他的武僧等級，再加上每天每4個非武僧職業等級1次。</p>
+</section>
+</div>
+
+<div id="物品" class="tab w3-container w3-border edit" hidden="hidden">
+<p class="boxes w3-container">
+	<span class="box w3-tag w3-border w3-theme-light">
+		<strong class="title">總重量</strong>
+		<span id="總重量" class="value" data-eval="(sum_product(get('#物品數值 .單重'),get('#物品數值 .數量'))+copy_one('#重量臨時調整值')).toFixed(2);" data-ref="物品數值">0</span>
+	</span>
+	
+	<span class="box w3-tag w3-border w3-theme-light">
+		<strong class="title">臨時調整值</strong>
+		<input id="重量臨時調整值" class="value w3-border-0 w3-center" type="number" style="width:5em" value="0" step="0.01" data-mod="get('#總重量');" />
+	</span>
+	
+	<span class="box w3-tag w3-border w3-theme-light">
+		<strong class="title">負重狀態</strong>
+		<span id="負重狀態" class="value" data-eval="state(copy_one('#總重量'),[copy_one('#輕度負重上限'),copy_one('#中度負重上限'),copy_one('#重度負重上限')],['輕度負重','中度負重','重度負重'],'超重')" data-ref="總重量">0</span>
+	</span>
+</p>
+
+<p class="boxes w3-container">
+	<span class="box w3-tag w3-border w3-theme-light">
+		<strong class="title">輕度負重</strong>
+		<span class="value">0</span>
+		<span>~</span>
+		<span id="輕度負重上限" class="value" data-eval="Math.floor(copy_one('#重度負重上限')/3);" data-ref="重度負重上限">0</span>
+	</span>
+	
+	<span class="box w3-tag w3-border w3-theme-light">
+		<strong class="title">中度負重</strong>
+		<span class="value" data-eval="copy_one('#輕度負重上限');" data-ref="輕度負重上限">0</span>
+		<span>~</span>
+		<span id="中度負重上限" class="value" data-eval="Math.floor(2*copy_one('#重度負重上限')/3);" data-ref="重度負重上限">0</span>
+	</span>
+	
+	<span class="box w3-tag w3-border w3-theme-light">
+		<strong class="title">重度負重</strong>
+		<span class="value" data-eval="copy_one('#中度負重上限');" data-ref="中度負重上限">0</span>
+		<span>~</span>
+		<span id="重度負重上限" class="value" data-eval="carrying_capacity(copy_one('#力量基本值'));" data-ref="力量基本值">0</span>
+	</span>
+	
+	<span class="box w3-tag w3-border w3-theme-light">
+		<strong class="title">高舉過頭</strong>
+		<span id="高舉過頭" class="value" data-eval="copy_one('#重度負重上限');" data-ref="重度負重上限">0</span>
+	</span>
+	
+	<span class="box w3-tag w3-border w3-theme-light">
+		<strong class="title">抬離地面</strong>
+		<span id="抬離地面" class="value" data-eval="2*copy_one('#重度負重上限');" data-ref="重度負重上限">0</span>
+	</span>
+	
+	<span class="box w3-tag w3-border w3-theme-light">
+		<strong class="title">推或拉</strong>
+		<span id="推或拉" class="value" data-eval="5*copy_one('#重度負重上限');" data-ref="重度負重上限">0</span>
+	</span>
+</p>
+
+<table id="物品數值" class="sortable w3-table-all w3-centered w3-panel">
+	<thead>
+		<tr>
+			<th>移動</th>
+			<th>名稱</th>
+			<th>單重</th>
+			<th>數量</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td></td>
+			<td class="名稱"><span class="value">白金幣</span></td>
+			<td class="單重"><span class="value">0.05</span></td>
+			<td class="數量"><input class="value store w3-border-0 w3-center" type="number" style="width:5em" value="0" min="0" /></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td class="名稱"><span class="value">金幣</span></td>
+			<td class="單重"><span class="value">0.05</span></td>
+			<td class="數量"><input class="value store w3-border-0 w3-center" type="number" style="width:5em" value="0" min="0" /></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td class="名稱"><span class="value">銀幣</span></td>
+			<td class="單重"><span class="value">0.05</span></td>
+			<td class="數量"><input class="value store w3-border-0 w3-center" type="number" style="width:5em" value="0" min="0" /></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td class="名稱"><span class="value">銅幣</span></td>
+			<td class="單重"><span class="value">0.05</span></td>
+			<td class="數量"><input class="value store w3-border-0 w3-center" type="number" style="width:5em" value="0" min="0" /></td>
+			<td></td>
+		</tr>
+	</tbody>
+	<tfoot>
+		<tr>
+			<td><span class="value w3-large" style="cursor:move">↕</span></td>
+			<td><input class="value" type="text" /></td>
+			<td><input class="value w3-border-0 w3-center" type="number" style="width:4em" value="0" min="0" step="0.01" /></td>
+			<td><input class="value w3-border-0 w3-center" type="number" style="width:5em" value="0" min="0" /></td>
+			<td><button class="w3-border" onclick="add_row(this);">+</button></td>
+		</tr>
+		<tr class="template" hidden="hidden">
+			<td><span class="value w3-large" style="cursor:move">↕</span></td>
+			<td><span class="value"></span></td>
+			<td><span class="value"></span></td>
+			<td><input class="value store w3-border-0 w3-center" type="number" style="width:5em" value="0" min="0" /></td>
+			<td class="edit"><button class="w3-border" onclick="$(this).closest('tr').remove();">-</button></td>
+		</tr>
+	</tfoot>
+</table>
+
+<h2>物品描述</h2>
+
+<section>
+<h3>錢幣</h3>
+
+<p>1白金幣價值等於10金幣，1金幣價值等於10銀幣，1銀幣價值等於10銅幣。</p>
+</section>
+</div>
+
+<div id="法術" class="tab w3-container w3-border edit" hidden="hidden">
+<p class="boxes w3-container">
+	<span class="box w3-tag w3-border w3-theme-light">
+		<strong class="title">法術學派/領域</strong>
+		<span id="法術學派領域" class="value">—</span>
+	</span>
+	
+	<span class="box w3-tag w3-border w3-theme-light">
+		<strong class="title">奧術失敗率</strong>
+		<span id="奧術失敗率" class="value" data-eval="Math.min(sum_node(get('.奧術失敗率',get('#防具數值 .防具狀態 .value:checked'))),1).toFixed(2);" data-ref="防具數值">0</span>
+	</span>
+	
+	<span class="box w3-tag w3-border w3-theme-light">
+		<strong class="title">專注檢定加成</strong>
+		<span id="專注檢定加成" class="value" data-eval="10+copy_one('#術士等級')+copy_one('#魅力總調整值');" data-ref="魅力總調整值 職業數值">+0</span>
+	</span>
+</p>
+
+<table id="法術數值" class="w3-table-all w3-centered w3-panel">
+	<thead>
+		<tr>
+			<th>法術等級</th>
+			<th>0</th>
+			<th>1</th>
+			<th>2</th>
+			<th>3</th>
+			<th>4</th>
+			<th>5</th>
+			<th>6</th>
+			<th>7</th>
+			<th>8</th>
+			<th>9</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<th>豁免難度等級</th>
+			<td><span class="value" data-eval="10+copy_one('#術士等級')+0;" data-ref="職業等級">0</span></td>
+			<td><span class="value" data-eval="10+copy_one('#術士等級')+1;" data-ref="職業等級">0</span></td>
+			<td><span class="value" data-eval="10+copy_one('#術士等級')+2;" data-ref="職業等級">0</span></td>
+			<td><span class="value" data-eval="10+copy_one('#術士等級')+3;" data-ref="職業等級">0</span></td>
+			<td><span class="value" data-eval="10+copy_one('#術士等級')+4;" data-ref="職業等級">0</span></td>
+			<td><span class="value" data-eval="10+copy_one('#術士等級')+5;" data-ref="職業等級">0</span></td>
+			<td><span class="value" data-eval="10+copy_one('#術士等級')+6;" data-ref="職業等級">0</span></td>
+			<td><span class="value" data-eval="10+copy_one('#術士等級')+7;" data-ref="職業等級">0</span></td>
+			<td><span class="value" data-eval="10+copy_one('#術士等級')+8;" data-ref="職業等級">0</span></td>
+			<td><span class="value" data-eval="10+copy_one('#術士等級')+9;" data-ref="職業等級">0</span></td>
+		</tr>
+		<tr>
+			<th>每日法術數量</th>
+			<td><span class="value">Infinity</span></td>
+			<td><span class="value" data-eval="Math.min(copy_one('#術士等級')+2,6);" data-ref="職業等級">0</span></td>
+			<td><span class="value" data-eval="copy_one('#術士等級')-1&lt;0?'—':Math.min(copy_one('#術士等級')-1,6);" data-ref="職業等級">0</span></td>
+			<td><span class="value" data-eval="copy_one('#術士等級')-3&lt;0?'—':Math.min(copy_one('#術士等級')-3,6);" data-ref="職業等級">0</span></td>
+			<td><span class="value" data-eval="copy_one('#術士等級')-5&lt;0?'—':Math.min(copy_one('#術士等級')-5,6);" data-ref="職業等級">0</span></td>
+			<td><span class="value" data-eval="copy_one('#術士等級')-7&lt;0?'—':Math.min(copy_one('#術士等級')-7,6);" data-ref="職業等級">0</span></td>
+			<td><span class="value" data-eval="copy_one('#術士等級')-9&lt;0?'—':Math.min(copy_one('#術士等級')-9,6);" data-ref="職業等級">0</span></td>
+			<td><span class="value" data-eval="copy_one('#術士等級')-11&lt;0?'—':Math.min(copy_one('#術士等級')-11,6);" data-ref="職業等級">0</span></td>
+			<td><span class="value" data-eval="copy_one('#術士等級')-13&lt;0?'—':Math.min(copy_one('#術士等級')-13,6);" data-ref="職業等級">0</span></td>
+			<td><span class="value" data-eval="copy_one('#術士等級')-15&lt;0?'—':Math.min(copy_one('#術士等級')-15,6)+copy_one('#術士等級')==20?1:0;" data-ref="職業等級">0</span></td>
+		</tr>
+		<tr>
+			<th>額外法術數量</th>
+			<td><span class="value">0</span></td>
+			<td><span class="value" data-eval="copy_one('#魅力基本值')-2*1-10>0?1+Math.floor((copy_one('#魅力基本值')-2*1-10)/8):0;" data-ref="魅力基本值">0</span></td>
+			<td><span class="value" data-eval="copy_one('#魅力基本值')-2*2-10>0?1+Math.floor((copy_one('#魅力基本值')-2*2-10)/8):0;" data-ref="魅力基本值">0</span></td>
+			<td><span class="value" data-eval="copy_one('#魅力基本值')-2*3-10>0?1+Math.floor((copy_one('#魅力基本值')-2*3-10)/8):0;" data-ref="魅力基本值">0</span></td>
+			<td><span class="value" data-eval="copy_one('#魅力基本值')-2*4-10>0?1+Math.floor((copy_one('#魅力基本值')-2*4-10)/8):0;" data-ref="魅力基本值">0</span></td>
+			<td><span class="value" data-eval="copy_one('#魅力基本值')-2*5-10>0?1+Math.floor((copy_one('#魅力基本值')-2*5-10)/8):0;" data-ref="魅力基本值">0</span></td>
+			<td><span class="value" data-eval="copy_one('#魅力基本值')-2*6-10>0?1+Math.floor((copy_one('#魅力基本值')-2*6-10)/8):0;" data-ref="魅力基本值">0</span></td>
+			<td><span class="value" data-eval="copy_one('#魅力基本值')-2*7-10>0?1+Math.floor((copy_one('#魅力基本值')-2*7-10)/8):0;" data-ref="魅力基本值">0</span></td>
+			<td><span class="value" data-eval="copy_one('#魅力基本值')-2*8-10>0?1+Math.floor((copy_one('#魅力基本值')-2*8-10)/8):0;" data-ref="魅力基本值">0</span></td>
+			<td><span class="value" data-eval="copy_one('#魅力基本值')-2*9-10>0?1+Math.floor((copy_one('#魅力基本值')-2*9-10)/8):0;" data-ref="魅力基本值">0</span></td>
+		</tr>
+		<tr>
+			<th>領域法術數量</th>
+			<td><span class="value">0</span></td>
+			<td><span class="value">0</span></td>
+			<td><span class="value">0</span></td>
+			<td><span class="value">0</span></td>
+			<td><span class="value">0</span></td>
+			<td><span class="value">0</span></td>
+			<td><span class="value">0</span></td>
+			<td><span class="value">0</span></td>
+			<td><span class="value">0</span></td>
+			<td><span class="value">0</span></td>
+		</tr>
+	</tbody>
+	<tfoot>
+	</tfoot>
+</table>
+
+<section>
+<h3>舞光術</h3>
+
+<p class="boxes w3-container">
+	<span class="box w3-tag w3-border w3-theme-light">
+		<strong class="title">準備數量</strong>
+		<input class="value w3-border-0 w3-center" type="number" style="width:5em" value="0" min="0" />
+	</span>
+</p>
+
+<p>學派︰塑能係[光亮]；環位︰0；施法時間︰標準動作；成份︰語言、姿勢；距離︰中距（100尺+每等級10尺）；效果︰至多四個光源，所有光源都要在半徑10尺的區域內；持續時間︰1分鍾（可解消）；豁免︰無。</p>
+<p>根據你選擇的法術功效，你可以造出至多四個類似於油燈或火把的光源（並發出同等亮度的光），或者至多四個像是鬼火（Will-o'-Wisp）的光球，或是一個微微發光的模糊人形。舞光術的光源必須彼此均處在10尺半徑的區域內，在此限製下可以按照你的意願隨意移動（不需要專注），包括：向前向後、向上向下、直行或轉彎等等。光源每輪最多可以移動100尺。光源將會在與你的距離超過法術範圍時熄滅。</p>
+<p>在同一時間內，你隻能啟動一個舞光術。若你在之前施放的舞光術仍在生效時再次施放該法術，那麼早先施放的會被解除。若你將該法術恒定，則被恒定的法術不會算在此限製之內。</p>
+<p>舞光術可以被魔法恒定術（permanency）恒定。</p>
+</section>
+</div>
+
+<div id="test" class="tab w3-container w3-border edit" hidden="hidden">
+	<p id="test-text">Test.</p>
+</div>
+</div>
+</div>
+</body>
+</html>
