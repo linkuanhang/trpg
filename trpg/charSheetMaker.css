@@ -1,0 +1,9 @@
+.w3-theme-dark .w3-button svg {
+  filter: contrast(4) invert(1);
+}
+.w3-theme-dark .w3-button:hover svg {
+  filter: contrast(4) invert(0);
+}
+#editor {
+  min-height: 100px;
+}

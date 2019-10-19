@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="w3pro.css" />
+  <link rel="stylesheet" href="w3-theme-grey.css" />
+  <link rel="stylesheet" href="charSheetMaker.css" />
+  <script src="ace.js"></script>
+  <script src="pug.js"></script>
+  <script src="mode-jade.js"></script>
+  <script src="charSheetMaker.js"></script>
+</head>
+<body>
+  <nav class="w3-bar w3-theme-dark">
+    <button class="w3-bar-item w3-button" onclick="openModal(this)" data-modal="#editor-container">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z" />
+      </svg>
+    </button>
+    <button class="w3-bar-item w3-button" onclick="downloadFromEditor()">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <path d="M17 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V7l-4-4zm-5 16c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3zm3-10H5V5h10v4z" />
+      </svg>
+    </button>
+    <label class="w3-bar-item w3-button">
+      <input class="w3-hide" type="file" accept=".pug" onchange="uploadFromFile(this)" />
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM14 13v4h-4v-4H7l5-5 5 5h-3z"/>
+      </svg>
+    </label>
+  </nav>
+  <main>
+    <div id="editor-container" class="w3-modal" onclick="closeModal(this)" data-modal="#editor-container">
+      <div class="w3-modal-content" onclick="event.stopPropagation()">
+        <div id="editor"></div>
+      </div>
+    </div>
+    <div id="show"></div>
+  </main>
+</body>
+</html>
