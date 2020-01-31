@@ -3,8 +3,8 @@
 	xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns="http://www.w3.org/1999/xhtml"
 	xmlns:gen="general" xmlns:t="terms">
 
-<xsl:import href="/pathfinder/navbar.xsl" />
-<xsl:import href="/pathfinder/static/xml/terms.xsl" />
+<xsl:import href="/trpg/pathfinder/navbar.xsl" />
+<xsl:import href="/trpg/pathfinder/static/xml/terms.xsl" />
 
 <xsl:template name="page">
 	<xsl:param name="title" />
