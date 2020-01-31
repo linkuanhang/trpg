@@ -11,7 +11,7 @@
 	<head>
 		<meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
 		<title>翻譯詞彙</title>
-		<link rel="stylesheet" href="/pathfinder/static/css/w3.css" />
+		<link rel="stylesheet" href="/trpg/pathfinder/static/css/w3.css" />
 		<script type="text/javascript" src="/trpg/pathfinder/static/js/jquery-3.1.1.min.js"></script>
 		<script type="text/javascript" src="/trpg/pathfinder/static/js/base.js"></script>
 	</head>
@@ -21,7 +21,7 @@
 	<nav class="w3-bar w3-border-bottom w3-white w3-top">
 		<div class="logo-container">
 			<a href="javascript:void(0)" onclick="nav_toggle();" class="w3-bar-item w3-hover-none w3-xlarge w3-button">&#8801;</a>
-			<a href="/pathfinder/index.xml" class="w3-bar-item"><img src="/pathfinder/static/img/PRD-Logo.png" alt="Pathfinder RPG" height="30px" /></a>
+			<a href="/pathfinder/index.xml" class="w3-bar-item"><img src="/trpg/pathfinder/static/img/PRD-Logo.png" alt="Pathfinder RPG" height="30px" /></a>
 		</div>
 		<div id="languages">
 			<input id="en" class="w3-bar-item w3-check" type="checkbox" onclick="toggle_lang($(this))" />
