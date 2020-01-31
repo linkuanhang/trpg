@@ -21,7 +21,7 @@
 	<nav class="w3-bar w3-border-bottom w3-white w3-top">
 		<div class="logo-container">
 			<a href="javascript:void(0)" onclick="nav_toggle();" class="w3-bar-item w3-hover-none w3-xlarge w3-button">&#8801;</a>
-			<a href="/pathfinder/index.xml" class="w3-bar-item"><img src="/trpg/pathfinder/static/img/PRD-Logo.png" alt="Pathfinder RPG" height="30px" /></a>
+			<a href="/trpg/pathfinder/index.xml" class="w3-bar-item"><img src="/trpg/pathfinder/static/img/PRD-Logo.png" alt="Pathfinder RPG" height="30px" /></a>
 		</div>
 		<div id="languages">
 			<input id="en" class="w3-bar-item w3-check" type="checkbox" onclick="toggle_lang($(this))" />

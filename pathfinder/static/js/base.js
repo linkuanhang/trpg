@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	$("#header").load("/pathfinder/navbar.html");
+	$("#header").load("/trpg/pathfinder/navbar.html");
 	
 	$("*").contents().filter(function() {
 		return this.nodeType==3;

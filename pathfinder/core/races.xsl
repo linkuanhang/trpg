@@ -3,7 +3,7 @@
 	xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns="http://www.w3.org/1999/xhtml"
 	xmlns:r="races" xmlns:gen="general">
 
-<xsl:import href="/pathfinder/static/xml/base.xsl" />
+<xsl:import href="/trpg/pathfinder/static/xml/base.xsl" />
 
 <xsl:output method="html" encoding="utf-8" doctype-system="about:legacy-compat" indent="yes" media-type="application/xhtml+xml" />
 
