@@ -2,7 +2,7 @@
 <xsl:stylesheet version="2.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:books="books" xmlns:gen="general"
 	xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/1999/xhtml">
 
-<xsl:import href="/pathfinder/static/xml/general.xsl" />
+<xsl:import href="/trpg/pathfinder/static/xml/general.xsl" />
 
 <xsl:template match="books:books">
 	<nav id="sidenav" class="w3-sidenav w3-border-right" style="width:200px;top:53px;">
