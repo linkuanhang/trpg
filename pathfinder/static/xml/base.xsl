@@ -18,8 +18,8 @@
 		<meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
 		<title><xsl:apply-templates select="$title" /></title>
 		<link rel="stylesheet" href="/pathfinder/static/css/w3.css" />
-		<script type="text/javascript" src="/pathfinder/static/js/jquery-3.1.1.min.js"></script>
-		<script type="text/javascript" src="/pathfinder/static/js/base.js"></script>
+		<script type="text/javascript" src="/trpg/pathfinder/static/js/jquery-3.1.1.min.js"></script>
+		<script type="text/javascript" src="/trpg/pathfinder/static/js/base.js"></script>
 	</head>
 	
 	<body style="min-width:500px;">

@@ -12,8 +12,8 @@
 		<meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
 		<title>翻譯詞彙</title>
 		<link rel="stylesheet" href="/pathfinder/static/css/w3.css" />
-		<script type="text/javascript" src="/pathfinder/static/js/jquery-3.1.1.min.js"></script>
-		<script type="text/javascript" src="/pathfinder/static/js/base.js"></script>
+		<script type="text/javascript" src="/trpg/pathfinder/static/js/jquery-3.1.1.min.js"></script>
+		<script type="text/javascript" src="/trpg/pathfinder/static/js/base.js"></script>
 	</head>
 	
 	<body>
