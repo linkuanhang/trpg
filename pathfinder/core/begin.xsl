@@ -11,7 +11,7 @@
 	<xsl:call-template name="page">
 		<xsl:with-param name="title" select="b:header/b:title[@lang='en']" />
 		<xsl:with-param name="pageTitle" select="b:header/b:title" />
-		<xsl:with-param name="nav" select="document('/pathfinder/navbar.xml')" />
+		<xsl:with-param name="nav" select="document('/trpg/pathfinder/navbar.xml')" />
 		<xsl:with-param name="page" select="b:body/*" />
 		<xsl:with-param name="initDepth" select="2" />
 	</xsl:call-template>

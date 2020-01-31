@@ -176,7 +176,7 @@
 </xsl:template>
 
 <xsl:template match="gen:name">
-	<xsl:variable name="terms" select="'/pathfinder/static/xml/terms.xml'" />
+	<xsl:variable name="terms" select="'/trpg/pathfinder/static/xml/terms.xml'" />
 	
 	<xsl:call-template name="glossary">
 		<xsl:with-param name="href" select="concat($terms,'#',@href)" />

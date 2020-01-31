@@ -8,18 +8,18 @@
 <xsl:output method="html" encoding="utf-8" doctype-system="about:legacy-compat" indent="yes" media-type="application/xhtml+xml" />
 
 <xsl:template match="r:races">
-	<xsl:variable name="xml" select="document('/pathfinder/static/xml/terms.xml')" />
+	<xsl:variable name="xml" select="document('/trpg/pathfinder/static/xml/terms.xml')" />
 	<xsl:call-template name="page">
 		<xsl:with-param name="title" select="$xml//*[@id='race']/*[name()='name'][@lang='zh-tw']" />
 		<xsl:with-param name="pageTitle" select="$xml//*[@id='race']/*[name()='name'][@lang='zh-tw']" />
-		<xsl:with-param name="nav" select="document('/pathfinder/navbar.xml')" />
+		<xsl:with-param name="nav" select="document('/trpg/pathfinder/navbar.xml')" />
 		<xsl:with-param name="page" select="r:race" />
 		<xsl:with-param name="initDepth" select="1" />
 	</xsl:call-template>
 </xsl:template>
 
 <xsl:template match="r:race">
-	<xsl:variable name="xml" select="document('/pathfinder/static/xml/terms.xml')" />
+	<xsl:variable name="xml" select="document('/trpg/pathfinder/static/xml/terms.xml')" />
 	<h2><xsl:apply-templates select="r:name" /></h2>
 	
 	<xsl:for-each select="r:descriptions/r:description">

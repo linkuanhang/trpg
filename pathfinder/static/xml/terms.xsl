@@ -31,7 +31,7 @@
 		</div>
 	</nav>
 	
-	<xsl:apply-templates select="document('/pathfinder/navbar.xml')" />
+	<xsl:apply-templates select="document('/trpg/pathfinder/navbar.xml')" />
 	
 	<main style="margin-top:53px;margin-left:200px;">
 		<header class="w3-container">
