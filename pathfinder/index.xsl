@@ -2,7 +2,7 @@
 <xsl:stylesheet version="2.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:i="intro" xmlns:gen="general"
 	xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/1999/xhtml">
 
-<xsl:import href="/pathfinder/static/xml/base.xsl" />
+<xsl:import href="/trpg/pathfinder/static/xml/base.xsl" />
 
 <xsl:output method="html" encoding="utf-8" doctype-system="about:legacy-compat" indent="yes" media-type="application/xhtml+xml" />
 
