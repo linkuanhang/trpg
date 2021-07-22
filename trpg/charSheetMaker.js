@@ -1,12 +1,5 @@
 const pug = require('pug')
 
-function showTab (node) {
-  document.querySelectorAll(node.dataset.hide).forEach(n => n.classList.add('w3-hide'))
-  document.querySelectorAll(node.dataset.show).forEach(n => n.classList.remove('w3-hide'))
-  document.querySelectorAll(node.dataset.cln).forEach(n => n.classList.remove('w3-theme-dark'))
-  node.classList.add('w3-theme-dark')
-}
-
 function openModal (node) {
   document.querySelectorAll(node.dataset.modal).forEach(n => n.style.display='block')
 }
@@ -47,8 +40,13 @@ function init () {
   async function input (e) {
     try {
       const content = editor.getValue()
-      const html = pug.render(content)
-      document.querySelector('#show').innerHTML = html
+      const pugtext = pug.render(content)
+      const parser = new DOMParser()
+      const html = parser.parseFromString(pugtext, 'text/html')
+      const root = document.querySelector('#show')
+      const shadow = root.shadowRoot || root.attachShadow({ mode: 'open' })
+      window.editorDocument = shadow
+      shadow.innerHTML = html.documentElement.outerHTML
       editor.getSession().setAnnotations([])
     } catch (e) {
       window.errs = e
