@@ -5,13 +5,13 @@
 <xsl:import href="/trpg/pathfinder/static/xml/general.xsl" />
 
 <xsl:template match="books:books">
-	<nav id="sidenav" class="w3-sidenav w3-border-right" style="width:200px;top:53px;">
+	<nav id="sidenav" class="w3-sidebar w3-border-right w3-bar-block" style="width:200px;top:53px;">
 		<xsl:apply-templates />
 	</nav>
 </xsl:template>
 
 <xsl:template match="books:book">
-	<a href="javascript:void(0)">
+	<a href="javascript:void(0)" class="w3-bar-item w3-button">
 		<xsl:attribute name="onclick">
 			<xsl:text>sidenav_toggle($('#</xsl:text>
 			<xsl:value-of select="@id" />
@@ -20,7 +20,7 @@
 		<xsl:value-of select="books:name" />
 		<xsl:text> &#9660;</xsl:text>
 	</a>
-	<div class="w3-hide w3-border">
+	<div class="w3-hide w3-border w3-bar-block">
 		<xsl:attribute name="id">
 			<xsl:value-of select="@id" />
 		</xsl:attribute>
@@ -31,13 +31,16 @@
 						<xsl:attribute name="href">
 							<xsl:value-of select="@xlink:href" />
 						</xsl:attribute>
+						<xsl:attribute name="class">
+							<xsl:text>w3-bar-item w3-button</xsl:text>
+						</xsl:attribute>
 					</xsl:when>
 					<xsl:otherwise>
 						<xsl:attribute name="href">
 							<xsl:text>javascript:void(0)</xsl:text>
 						</xsl:attribute>
 						<xsl:attribute name="class">
-							<xsl:text>w3-hover-red</xsl:text>
+							<xsl:text>w3-bar-item w3-button w3-hover-red</xsl:text>
 						</xsl:attribute>
 					</xsl:otherwise>
 				</xsl:choose>
