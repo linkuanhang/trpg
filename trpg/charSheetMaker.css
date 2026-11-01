@@ -1,9 +1,51 @@
-.w3-theme-dark .w3-button svg {
-  filter: contrast(4) invert(1);
+body {
+    margin: 0px;
+    width: 100vw;
+    height: 100vh;
 }
-.w3-theme-dark .w3-button:hover svg {
-  filter: contrast(4) invert(0);
+nav {
+    padding: 1ex 1em;
+    width: calc(100% - 2em);
+    color: white;
+    background-color: gray;
+}
+button {
+    display: inline-block;
+    border-width: 1px;
+    border-color: gray;
+    border-radius: 1rex;
+    padding: 8px 16px;
+    vertical-align: middle;
+    color: inherit;
+    background-color: inherit;
+    cursor: pointer;
+}
+button:hover {
+    filter: brightness(0.8);
+}
+button.icon {
+    width: 2rem;
+    height: 2rem;
+    padding: 0px;
+    border-color: transparent;
+    font-weight: bold;
+}
+input[type=file] {
+    display: none;
 }
 #editor {
-  min-height: 100px;
+    width: 80vw;
+    height: 80vh;
+}
+.action-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rex;
+}
+footer {
+    margin-top: 1rex;
+}
+#preview {
+    margin: 1rem;
 }

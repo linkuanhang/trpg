@@ -1,27 +1,53 @@
-const pug = require('pug')
+import { init } from 'https://esm.sh/modern-monaco'
+import { evaluateSync } from 'https://esm.sh/@mdx-js/mdx@3?bundle'
+import * as runtime from 'https://esm.sh/preact@11.0.1/jsx-runtime'
+import { render, h } from 'https://esm.sh/preact@11.0.1'
 
-function openModal (node) {
-  document.querySelectorAll(node.dataset.modal).forEach(n => n.style.display='block')
-}
+const monaco = await init()
+const editor = monaco.editor.create(document.querySelector('#editor'), {
+  value: '',
+  language: 'mdx',
+  automaticLayout: true
+})
 
-function closeModal (node) {
-  document.querySelectorAll(node.dataset.modal).forEach(n => n.style.display='none')
-}
+let savedValue = editor.getValue()
+let savedViewState = editor.saveViewState()
 
-function downloadText (text) {
-  const file = new Blob([text], { type: 'text/plain' })
-  const url = URL.createObjectURL(file)
-  let a = document.createElement('a')
-  a.classList.add('w3-hide')
-  a.href = url
-  a.download = 'sheet.pug'
-  document.body.appendChild(a)
-  a.click()
-  setTimeout(() => {
-    document.body.removeChild(a)
-    window.URL.revokeObjectURL(url)
-  }, 0)
-}
+document.querySelector('#editor-submit').addEventListener('click', () => {
+  const code = editor.getValue()
+  try {
+    const { default: mdxContent } = evaluateSync(code, runtime)
+    render(h(mdxContent), document.querySelector('#preview'))
+    savedValue = code
+    savedViewState = editor.saveViewState()
+    document.querySelector('#editor-dialog').hidePopover()
+  } catch (err) {
+    const startLineNumber = err.line
+    const startColumn = err.column
+    let endLineNumber = startLineNumber
+    let endColumn = startColumn
+    if (err.place && err.place.end) {
+      endLineNumber = err.place.end.line
+      endColumn = err.place.end.column
+    }
+    const markers = [
+      {
+        startLineNumber,
+        startColumn,
+        endLineNumber,
+        endColumn,
+        message: err.message,
+        severity: monaco.MarkerSeverity.Error
+      }
+    ]
+    monaco.editor.setModelMarkers(editor.getModel(), 'mdx-parse-error', markers)
+  }
+})
+
+document.querySelector('#editor-close').addEventListener('click', () => {
+  editor.setValue(savedValue)
+  editor.restoreViewState(savedViewState)
+})
 
 function reader (file) {
   return new Promise((res, rej) => {
@@ -32,42 +58,27 @@ function reader (file) {
   })
 }
 
-function init () {
-  const editor = ace.edit('editor')
-  editor.setOptions({ wrap: true, maxLines: Infinity, tabSize: 2, useSoftTabs: true })
-  editor.session.setMode('ace/mode/jade')
+const editorInput = document.querySelector('#editor-upload-input')
 
-  async function input (e) {
-    try {
-      const content = editor.getValue()
-      const pugtext = pug.render(content)
-      const parser = new DOMParser()
-      const html = parser.parseFromString(pugtext, 'text/html')
-      const root = document.querySelector('#show')
-      const shadow = root.shadowRoot || root.attachShadow({ mode: 'open' })
-      window.editorDocument = shadow
-      shadow.innerHTML = html.documentElement.outerHTML
-      editor.getSession().setAnnotations([])
-    } catch (e) {
-      window.errs = e
-      const nline = isFinite(e.line) ? e.line - 1 : 0
-      editor.getSession().setAnnotations([{ row: nline, type: 'error', text: e.message }])
-    }
-  }
-  editor.on('change', input)
-  
-  input()
-  
-  window.downloadFromEditor = () => {
-    const text = editor.getValue()
-    downloadText(text)
-  }
+editorInput.addEventListener('change', async e => {
+  const content = await reader(e.target.files[0])
+  editor.setValue(content)
+})
 
-  window.uploadFromFile = async node => {
-    const file = node.files[0]
-    const text = await reader(file)
-    editor.setValue(text)
-  }
-}
+document.querySelector('#editor-upload').addEventListener('click', () => {
+  editorInput.click()
+})
 
-window.onload = init
+document.querySelector('#editor-save').addEventListener('click', () => {
+  const code = editor.getValue()
+  const file = new Blob([code], { type: 'text/plain' })
+  const url = URL.createObjectURL(file)
+  let a = document.createElement('a')
+  a.href = url
+  a.download = 'sheet.mdx'
+  a.click()
+  setTimeout(() => {
+    document.body.removeChild(a)
+    window.URL.revokeObjectURL(url)
+  }, 0)
+})
